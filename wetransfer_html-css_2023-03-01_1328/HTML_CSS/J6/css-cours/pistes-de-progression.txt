@@ -1,0 +1,25 @@
+Transitions - https://www.w3schools.com/css/css3_transitions.asp
+
+    De quelle manière un élément passe d'un état à un autre.
+
+        Si sa hauteur passe de 100px à 200px, comment elle le fait ?
+
+
+Animations - https://www.w3schools.com/css/css3_animations.asp
+
+    Changements dans le visuel d'un élément
+
+        La plus connue : rotate(Xdeg);
+
+        Rotate va faire tourner un élément d'autant d'angle qu'indiqués entre les parenthèses
+
+
+Unités de grandeur :
+
+    On peut utiliser :
+
+        em : la taille relative à la taille d'un élément
+
+            Si on dit que la taille d'un h2 est 1.2em, il fera 1.2 x la taille d'un h2 
+
+        rem : la taille relative à la police d'un élément (sans rapport avec l'élément en lui-même)

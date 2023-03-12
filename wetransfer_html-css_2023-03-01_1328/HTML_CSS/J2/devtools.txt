@@ -1,0 +1,11 @@
+Dans google chrome, on peut faire clic droit -> inspecter pour ouvrir DevTools
+
+Qu'est-ce que DevTools ?
+
+    C'est un service / logiciel qui nous permet d'avoir accès et de modifier le contenu HTML
+    dans l'onglet Elements.
+
+    Dans Sources, on a accès à toutes les ressources que le moteur de recherce utilise pour afficher la 
+    page.
+
+    Dans LightHouse : on peut générer un rapport complet sur notre site.

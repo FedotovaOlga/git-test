@@ -1,0 +1,53 @@
+https://www.w3schools.com/css/css_selectors.asp
+
+En CSS, il y a trois manières principales pour sélectionner un ou 
+plusieurs éléments :
+
+- On peut sélectionner un ensemble d'éléments :
+
+    h1 {
+        color: blue;
+    }
+
+    En utilisant comme sélecteur un nom d'élément, on va sélectionner 
+    tous les éléments de ce type.
+
+    Dans l'exemple, tous les h1 auront la couleur bleu.
+
+
+- On peut sélectionner un élément grâce à son ID :
+
+    #id_element {
+        color: blue;
+    }
+
+    Pour faire cela, on utilise le symbole # suivi du l'id de 
+    l'élément à sélectionner.
+
+    Dans notre exemple, l'élément ayant comme id 'id_element' sera 
+    bleu.
+
+
+- On peut sélectionner (un /) des éléments grâce à leur classe :
+
+    .classe_element {
+        color: blue;
+    }
+
+    Pour faire cela, on utilise le symbole '.' suivi du nom de la 
+    classe à sélectionner.
+
+    Dans notre example, tous les éléments faisant partie de la classe 
+    'classe_element' seront bleus.
+
+
+On peut utiliser plusieurs sélecteurs à la fois, en les séparant par 
+une virgule :
+
+    h1, #id_element, .classe_element {
+        color: blue;
+    }
+
+    Dans l'example ci-dessus, tous les h1, l'élément ayant comme id 
+    'id_element' et tous les éléments de la classe 'classe_element'
+    seront bleus.

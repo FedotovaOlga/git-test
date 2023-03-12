@@ -1,0 +1,3 @@
+Bootstrap (qu'on utilise)
+TailwindCSS
+    Il faut maîtriser le CSS avant de se lancer dedans

@@ -1,0 +1,59 @@
+<!-- https://www.w3schools.com/html/html_tables.asp -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: solid 1px black;
+        }
+    </style>
+    <title>Tableaux</title>
+</head>
+<body>
+
+  <!-- th horizontaux -->
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <!-- <td>Bonjour</td> -->
+        </tr>
+    </table>
+  
+  <!-- th verticaux -->
+    <table style="margin-top: 20px;">
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>50</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+</body>
+</html>

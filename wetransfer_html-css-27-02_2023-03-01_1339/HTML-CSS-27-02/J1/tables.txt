@@ -1,0 +1,17 @@
+Une table, ou tableau, en HTML, c'est un moyen d'afficher des 
+données.
+
+On crée une table avec la balise double <table></table>.
+
+À l'intérieur d'une table, on doit créer des rangs.
+
+Pour créer un rang, ça va être avec la balise <tr></tr>.
+
+Pour créer des cellules / insérer des données dans la table, on va 
+utiliser les balises <th></th> et <td></td>.
+
+th : table header, un titre d'en-tête
+
+td : table data, une donnée à afficher
+
+Les balises th et td sont à insérer à l'intérieur d'un rang.

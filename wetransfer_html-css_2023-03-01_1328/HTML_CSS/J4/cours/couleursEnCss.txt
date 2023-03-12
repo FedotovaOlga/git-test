@@ -1,0 +1,37 @@
+https://www.w3schools.com/css/css_colors.asp
+https://www.w3schools.com/css/css_background.asp
+
+Pour assigner une couleur à un ou plusieurs éléments de texte sélectionnées, on utilise la propriété color, suivie 
+d'une valeur.
+
+color: blue;
+
+Il y a trois façons différentes d'attribuer une couleur :
+
+    Nommer la couleur (en anglais)
+        blue;
+        red;
+        yellow;
+        ...
+    Cela permet de développer vite, mais on perd en précision
+
+
+    Utiliser le système RGB (red, green, blue (, opacité))
+
+        rgb(110, 230, 90);
+
+
+    En Hexadecimal : un code à 6 chiffres ou lettres, qui représente la couleur 
+
+        #000000;
+
+
+
+Pour sélectionner un arrière-plan d'élément (comme le fond d'une div), on utilise pas color, mais 
+background-color.
+
+La valeur de la couleur ne change pas (par rapport à color (simple)).
+
+    background-color : blue;
+    background-color: rgb(120, 120, 33);
+    background-color: #000000;

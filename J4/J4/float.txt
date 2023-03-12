@@ -1,0 +1,30 @@
+Pour l'instant, les images ne s'intègrent pas avec le texte.
+
+Comment faire, si on veut faire en sorte que du texte entoure une 
+image ?
+
+On va utiliser Float, qui permet de faire 'flotter' une image dans 
+du texte.
+
+Float a deux valeurs possibles :
+
+    - left 
+
+    - right
+
+Left fera flotter l'image à gauche du texte.
+
+Right fera flotter l'image à droite du texte.
+
+Syntaxe :
+
+    - float: left;
+    - float: right;
+
+Pour faire flotter une image dans du texte, on doit l'insérer juste 
+au-dessus du texte dans laquelle on veut la faire flotter.
+
+On peut faire flotter plusieurs images à la suite.
+
+On peut flotter des images à plusieurs endroits différents dans le 
+même texte.

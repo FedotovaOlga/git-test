@@ -1,0 +1,44 @@
+https://www.w3schools.com/html/html_links.asp
+https://www.w3schools.com/TAgs/tag_nav.asp
+
+Un lien vers une autre page, en HTML, se crée avec la balise double <a></a>.
+
+Un lien prend obligatoirement un attribut href="" qui indique la destination du lien.
+
+    <a href="page.html">Lien vers la page</a>
+
+On peut faire un lien vers un ID d'une page (on crée une ancre), en ajoutant # et l'id de l'élément 
+après le nom de la page, dans l'attribut href du lien.
+
+    <a href="page.html#idElement">Lien vers la page</a>    
+
+On peut ouvrir des liens dans un nouvel onglet :
+
+        On va utiliser l'attribut target="_blank".
+
+            < a href="page.html"  target="_blank">Lien vers la page</a>
+
+
+On peut faire des liens vers un envoi d'email, ou un appel téléphonique.
+
+    Par exemple :
+
+        Sur Google, on peut appeler un magasin en cliquant sur le bouton 'Appeler'.
+
+        Ce bouton est une balise <a></a>.
+
+        Son arrtibut href est égal à href="callto:NUMERO_DE_TEL".
+
+
+        On peut ouvrir un nouvel email avec le destinataire déjà rempli :
+
+            Le lien doit avoir un attribut href="mailto:ADRESSE_MAIL".
+
+
+
+Qu'est-ce qu'une nav ?
+
+C'est une 'navigation' : un ensemble de liens.
+    Une nav nous permet de faire des menus.
+
+Une nav se crée avec la balise double <nav></nav>.

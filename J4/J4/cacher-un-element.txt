@@ -1,0 +1,17 @@
+Pour cacher, ou faire disparaître un élément, en CSS,
+nous avons deux possibilités :
+
+    - visibility: hidden;
+
+    - display: none;
+
+
+Visibility hidden :
+
+    Ça va rendre insivible un élément, mais ça ne va pas le 
+    supprimer de la page.
+
+
+Display none :
+
+    Ça va supprimer l'élément de la page.

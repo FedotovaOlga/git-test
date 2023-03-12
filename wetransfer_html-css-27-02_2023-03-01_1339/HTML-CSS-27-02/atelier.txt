@@ -1,0 +1,118 @@
+Pour chaque partie de l'exercice :
+
+    Il faut faire valider son code par le validateur W3C.
+    Si votre code est visuellement ok, mais qu'à sa validation il y a une erreur :
+        Considérez que l'exercice est faux
+        Il n'est réussi quand quand le validateur dit ok
+
+Créer un nouveau dossier (ou sous-dossier dans votre dossier de cours)
+
+Sélectionnez un sujet qui vous tient à coeur
+
+Le but de l'exercice est de créer une page d'articles par rapport à ce sujet
+
+La page doit être d'une structure basique, mais complète
+
+Dans le body (de la page), il doit y avoir :
+
+    1 header 
+
+    1 footer 
+
+    1 main 
+
+    2 sections
+
+    Pour chaque section :
+
+        1 titre
+        2 articles
+
+    Pour chaque article :
+
+        1 titre 
+        1 image
+        1 paragraphe
+
+Créer une liste ordonnée, une liste non-ordonnée, et une liste 
+imbriquée.
+
+Chaque liste doit avoir au moins trois éléments.
+
+Chaque liste doit être dans un article.
+
+Utiliser les balises de style html i, u et b dans votre code.
+
+Être bien sûr d'avoir un dossier dédié au site, afin de pouvoir l'améliorer
+indépendemment du cours.
+
+Créer deux tables (qui contiennent des données) :
+
+    Une avec les en-têtes dans le rang du haut
+
+    Une avec les en-têtes dans la colonne de gauche
+
+
+-------------
+
+Créer un sous-dossier 'assets'
+
+Dans assets : créer un sous-dossier 'img'
+
+    Dans img -> les images dont on se sert
+
+
+
+Créer un Header et un Footer (comme indiqué dans aide-atelier.txt)
+
+
+Créer une page contact.html 
+
+    Créer un formulaire de contact
+
+        1 champ 'email'
+
+        1 champ 'sujet'
+
+        1 champ 'message'
+
+        Utiliser :
+
+            Select 
+            Textarea
+            Inputs 
+                Text 
+                Range 
+                Radio 
+                Checkbox 
+                Submit
+
+-----------------------------------------------------------------
+
+Intégrer du CSS à votre site web.
+
+    Dans assets : 
+         
+         Créer un sous-dossier CSS 
+
+            Dedans :
+
+                Créer un fichier style.css
+
+    Relier le fichier style.css à votre page / site
+
+    Intégrer les notions présentes dans J3 :
+
+        - Utiliser des classes 
+
+        - Créer des backgrounds
+
+        - Mettre des couleurs 
+
+        - Utiliser des mesures de tailles avec height et width 
+
+        - Utiliser / Expérimenter avec le Box Model :
+
+            - border 
+            - padding 
+            - margin

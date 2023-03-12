@@ -1,0 +1,67 @@
+1 - Ne pas se prendre la tête sur les détails 
+
+2 - Commencer par créer les zones de contenu : découper la page à créer en zones, que l'on pourra ensuite 
+    découper elles-aussi pour arriver au produit final.
+
+3 - Pour faire un texte raturé, on dit :
+
+    text-decoration: line-through;
+
+4 - Indice : la zone du milieu, contenant les produits, est un Container Flex contenant 4 Items
+
+5 - Les polices ne comptent pas
+
+6 - Pour les icônes -> Bootstrap Icons
+
+    Sur la page de l'icône : "Copy HTML"
+
+    On peut ensuite coller l'icône dans notre HTML 
+
+    Pour modifier sa taille : 
+
+        - On peut supprimer les attributs width="" et height="", et en spécifier un des deux dans du style.
+
+
+------------------------
+
+Structure du dossier (que vous recevrez) :
+
+    fonts/ -> les polices (ne comptent pas)
+    images/ -> les images disponibles
+    mockups/ -> les pages à reproduire
+
+
+Dossier / Page à créer :
+
+    1 page index.html 
+
+    1 dossier css, avec dedans un fichier style.css 
+
+
+Important :
+
+    Dans style.css, faites attention à bien être organisé
+
+    Je vous conseille très vivement de strcuturer votre fichier style.css, de manière claire et aérée.
+
+    Ce sera très utile d'être bien organisé, pour les Media Queries, qui nous permettront de faire 
+    le Responsive de notre site.
+
+
+Media Queries :
+
+    Vous devez prendre en charge deux version :
+
+        - Bureau (que vous avez commencé)
+
+        - Mobile : inférieur à 576px
+
+            @media screen and (max-width: 575px) {
+                /**/
+            }
+
+    Dans le CSS, vous pourrez délimiter deux sections différentes :
+
+        - La section principale : le CSS de la version bureau 
+
+        - En dessous : une media query, qui va styliser la version mobile.

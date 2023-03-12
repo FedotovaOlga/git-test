@@ -1,0 +1,88 @@
+La propriété 'z-index' contrôle l'empilement vertical des éléments, c'est à dire à quel plan (premier, deuxième, troisième)
+sera affiché un élément.
+
+La propriété Z-index attend une valeur, en nombre.
+
+Plus un élément a une valeur haute, plus il s'affiche haut dans la pile des éléments.
+
+Par exemple, un élément avec un Z-index de 2 s'affichera par dessus un élément avec un Z-index de 1.
+
+Par exemple :
+
+<style>
+    .box1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        z-index: 2;
+    }
+    .box2 {
+        position: absolute;
+        top: 75px;
+        left: 75px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        z-index: 1;
+    }
+</style>
+
+<div class="box1">
+    Boite n°1.
+</div>
+<div class="box2">
+    Boite n°2.
+</div>
+
+Dans l'exemple ci-dessus, nous avons deux éléments, "box1" et "box2", auxquels nous avons donné des positions absolues.
+
+Ils sont donc positionnées par rapport à leur élément parent à position relative ou absolue le plus proche, ou le Body s'il n'y en a
+pas. Dans notre cas, ils seront donc positionnées par rapport au Body.
+
+Étant donné que l'élément à classe "box1" a un Z-index de 2, il sera positionné par dessus l'élément "box2".
+
+Si on inversait les valeurs, comme-ceci :
+
+<style>
+    .box1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        z-index: 1;
+    }
+    .box2 {
+        position: absolute;
+        top: 75px;
+        left: 75px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        z-index: 2;
+    }
+</style>
+
+<div class="box1">
+    Boite n°1.
+</div>
+<div class="box2">
+    Boite n°2.
+</div>
+
+L'élément à classe "box2" apparaîtrait par-dessus l'élément à classe "box1", car il a un Z-index plus élevé.
+
+
+En résumé, on peut dire que :
+
+    - La propriété Z-index contrôle l'empilement vertical des éléments sur la page.
+
+    - Plus un élément à une propriété Z-index élevée, plus il s'affichera haut sur la page.
+
+
+On peut également utiliser des valeurs négatives, ou le chiffre 0, pour classer nos éléments, mais par convention, 
+on partira de 1.

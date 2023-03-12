@@ -1,0 +1,20 @@
+Displays Inline et Block : https://www.w3schools.com/html/html_blocks.asp
+
+En HTML et CSS, on se réfère au positionnement des éléments par la propriété 'display'.
+
+En HTML, il y a 2 types de display principaux :
+
+    Le display inline, qui insèrera le contenu sur la même ligne que l'élément précédant, et autorisera 
+    l'élément suivant à être sur la même ligne que lui.
+
+    Le display block, qui insèrera le contenu en-dessous de l'élément précédant, et prendra toute la 
+    largeur de la page (n'autorisant pas l'élément suivant à être sur la même ligne que lui).
+
+Certains éléments HTML ont par défaut un display inline, d'autre ont un display block.
+
+Par exemple, les <p></p> ont par défaut un display block, et les <a></a> un display inline.
+
+Pour modifier le type de display, on doit utiliser du CSS.
+
+Un autre type de display s'appelle inline-block :
+    Les éléments sont sur la même ligne, mais on revient à la ligne lorsqu'on arrive au bout de la page.

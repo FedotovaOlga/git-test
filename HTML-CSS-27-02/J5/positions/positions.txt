@@ -1,0 +1,203 @@
+Pour positionner un élément, nous pouvons utiliser la propriété 'position', qui a 5 valeurs possibles : 
+
+    - static
+
+    - relative
+
+    - absolute
+
+    - fixed
+
+    - sticky
+
+
+
+-----------------------------------------------------------
+position: static;
+-----------------------------------------------------------
+
+
+
+C'est la position par défaut d'un élément.
+
+Un élément à 'position: static;' n'aura aucun positionnement particulier, et s'affichera selon le 
+déroulé normal de la page.
+
+
+
+-----------------------------------------------------------
+position: relative;
+-----------------------------------------------------------
+
+
+
+Un élément à 'position: relative;" sera positionné par rapport à son positionnement initial.
+
+Les valeurs utilisées pour le positionnement sont top, right, bottom ou left.
+
+Ces valeurs définissent l'écart entre le bord d'un élément et l'endroit initial où il aurait été 
+positionné.
+
+On peut cumuler une valeur de l'axe vertical et horizontal dans le positionnement.
+
+Dans le code suivant, l'élément à position relative sera décalé de 50px, en partant de la gauche,
+et de 20px en partant du haut :
+
+<style>
+    .relative {
+        position: relative;
+        left: 50px;
+        top: 20px;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<div class="relative">
+    Cette div a une position relative.
+</div>
+
+On peut aussi assigner des valeurs négatives.
+
+Dans le code suivant, la div sera décalée vers l'arrière :
+
+<style>
+    .relativeInverse {
+        position: relative;
+        left: -50px;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<div class="relativeInverse">
+    Cette div a une position relative.
+</div>
+
+
+
+-----------------------------------------------------------
+position: absolute;
+-----------------------------------------------------------
+
+
+
+Un élément à 'position: absolute;' sera positionné par rapport à son élément parent le plus proche ayant 
+une position relative ou absolute.
+
+(Parent le plus proche : l'élément parent, ou ancêtre d'ans l'abre généalogique, le plus proche, ayant une position 
+relative ou absolute).
+
+C'est le positionnement qu'on utilise quand on veut positionner un élément par rapport à un autre élément.
+
+Les valeurs possibles sont top, right, bottom ou left, et on peut combiner une valeur de chaque axe.
+
+On peut aussi utiliser des valeurs négatives.
+
+Ce type de positionnement est utile, par exemple, pour afficher des notifications :
+
+    Pour faire cela, on crée un Container en assignant la propriété 'position: relative' à une div, puis à l'intérieur 
+    on crée une div à 'position: absolute;'.
+
+<style>
+    .container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+    }
+    .item {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<div class="container">
+    <div class="item">
+        Cette div a une position absolute.
+    </div>
+</div>
+
+
+
+-----------------------------------------------------------
+position: fixed;
+-----------------------------------------------------------
+
+
+
+Un élément à 'position: fixed;' sera positionné par rapport à l'écran sur lequel la page est affichée,
+sans prendre d'autres éléments en compte.
+
+Un élément à 'position: fixed;' ne bougera donc pas lorsque l'utilisateur scrollera sur la page.
+
+Ce type de positionnement est utile, par exemple, pour faire les boutons 'back-to-top' permettant un 
+retour en haut de page, ou un widget de chatbot.
+
+Les valeurs que l'on peut utiliser sont top, right, bottom ou left, et on peut combiner une valeur de chaque 
+axe.
+
+Dans le code ci-dessous, on crée une div à 'position: fixed'
+
+<style>
+    .fixed {
+        position: fixed;
+        top: 10em;
+        left: 5vw;
+        background-color: red;
+        width: 10vw;
+        height: 10vh;
+    }
+</style>
+
+<div class="fixed">
+    Cette div a une position fixe.
+</div>
+
+
+
+-----------------------------------------------------------
+position: sticky;
+-----------------------------------------------------------
+
+
+
+Un élément à 'position: sticky' a un positionnement hybride, entre relatif et fixe :
+
+    - Il est d'abord relatif par rapport à son élément parent (le Body s'il n'y en a pas d'autre)
+
+    - Et deviend fixe lorsque la fenêtre du navigateur arrive à un certain point de la page (le pont où 
+        l'élément devrait disparaître)
+
+
+De plus, il est important de noter que l'élément à 'position: sticky' reste fixe tant que son container est 
+visible à l'écran : si le container n'est plus visible, l'élément disparaît lui-aussi (voir positions.hmtl).
+
+Dans le code ci-dessous, nous créons une div à 'position: relative;', créant un Container dans lequel nous 
+pouvons insérer une div à 'position: sticky;'.
+
+<style>
+    .containerSticky {
+        position: relative;
+        height: 500px;
+    }
+    .boxSticky {
+        position: sticky;
+        top: 50px;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<div class="containerSticky">
+    <div class="boxSticky">
+        Cette div a une position sticky.
+    </div>
+</div>

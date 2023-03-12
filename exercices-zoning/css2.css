@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    color:white;
+    }
+
+#container1 {
+    background-color: rgb(150, 62, 150);
+    height: 3em;
+}
+
+#container2 {
+    background-color: yellow;
+    height: 1.5em;
+}
+
+main {
+    border-style: solid;
+    border-color: rgb(75, 153, 165);
+    border-width: 20px;
+}
+
+#container3 {
+  background-color: red;  
+  height: 8em;
+}
+
+#container4 {
+background-color: blue;
+height: 16em;
+}
+
+.grandePolice {
+    font-size: 2em;
+    color: grey;
+}
+
+footer {
+    background-color: red;
+    height: 3em;
+}

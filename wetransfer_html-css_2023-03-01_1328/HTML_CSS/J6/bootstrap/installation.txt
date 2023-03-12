@@ -1,0 +1,14 @@
+Pour installer Bootstrap, deux façons :
+
+    Le télécharger
+
+        On a les fichiers, dans notre dossier
+
+    L'inclure
+
+        On utilise un CDN : content delivery network
+
+            On utilise des ressources présentes sur internet
+
+
+Pour notre cours, on va utiliser le CDN que nous fournit Bootstrap.

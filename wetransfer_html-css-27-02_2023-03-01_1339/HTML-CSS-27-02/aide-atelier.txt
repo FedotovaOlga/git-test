@@ -1,0 +1,46 @@
+Header :
+
+    Logo : 1 image
+
+    Menu : Nav avec des liens
+
+
+Main :
+
+    Le contenu spécifique à une page 
+        -> Header et Footer sont les mêmes sur tout notre site 
+
+
+Footer :
+
+    Logo : 1 image 
+
+    2 menus :
+
+        1 menu Informations :
+
+            1 page contact
+
+            1 page qui-sommes-nous 
+
+        1 menu Pages Légales :
+
+            1 page Politique de cookies 
+
+            1 page Politique de confidentialité
+
+            1 page Mentions légales
+
+
+Pour récupérer une image / un fichier qui n'est pas au même endroit 
+que la page qui l'appelle :
+
+    ./ -> dans notre dossier 
+    dossier/ -> on entre dans un nouveau dossier 
+                (on répète ça jusqu'à être au bon endroit)
+    fichier
+
+Si l'image est dans un dossier précédent :
+
+    ../ -> chaque point en plus du premier indique qu'on revient 
+            1 dossier en arrière

@@ -1,0 +1,206 @@
+Pour chaque partie de l'exercice :
+
+    Il faut faire valider son code par le validateur W3C.
+    Si votre code est visuellement ok, mais qu'à sa validation il y a une erreur :
+        Considérez que l'exercice est faux
+        Il n'est réussi quand quand le validateur dit ok
+
+
+Sélectionnez un sujet qui vous tient à coeur
+
+Le but de l'exercice est de créer une page d'articles par rapport à ce sujet
+
+La page doit être d'une structure basique, mais complète
+
+Dans le body (de la page), il doit y avoir :
+
+    1 header 
+
+    1 footer 
+
+    1 main 
+
+    1 section
+
+    4 articles
+
+    Pour chaque article :
+
+        1 titre 
+        1 photo
+        1 paragraphe
+
+    Utiliser des balises de style 
+
+    Redimensionner les images
+    
+    Insérer des séparateurs 
+
+
+Créer une nouvelle page appelée nous.html 
+
+La page doit respecter la structure de base header, main, footer
+
+    Dans cette page :
+
+        Créer une div 
+
+            Du texte explicatif (vous pouvez Lorem Ipsum)
+
+            Dans cet texte explicatif : 
+
+                Insérer un span auquel vous passerez l'attribut 
+                    style="color: red;"
+
+
+Créer une nav contenant des liens vers index.html et nous.html
+
+Insérer la nav dans le Header de chaque page.
+
+
+Créer, pour chaque article de votre page index.html, une liste.
+Au moins (en tout) :
+    1 ordered list 
+    1 unordered list 
+    1 liste imbriquée
+
+
+Créer une nouvelle page infos.html 
+
+Dans la page info.html :
+
+    Créer deux tables
+
+    Chaque table doit comprendre au moins 3 rangs et 3 cellules par rang
+
+    1 table doit afficher ses <th> horizontalement
+
+    1 table doit afficher ses <th> verticalement
+
+
+Créer une page contact.html, avec dedans un formulaire contenant :
+
+    Des fieldset
+    
+    Des inputs, avec au moins un input de type :
+        Text 
+        Password
+    
+    Un champ d'inputs radio : "Sélectionnez votre niveau :"
+
+    Un champ d'inputs range : "Années d'expérience :"
+
+    Un champ d'inputs checkbox : "Compétences :"
+
+    Un Select 
+
+    Une Textarea 
+
+    Un input de type submit dans lequel est écrit 'Envoyer'
+
+    Des Labels pour chaque champ
+
+
+Vérifier que vous avez répondu à chaque ligne/instruction du fichier exercice 
+
+Vérifier l'ensemble de votre code dans le validateur W3C 
+
+Quand l'ensemble de votre code a été validé (sans avertissement / info)
+
+
+------------------------------------------------------------------------------------------------------
+
+CSS
+
+------------------------------------------------------------------------------------------------------
+
+Créer un fichier style.css 
+
+Créer une structure de dossier adaptée à la conservation de fichiers multiples
+
+    Seulement les fichiers .html à la racine du dossier 
+    Un sous dossier assets
+        Un sous-dossier img 
+            Les images 
+        Un sous-dossier css 
+            style.css
+    Un sous-dossier cours
+        Les fichiers de cours
+
+
+Reprendre index.html 
+
+    Rendre chaque titre d'une couleur différente 
+        En utilisant les trois façons vues pour assigner une couleur
+            Nom de la couleur 
+            RGB
+            Hexadicemal (#000000)
+
+    Mettez les premières phrases du texte de chaque article dans un span
+    Les spans contenant ces premières phrases auront une classe commune
+        Rendre ce texte en gras (sans balise <b></b>, indice : utiliser la propriété font-weight)
+
+
+
+Améliorer votre site :
+
+    Améliorer son visuel :
+
+        Expérimenter avec le box-model :
+
+            Border 
+
+            Padding 
+
+            Margin
+
+            Dans le but de rendre son site plus joli
+
+
+    Pour chaque article, faire flotter l'image dans le texte (en utilisant Float).
+
+    Appliquer du style aux liens qui ont été visités.
+
+    Appliquer du style aux titres de chaque article (pour leur affichage par défaut).
+
+    Appliquer du style aux titres des articles quand on les survole.
+
+    Appliquer du style à certains 'background' (couleur ou image).
+
+        Pour ceux qui utilisent une image plutôt qu'une couleur, vous pourrez utiliser 'no-repeat'.
+
+
+Pour Flex :
+
+    Sur la page où vous avez fait les tables :
+
+        Créer un container pour chaque table.
+
+        Les containers contiendront les éléments de la table.
+
+            Ex : 
+
+                1 table avec nom, prenom, âge
+
+                Créer un container Flex
+
+                Il ne faudra pas afficher les tables header : simplement les données contenues dans la table
+                
+                Pour chaque personne dans la table :
+
+                    Créer un Item contenant nom, prenom et âge dans des éléments HTML différents 
+                    (ex : 1 <p></p> par paramètre à afficher)
+
+
+
+    Améliorer son contenu :
+
+        Exemple, pour les articles :
+
+            Mettre du Lorem Ipsum plutôt que des semi-phrases
+
+                On écrit Lorem67 puis on appuie sur Entrée :
+
+                    Un texte de 67 mots créé
+
+                On écrit LoremNOMBRE_DE_MOTS et on appuie sur entrée

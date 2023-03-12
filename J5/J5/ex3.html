@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+        .subContainer {
+            display: flex;
+            flex-direction: row;
+        }
+        .subContainerCote {
+            height: 100%;
+            width: 25%;
+            background-color: blue;
+        }
+        .containerMiddle {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+        }
+        .containterCenter {
+            display: flex;
+            height: 85%;
+            background-color: green;
+        }
+        .divMid {
+            height: 100%;
+            width: 20%;
+            border: solid 1px white;
+        }
+        .align-text-center {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            /* Positionnement par défaut, il n'y a pas besoin de l'écrire 
+               Quand est-ce qu'on devra écrire en dur 'flex-direction: row;' : 
+                Quand on voudra changer un positionnement, autre que row, en row.
+               On peut aussi l'écrire pour de la visibilité.
+            */
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Exercice 3 - Zoning</title>
+</head>
+<body> 
+    
+    <div class="container" style="height: 100vh; width: 100vw;">
+        <div class="align-text-center" style="height: 10%; background-color: red;">
+            <p>Zone du haut</p>
+        </div>
+        <div class="subContainer" style="height: 90%;">
+            <div class="subContainerCote align-text-center">
+                <p>Zone de gauche</p>
+            </div>
+            <div class="containerMiddle">
+                <div class="containterCenter">
+                    <div class="divMid align-text-center">
+                        Z1
+                    </div>
+                    <div class="divMid align-text-center">
+                        Z2
+                    </div>
+                    <div class="divMid align-text-center">
+                        Z3
+                    </div>
+                    <div class="divMid align-text-center">
+                        Z4
+                    </div>
+                    <div class="divMid align-text-center">
+                        Z5
+                    </div>
+                </div>
+                <div class="align-text-center" style="height: 15%; background-color: orange;">
+                    <p>Zone du bas</p>
+                </div>
+            </div>
+            <div class="subContainerCote align-text-center">
+                <p>Zone de droite</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+Box Model : https://www.w3schools.com/css/css_boxmodel.asp
+Border : https://www.w3schools.com/css/css_border.asp
+Padding : https://www.w3schools.com/css/css_padding.asp
+Margin : https://www.w3schools.com/css/css_margin.asp
+
+
+On peut représenter chaque élément HTML comme une boite, constituée de 
+4 éléments :
+
+    - contenu : l'élément en lui-même
+
+    - bordure : ce qui entoure l'élément
+
+    - padding : marge interne, entre le contenu et la bordure
+
+    - margin : marge externe, qui empêche d'autres éléments de 
+               s'approcher
+
+
+Pour padding et margin :
+
+    On peut assigner une valeur globale :
+
+        margin: 2em;
+        padding: 20px;
+
+    En spécifiant une seule valeur, les quatre cotés sont modifiés.
+
+    On peut aussi spécifier padding et margin pour chacun des 
+    quatre cotés d'un élément :
+
+        top 
+        right 
+        bottom
+        left 
+
+        margin-bottom: 20px;
+        padding-left: 1em;
+
+    Par exemple, si on veut spécifier un padding pour chaque coté :
+
+        padding-top: 1em;
+        padding-right: 1.2em;
+        padding-bottom: 1.3em;
+        padding-left: 1.1em;
+
+        Pour faire ceci sur une seule ligne :
+
+        padding: top right bottom left;
+                 (le sens des aiguilles d'une montre)
+        padding: 1em 1.2em 1.3em 1.1em;
+
+
+Pour les bordures :
+
+    Une bordure a plusieurs propriétés :
+
+        - border-style: le type de bordure
+
+            dotted -> à points
+            solid -> unie
+            ...
+
+            Syntaxe:
+
+            border-style: solid;
+
+        - border-width: la largeur de la bordure 
+
+            Il est plus simple de la déclarer en 'px' :
+
+                avec 'em', les valeurs vont vite être très grosses
+                (voir test.html)
+
+            Syntaxe:
+
+            border-width: 3px;
+
+        - border-color: la couleur de la bordure 
+
+            Comment la déclarer :
+                
+                couleur brute, hexadecimal ou rgb
+
+            Syntaxe :
+
+            border-color: red;
+            border-color: #777777;
+            border-color: rgb(50, 50, 100);
+
+    Pour assigner une valeur à une bordure :
+
+        On peut déclarer chaque propriété à la suite :
+
+            border-style: solid;
+            border-width: 0.2em;
+            border-color: blue;
+
+        Ou réunir ces tros propriétés en une ligne :
+
+            border: style width color;
+
+            border: solid 0.2em blue;
+
+    Pour arrondir les angles d'une bordure :
+
+        On utilise la clé 'border-radius', suivie d'une valeur :
+
+            border-radius: 8px;
+            border-radius: 0.4em;
+
+        border-radius doit se déclarer après avoir créé la bordure :
+
+            border: solid 0.2em blue;
+            border-radius: 8px;

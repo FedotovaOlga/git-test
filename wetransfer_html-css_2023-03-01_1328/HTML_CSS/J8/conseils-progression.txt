@@ -1,0 +1,86 @@
+Pour s'entrainer : Plusieurs plateformes :
+
+    - CodinGame : en Français
+
+    - LeetCode : en anglais
+
+    - Codedex : https://www.codedex.io/
+
+    Sur les deux premières plateformes :
+
+        Il y a des recruteurs
+
+    Sur les 3 plateformes : 
+
+        Vous allez faire de l'algorithmie
+
+
+Un cours d'Harvard s'appelle CS50: Introduction to Computer Science
+
+    En anglais
+
+    Totalement gratuit 
+
+    Vraiment Harvard : le niveau est élevé, il y beaucoup, beauuuucoup de connaîssances à apprendre.
+
+    Dans ce cours :
+
+        L'ingénierie informatique
+
+        Qu'est-ce que c'est que le binaire ?
+
+        Comment la mémoire est stockée ?
+
+        Apprendre C -> le langage de programmation le plus dur encore utilisé
+
+            Une fois que vous aurez rééllement travaillé sur C, aucun langage de vous fera peur.
+
+        Algorithmie 
+
+        Data structures : 
+
+            Des façons plus complexes (et plus rapides) que ce que vous verrez en JS pour stocker les données.
+
+        Mais aussi -> introduction à Python
+
+        Des exercices compliqués, mais c'est bien de faire des exercices compliqués !
+
+        Si vous jouez le jeu à fond, vous allez progresser de manière drastique !
+
+
+Apprendre Python 
+
+    Pourquoi ?
+
+    Car c'est un 'multi-purpose' pogramming langage.
+
+    Python n'a pas été créé pour répondre à un besoin précis (comme JS pour le front ou PHP pour le back).
+
+    Python, c'est un langage dont le but est simple :
+
+        Programmer de manière intuitive
+
+    Si vous voulez faire des projets perso, hors du web, il n'y a pas mieux.
+
+    Python a été écrit en C.
+
+    Comme C est une évolution de l'Assembleur, écrit en Assembleur, et l'Assembleur une évolution du 
+    langage machine, écrit en langage machine, Python est une évolution de C, écrit en C.
+
+    Imaginez que l'informatique a fait :
+
+        - Binaire (des 0 et des 1)
+        vers 
+        - Langage Machine (des chiffres, des lettres et des symboles illisibles) - créé en binaire 
+        vers 
+        - Assembleur (on peut commencer à faire des mots, il n'y a plus de symboles illisibles)
+            - créé en langage machine 
+        vers 
+        - C - créé en Assembleur 
+        vers
+        - Python - créé en C
+
+
+
+
+Apprenez les échecs -> de la logique, pas de hasard, si on perd c'est qu'on a fait au moins une erreur.

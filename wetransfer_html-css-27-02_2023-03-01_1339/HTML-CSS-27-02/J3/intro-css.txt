@@ -1,0 +1,70 @@
+https://www.w3schools.com/css/css_intro.asp
+https://www.w3schools.com/css/css_syntax.asp
+
+CSS est un langage informatique.
+
+Comme HTML, c'est un langage descriptif :
+
+    On ne va pas écrire de logique :
+    on va décrire des choses.
+
+CSS veut dire Cascading Style Sheets ->
+Feuilles de style en cascade.
+
+CSS va nous permettre de décrire le style de notre site internet.
+
+Pour faire du CSS, on a trois options :
+
+    1 - On peut ajouter un attribut style="" à un élément HTML 
+
+    2 - On peut créer une balise <style></style> dans le head d'une 
+        page HTML 
+
+    3 - On peut créer un fichier CSS
+
+La manière la plus simple, pour ne pas s'embrouiller, est de créer 
+un fichier CSS.
+
+
+Comment CSS fonctionne ?
+
+    - On doit sélectionner un ou plusieurs éléments
+
+    - On attribue du style aux éléments sélectionnés.
+
+
+Comment attribuer du style ?
+
+    C'est avec un ensemble clé-valeur.
+
+    La clé : propriété que l'on veut modifier / à laquelle on veut 
+             assigner une valeur 
+
+    La valeur : ce qui permet de styliser l'élément.
+
+    Syntaxe :
+
+        clé: valeur;
+        color: blue;
+
+    (Le ';' dit à l'ordinateur que l'instruction est terminée.
+    Sans ';', l'ordinateur / navigateur ne peut pas passer à 
+    l'instruction suivante)
+
+
+Comment relier un fichier CSS à une page HTML ?
+
+    On va insérer une balise <link> dans le head de notre 
+    page HTML.
+
+    Cette balise link  besoin d'un attribut rel="" (relation), 
+    avec comme valeur 'stylesheet' pour 'feuille de style', et 
+    d'un attribut href="" pour indiquer l'endroit où aller chercher 
+    le fichier.
+
+
+Comment faire des commentaires en CSS ?
+
+    En HTML : <!-- le texte à l'intérieur est commenté -->
+
+    En CSS : /* le texte à l'intérieur est commenté */

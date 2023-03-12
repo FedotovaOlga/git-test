@@ -1,0 +1,75 @@
+https://www.w3schools.com/html/html_intro.asp
+
+Si on veut créer une page html, on doit créer un fichier dont l'extension est .html
+
+HTML est un langage de balises.
+
+Une balise représente un élément de notre page, comme par exemple :
+    Un titre
+    Un paragraphe
+
+C'est avec ces balises que l'on crée notre structure / page HTML.
+
+
+Une page HTML commence par un DOCTYPE, pour Document Type.
+
+En dessous du Doctype, on peut insérer une balise ouvrante <html> et une balise fermante </html>.
+
+La balise <html> est une balise double : elle nécessite une balise fermante.
+
+La balise ouvrante <html> prend un attribut lang="..." spécifiant au navigateur la langue de la page à afficher.
+
+
+En HTML, certaines balises sont simples, certaines balises sont doubles.
+
+Les balises doubles sont celles dans lesquelles on peut insérer du contenu.
+
+    Par exemple, une image : 
+        On insère l'image sur notre page web, mais on ne peut pas insérer de balise à l'intérieur de l'image.
+        La balise <img> est donc une balise simple, car on ne peut pas insérer de balise entre le début et la fin de l'image.
+
+    
+Entre la balise ouvrante <html> et la balise fermante </html>, on peut insérer le contenu de notre site.
+
+
+
+Le contenu d'une page HTML se découpe en deux parties :
+
+    Le Head
+
+    Le Body
+
+
+Le Head :
+
+    Les informations sur notre page web, ne devant pas être affichées sur la page.
+
+    Ces informations comprennent :
+
+        Des balises <meta> : du contenu informationnel
+
+            Les réglages de l'écran
+
+            Les caractères acceptés
+
+        Le titre de la page
+
+            Avec une balise double <title></title>, on indique à l'ordinateur quel est le titre de notre page 
+                C'est ce titre qui sera affiché dans le navigateur
+
+        Facultativement :
+
+            Un ou des liens <link> vers des feuilles de style CSS
+
+            Des <script></script> JavaScript
+
+            Un lien vers le favicon (l'icône du site)
+
+            La description de la page, les mots-clées, l'auteur de la page...
+
+
+Le Body : 
+
+    C'est ce qui doit être affiché par le navigateur : le contenu de notre page.
+
+    Voir la page balises-body-principales.txt

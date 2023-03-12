@@ -1,0 +1,19 @@
+On peut ajouter des attributs aux balises.
+
+Par exemple, une balise img a besoin d'un attribut src="" pour 
+afficher l'image. 
+
+Qu'est-ce qu'un attribut, en réalité ?
+
+    C'est une valeur, que l'on va assigner à une balise.
+
+    Pour assigner cette valeur, on doit donner un nom à l'attribut.
+
+    nom="valeur"
+    src="image.jpeg"
+
+    Par exemple, quand vous allez faire un site, si vous voulez 
+    que la souris se transforme en main qui peut cliquer au 
+    passage sur un élément :
+
+        On peut ajouter l'attribut role="button".

@@ -1,0 +1,27 @@
+https://www.w3schools.com/html/html_lists.asp
+
+Une liste, nous permet de faire des listes, comme un liste de courses, ou le classement d'un 
+championnat.
+
+En HTML, il y a deux types de listes :
+
+Les listes ordonnées :
+
+    C'est un classement (chaque élément de la liste est précédé par son numéro de placement)
+
+Les listes non-ordonnées (unordered) :
+
+    Comme une liste basique (exemple : liste de courses)
+
+
+Les listes ordonnées se déclarent avec la balise <ol></ol>, pour 'ordered list'.
+
+Les listes non-ordonnées se déclarent avec la balise <ul></ul>, pour 'unordered list'.
+
+
+Ces listes nous permettent de créer l'élément global 'liste', mais encore faut-il créer les 
+éléments composant la liste.
+
+Un élément de liste se déclare avec la balise <li></li>, pour 'list item'.
+Cet élément <li></li> peut contenir d'autres éléments HTML : on le sait facilement car c'est une balise 
+double.

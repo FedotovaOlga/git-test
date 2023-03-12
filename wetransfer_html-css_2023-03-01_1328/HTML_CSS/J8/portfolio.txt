@@ -1,0 +1,210 @@
+https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp
+
+Un Portfolio, qu'est-ce que c'est ?
+
+    C'est un endroit dans lequel on montre notre travail.
+
+    Un Portfolio, en programmation, peut-être visuel, ou non-visuel (back-end, algorithme...).
+
+    Un Portfolio visuel, ce serait par exemple :
+
+        Un site sur lequel vous avez des liens vers d'autres sites / front-ends que vous avez-réalisés.
+
+    Un Portfolio non-visuel, ce serait par exemple :
+
+        Votre compte github et vos repositories publics.
+
+
+Pour notre cours, nous allons voir les Portfolios visuels.
+
+Le terme 'Portfolio' se réfèrera aux Portfolios visuels.
+
+
+
+Pour créer un Portfolio, qu'est-ce que je dois faire ?
+
+    - Je dois créer un site internet
+
+    - Je dois insérer mon travail dans ce site
+
+
+Pour créer un site internet ?
+
+    - Bootstrap
+
+    - Choisir un thème de BootstrapMade
+
+    - Parler de nous.
+
+        Qui on est ?
+        Notre expérience ?
+        Notre reconversion ?
+        Nos compétences ?
+        Tout ce qui nous paraît utile d'indiquer aux gens qui se renseignent sur nous.
+
+
+Quel travail insérer ?
+
+    - Des sites internets / front-ends de site en rapport avec notre cible commerciale.
+
+        Exemple, pour être freelance ?
+
+            Si je choisis la cible des professions libérales (avocat, expert-comptable...) :
+
+                Dans mon Portfolio, je vais insérer des sites dont mes clients auraient envie qu'ils soient 
+                le leur.
+
+                Si on veut vendre un site à un avocat, autant avoir au moins un site pour avocat sur notre 
+                Portfolio.
+
+
+Pour créer notre portfolio, nous allons utiliser les connaissances vues en cours et combiner HTML, CSS et
+Bootstrap.
+
+
+Pour Bootstrap, nous pouvons choisir un thème gratuit fait par BootstrapMade afin d'accélérer le processus.
+
+
+Thème BootstrapMade : structure du dossier :
+
+    - 1 sous-dossier assets 
+
+        - 1 sous-dossier contact-form / php
+
+            Ne nous concerne pas : 
+
+                Le formulaire de contact est disponible avec la version pro 
+
+                De plus -> vous apprendrez à le faire en PHP 
+
+            On peut le supprimer (il est presque vide, le code ne fonctionnera pas).
+
+        - 1 sous-dossier css 
+
+            Nous concerne :
+
+                Pour personnaliser Bootstrap, on ajoute du CSS personnel.
+
+                Le fichier style.css contient l'ensemble du CSS qui a été écrit pour faire le thème.
+
+                On modifiera ce fichier pour modifier le visuel de notre site.
+
+        - 1 sous-dossier img
+
+            Nous concerne :
+
+                Ce sont les images de notre site.
+
+                On ajoutera nos images dans ce dossier.
+
+        - 1 sous-dossier js (JavaScript)
+
+            Ne nous concerne pas pour l'instant :
+
+                Il gère les effets du site, mais surtout :
+
+                    On a pas encore appri à développer en JavaScript.
+
+            À ne PAS supprimer.
+
+            Nous concernera :
+
+                Quand on maîtrisera JavaScript ET qu'on voudra ajouter du code JS à notre page 
+                (exemple : pour ajouter une animation).
+
+        - 1 sous-dossier scss
+
+            Ne nous concerne pas :
+
+                Disponible seulement dans la version pro.
+
+                SCSS : CSS avec une plus grande possibilité de personnalisation.
+
+            On peut le supprimer (il est vide).
+
+        - 1 sous-dossier vendor
+
+            Ne nous concerne pas.
+
+            'vendor' est un terme générique pour dire que :
+
+                Ce fichier est un fichier 'système' du thème que l'on télécharge :
+
+                    Que l'on télécharge un framework (carde de travail, ex: Symfony), 
+                    une librairie (du code fait par d'autres développeurs, que l'on peut utiliser, ex: 
+                    PHPMailer), un thème :
+
+                        On ne modifiera JAMAIS un dossier vendor.
+
+                        Imaginez que c'est comme un fichier système sur votre ordinateur :
+
+                            Si on le modifie, il y a un risque que plus rien ne marche, et on ne saura pas 
+                            revenir au point de départ.
+
+    - Des pages HTML :
+
+        Pour tous les thèmes, il y en au moins deux :
+
+            - 1 page index.html (la page d'accueil du site),
+
+            - 1 page inner-page.html : 
+
+                1 page avec l'identité visuelle du thème, sur laquelle c'est à nous de faire le 
+                <main></main>.
+
+                Rappel : le <main></main>, c'est le contenu spécifique à la page que l'on affiche 
+                (en effet, sur notre site, on aura toujours le même header, et le même footer).
+
+                Cette page là, on ne va pas la modifier :
+
+                    On s'en servira si on aenvie de créer une nouvelle page.
+
+                    Si notre site reste monopage (seulement une page d'accueil), on aura jamais besoin,
+                    au final, de la page inner-page.html.
+
+                    Elle nous sert seulement de point de départ pour la création de pages futures.
+
+                Pareil pour la page portfolio-details :
+
+                    Si notre portfolio est affiché sur la page principale, et par exemple constitué de liens 
+                    vers d'autres sites internets, et qu'on affiche donc pas de produits directement, on aura 
+                    jamais besoin de la page prtfolio-details.
+
+                La seule page dont on a rééllement besoin, c'est index.hmtl.
+
+
+        Dans la majorité des thèmes :
+
+            - 1 page portfolio-details : une page produit, crée grâce au thème.
+
+        Imaginez que les pages index.html et portfolio-details, comme els autres futures pages de votre 
+        site (si vous voulez en ajouter), on était créées en partant de la page inner-page.html, que l'on
+        peut copier et coller sur une page blanche pour créer une nouvelle page.
+
+
+Exercice :
+
+- Aller sur BootstrapMade - https://bootstrapmade.com/
+
+- Choisir un thème pour son Portfolio
+
+- Téléchargement et réflexion sur la personnalisation du thème
+
+- On commence à coder, en se servant d'HTML, CSS et Bootstrap pour arriver à notre but.
+
+Le but de l'exercice :
+
+    Commencer à vous créer un site professionnel.
+
+    Il n'y a aucune contrainte : vous faîtes comme vous désirez.
+
+    Le but est simplement, pour vous, de faire une site qui vous présente, vous ressemble, 
+    dont vous êtes fier, et qui est clair.
+
+    En réalité, c'est la seule contrainte :
+
+        Le site doit être clair, pour qu'une personne qui se renseigne sur vous, trouve les informations
+        qu'il cherche.
+
+    Le but n'est pas de faire un site complet en un jour (même si on part d'un thème), mais 
+    de commencer à créer votre site de développeur.

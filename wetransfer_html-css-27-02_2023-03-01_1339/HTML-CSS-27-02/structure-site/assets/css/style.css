@@ -1,0 +1,13 @@
+h2 {
+    color: blue;
+}
+
+.hero {
+    width: 50%;
+    border: solid 2px red;
+}
+
+#container {
+    width: 70vw;
+    border: solid 2px orange;
+}

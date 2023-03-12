@@ -1,0 +1,33 @@
+Une autre manière de voir le Responsive est sous la forme de colonnes :
+
+    Plutôt que de voir la page web comme un seul élément, que l'on doit découper; on voit la page web 
+    comme un ensemble de douze colonnes.
+
+    Imaginez que, que ce soit sur Bureau, Tablette ou Mobile, la page web soit constituée de 12 colonnes.
+
+    En quoi cela va nous aider :
+
+        On n'a plus à déterminer les % de largeur :
+
+            On détermine seulement combien de colonnes prend un élément, en fonction de l'écran sur lequel 
+            la page est vue.
+
+
+Par qui est utilisée ce système ? 
+
+    -> Bootstrap
+
+        Qu'est-ce que Bootstrap ?
+
+            C'est un Framework CSS :
+
+                Un cadre de travail
+
+                Un layout (système de rangs et de colonnes)
+
+                Un ensemble de classes CSS créées pour nous
+
+            C'est aussi une librairie de composants :
+
+                Des éléments web qui sont à notre disposition
+

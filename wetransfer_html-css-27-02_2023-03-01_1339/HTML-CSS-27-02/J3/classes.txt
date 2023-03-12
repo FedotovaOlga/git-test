@@ -1,0 +1,26 @@
+Pour sélectionner un élément, on lui passe un ID. 
+
+Comment créer un groupe d'éléments ?
+
+    On va faire ça avec les classes.
+
+    Plusieurs éléments peuvent avoir la même classe.
+
+    Un élément peut avoir plusieurs classes.
+
+Quel va être l'intérêt des classes ?
+
+    L'intérêt principal va être de styliser notre site 
+    internet.
+
+Comment on peut assigner une classe à un élément ?
+
+    En lui donnant un attribut class=""
+
+    Pour assigner 1 classe :
+
+        class="classe1"
+
+    Pour en asssigner plusieurs, on les sépare par un espace :
+
+        class="classe1 classe2"

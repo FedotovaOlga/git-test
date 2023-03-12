@@ -1,0 +1,368 @@
+cle: valeur;
+color: blue;
+; = instruction est terminé
+
+Comment sélectionner les éléments?
+
+h1 {
+    color: blue;
+}
+pour selectionner tous les h1
+
+#id_element {
+    color: blue;
+}
+l'élément ayant son id "id_element" sera black
+
+.classe_element {
+    color: blue
+}
+
+h1, #id_element, .classe_element {
+    color: blue
+}
+
+Comment relier une page CSS à un fichier HTML?
+<link> dans le head de HTML
+href = chemin vers le fichier css
+
+/*commentaire en css*/
+
+La taille
+
+px (pixels) on utilise presque jamais, sauf pour les bordures!
+em
+%
+
+(dans html) div on met autour d'un h1 et on lui donne "class: hero" = ce qui s'affiche en grand et on 
+voit en premier quand on va sur une page
+.hero {
+    width: 50%
+    border: solid 2 px red;
+}
+ ! pourcentages : écran c'est le container !
+
+vh = view height (heuteur de l'écran)
+vw = view width (largeur de l'écran)
+pourcentages, marche avec div id: container
+
+height: 50vh
+
+Pour les éléments de texte:
+em = taille de la police
+1em
+1.2em
+utilisé pour le font-size: 1.2 em
+
+body {
+    background-color: blue
+}
+
+background-image: url (....jpeg);
+il faut appeler une fonction url("image.gif")
+entre guiellemets!
+
+background-repeat
+si l'image est plus petite que la zone qu'elle doit remplir
+
+background-repeat: no-repeat
+
+background-position:
+la position de l'image dans l'arrière-plan
+par défaut: left top
+left, right, center, top, bottom, center
+Si on définit seulement une valeur, l'autre par défaut est center 
+D'abord axe horizontal, après axe vertical.
+
+background-attachment
+si l'image de fond reste sur place, ou peut etre scrollée
+valeurs: fixed ou scroll (par defaut)
+
+Le box model
+
+contenu
+border = entoure l'élément
+padding = de l'espace qu'on va créer entre la mordure et le contenu d'un element
+(ne modifie pas la taille de l'élément : il pousse son contenu à l'intérieur)
+margin = de l'espace uqui va séparer un element d'un autre élément
+(va espacer les elements)
+
+padding: 1.2em
+margin: 1.2em
+c'est pour les 4 côtés
+
+si on veut spécifier:
+top bottom right left 
+margin-top: 3px;
+etc. 
+right
+bottom 
+left
+
+pour avoir 1 seule ligne:
+
+padding: top right bottom left 
+padding: 11px 12px 3px 5px
+sens des aiguilles d'une montre
+
+*Sur bootstrap: margin et padding sont avec em! c'est mieux pour le responsive!
+
+Bordures
+
+border-style : le type
+dotted = à points
+solid = unique
+etc.
+
+border-width: 3px
+Il est plus simple de la déclarer en px
+ou 0.2em sinon trop gros
+
+border-color
+brut/hexadecimal/rgb
+
+Pour mettre en une ligne:
+border: style width color
+border: solid 2px blue
+
+border-radius: 8px
+pour arrondir les angles
+Pour le mettre, faut avoir déjà créé une bordure
+
+etoile = selectionne tous les elements de la page
+
+h2 padding 0 !important
+permet de gagner la priorité
+
+si y a balise style dans le head de html; elle
+aura la priorité sur le fichier css
+
+parent
+enfant
+frere
+
+* {
+    margin: 0;
+}
+pour coller tout le documents à la largeur de l'écran
+
+HTML:
+Display Inline : les elements s'affichent sur une line
+(comme les liens)
+
+Display Block: les elements s'affichent l'un en 
+dessous de l'autre (comme les paragraphes)
+
+margin: auto 
+va centrer les elements à display block
+
+(selecteur) {
+    display: inline (ou block)
+}
+
+3ieme type de base:
+inline-block
+pour que les elements arrivent à la ligne
+quand ils sont au bout de l'écran
+
+text-align: center/right/left/justify
+
+Pour cacher un élément:
+
+Pour rendre invisible un élément (sans le supprimer
+de la page), c'est comme s'il devnait transparent :
+visibility: hidden
+
+Supprimer l'élément de la page:
+display: none
+ça sert par exemple si on veut cacher 
+le menu mobile sur la version du site "bureau"
+
+float : 
+
+permet à l'image de flotter dans le texte
+(etre entouré par le texte)
+left: image flotte à gauche du texte
+right: à droite
+float: left/right
+Faut placer l'image juste au dessus du texte
+(dans lequel on veut la faire flotter) dans html.
+On peut faire flotter plusieurs images à la suite.
+On peut aussi les flotter à plusieurs endroits différents du texte
+Faut dire float: right
+par défaut c'est gauche.
+
+Pour centrer le texte:
+creer une classe pour le texte dans tous les containers, et lui attribuer center sur les deux ajustements flex.
+
+MESURES
+au début vh vw pour prendre tout l'écran
+et ensuite en % pour que ça s'adapte aux autres écrans.
+VW VH par rapport à la taille de l'écran
+% par rapport à l'élément PARENT
+
+
+COLUMN positionnement des elements un EN DESSOUS de l'autre
+ROW en ligne, et c'est le positionnement PAR DEFAUT donc pas besoin de l'écrire (sauf
+si on change)
+
+POSITIONS
+.static
+.relative : définit l'écart (par rapport à l'endroit où il aurait été initiallement)
++ on peut donner des valeus négatives (left: -50px)
+.absolute: par rapport à l'élément parent "relative ou absolute", pratique pour des notifications
+(surtout avec le décalage négatif)
+border-radius: 50% = ça donne un cercle!
+.fixed: fixé sur l'écran sans prendre en compte d'autres elements; ne va pas etre scrollé
+.sticky: d'abord relative par rapport au parent, ensuite devient fixe si son
+ container commence à disparaitre, et disparait completement si le container disparait
+
+eventListener (en JS) pour rendre header transparent et re-normal quand on scroll
+écouteur d'événément (il paut meme s'adapter à la vitesse de scroll)
+
+text-decoration: line-through (pour faire texte barré)
+
+class bi = bootstrap icon
+pour modifier sa taille: suffit de donner une autre width/height et deonner en em
+(suffit de donner 1 seule valeur)
+
+
+z-index: 1 ou 2 etc.
+empilement des elements un pardessus autre sur la page (vertical)
+le chiffre qui est plu grand = element s'affichera par dessus
+
+
+-------------------------
+Autres sélécteurs
+-------------------------
+
+input [type="text"] {
+    ...
+}
+
+enfants d'un autre element:
+.container < p {
+    color:
+}
+
+tous les éléments déscendants d'un autre élément (enfants d'enfant ...etc) sans parentheses
+.section p {
+
+}
+
+-------------------------
+Pseudo-classes
+-------------------------
+
+survol de souris
+.box:hover {
+
+}
+
+Uniquement pour les liens:
+a:visited {
+
+}
+
+premier ou dernier element-enfant :
+
+p:first-child {
+
+}
+
+ou 
+
+ul li:last-child {
+
+}
+
+-------------------------
+Pseudo-element
+-------------------------
+
+Pour séléctionner une partie d'un élément
+
+Première lettre: 
+p::first-letter {
+
+}
+
+première ligne du paragraphe
+
+p::first-line {
+text-transform: uppercase
+}
+
+
+
+LES MEDIA QUERIES
+
+
+@media screen (condition max-width: Xpx ou min-width: Xpx) {
+   h1 {
+
+   }
+   
+    p {
+
+    }
+    
+}
+
+on peut mettre les deux:
+
+@media screen (condition max-width: Xpx) and (min-width: Xpx) {
+    p {
+
+    }
+    
+}
+
+D'habitude y a l'appriche Mobile-First (on commence à écrire la règle générale 
+pour les protables, et puis on augmente la taille d'écran dans Média-queries)
+ici on va donner min-width
+
+Desktop first: l'inverse (ce qu'on fait aujourd'hui en examen blanc)
+Donc on va donner max-width
+
+Framework Bootstrap : Mobile-first
+
+Tailles d'écran: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+
+Pour mon exam: il faut pour mobile inférieur à 576:
+@media screen (max-width: 575) {
+    
+}
+
+
+
+
+
+
+FAIRE
+exercices avec greed
+
+
+
+RACCOURCIS CLAVIER
+
+Ctrl z = revenir en arrière
+cntrl shift l = selectionner et remplacer plisueurs elements
+
+
+
+
+
+
+QUESTIONS
+
+- comment faire pour avoir les liens de navigation en bloc et centré?
+réponse: donner la width à la div avec les liens de navigation
+
+
+- est-ce qu les produits vaut mieux mettre id ou class?
+réponse: .class 
+
+align-items: center; нужно ли в экзамене для контейнера с продуктами?
+align-content: space-evenly; почему не работает

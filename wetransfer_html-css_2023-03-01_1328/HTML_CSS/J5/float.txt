@@ -1,0 +1,24 @@
+La propriété 'float' nous permet d'insérer une image à l'intérieur d'un bloc de texte.
+
+On peut faire 'flotter' l'image à droite ou à gauche :
+
+#image1 {
+    float: right;
+}
+
+Le code ci-dessus fera flotter l'image à droite du texte.
+
+#image2 {
+    float: left;
+}
+
+Le code ci-dessus fera flotter l'image à gauche du texte.
+
+#image1 {
+    float: none;
+}
+
+Le code ci-dessus fera que l'image ne flotte pas (utile pour le responsive).
+
+
+Pour q'une image flotte, on doit placer l'image devant flotter juste avant le texte.

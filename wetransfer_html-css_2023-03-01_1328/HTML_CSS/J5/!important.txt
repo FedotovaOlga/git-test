@@ -1,0 +1,4 @@
+Le mot-clé !important permet au style auquel il est passé de gagner en priorité.
+
+Si deux (ou plus) instructions entrent en conflit, celle avec le mot-clé '!important' sera considérée comme
+ayant la priorité numéro 1.

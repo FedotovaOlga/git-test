@@ -1,0 +1,133 @@
+Sélecteurs complets : https://www.w3schools.com/cssref/css_selectors.php
+
+En CSS, nous avons accès a plusieurs sélecteurs, qui nous permettent de sélectionner des éléments 
+de façon plus précise que les sélecteurs d'éléments, de classe ou d'ID.
+
+
+----------------------------------------------
+Les sélecteurs d'attributs
+----------------------------------------------
+
+
+Les sélecteurs d'attributs nous permettant de sélectionner des éléments selon la présence ou la 
+valeur d'un de leurs attributs.
+
+Par exemple, on peut sélectionner tous les inputs de type text :
+
+input[type="text"] {
+  background-color: #fff;
+}
+
+Ou tous les liens menant vers une autre page :
+
+a[target="_blank"] {
+  color: blue;
+}
+
+
+----------------------------------------------
+Les sélecteurs d'éléments enfants / descendants
+----------------------------------------------
+
+
+On peut sélectionner les éléments enfants d'un autre type d'élément.
+
+Pour faire ceci, la syntaxe du sélecteur est : element_parent > element_a_selectionner
+
+    Par exemple, pour sélectionner tous les paragraphes enfants d'une classe 'container' :
+
+    .container > p {
+        color: red;
+    }
+
+
+On peut aussi sélectionner tous les éléments descendants d'un autre type d'élément :
+
+Pour faire ceci, la syntaxe du sélecteur est : element_parent element_a_selectionner
+
+    Par exemple, pour sélectionner tous les paragraphes descendants d'un élément Section :
+
+    section p {
+        font-size: 1.2em;
+    }
+
+
+
+
+----------------------------------------------
+Les pseudo-classes
+----------------------------------------------
+
+
+Les pseudo-classes nous permettent de sélectionner un élément par rapport à son état (ce qu'il est à un 
+instant t) ou une interaction de l'utilisateur.
+
+On peut par exemple sélectionner et styliser un élément, lorsque la souris le survole, 
+avec la pseudo-classe ':hover' :
+
+    .box:hover {
+        width: 150px;
+        height: 150px;
+    }
+
+
+On peut aussi sélectionner et styliser les liens ayant déjà été visités par l'utilisateur, 
+avec la pseudo-classe ':visited' (qui ne s'applique qu'aux liens) :
+
+    a:visited {
+        color: gray;
+    }
+
+
+La pseudo-classe ':first-child' désigne les éléments étant le premier enfant d'un autre élémént.
+
+Par exemple :
+
+    <div>
+        <p>Ce paragraphe est le premier enfant de la div.</p>
+        <p>Ce paragraphe est le deuxième enfant de la div.</p>
+    </div>
+
+On peut sélectionner, par exemple, les paragraphes étant des premiers enfants de cette façon :
+
+    p:first-child
+
+La pseudo-classe ':last-child' désigne les éléments étant le dernier enfant d'un autre élément.
+
+On peut, par exemple, sélectionner les <li>, présents dans une <ul>, et étant leur dernier enfant :
+
+    ul li:last-child
+
+En combinant les pseudo-classes à d'autres sélecteurs, comme on vient de le faire ci-dessus, on peut 
+sélectionner les éléments de manière dynamique, et précise.
+
+
+
+----------------------------------------------
+Les pseudo-éléments
+----------------------------------------------
+
+
+Les pseudo-éléments désignent une partie d'un élément HTML.
+
+Les deux principaux sont :
+
+    ::first-letter -> La première lettre d'un texte
+
+    Par exemple :
+
+        p::first-letter {
+            color: red;
+        }
+
+        Le code ci-dessus rendra la première lettre de tous les paragraphes rouge.
+
+    ::first-line -> La première ligne d'un texte 
+
+        p::first-line {
+            text-transform: uppercase;
+        }
+
+        Le code ci-dessus affichera la première ligne de tous les paragraphes en majuscule.
+
+Les pseudo-éléments, à la différence des pseudo-classes, prennent deux fois le symbole ':'.

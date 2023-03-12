@@ -1,0 +1,36 @@
+https://www.w3schools.com/html/html_intro.asp
+
+HTML est un langage informatique : il peut être lu et interprété 
+par un ordinateur / serveur / navigateur web.
+
+(Interpréter : 
+peut lire, 
+comprendre le sens, 
+et réaliser une action à la suite de la lecture)
+
+HTML est un langage de balises : on ne va pas écrire de logique, 
+on va structurer une page web.
+
+
+Pour créer une page HTML, on commence par insérer un Doctype 
+(pour Document Type), pour indiquer que notre oage est une page HMTL.
+
+Le DOCTYPE est une balise simple : il n'a pas besoin d'une balise 
+fermante.
+
+En dessous du Doctype, on insère une balise ouvrante <html>, et une balise 
+fermante </html>.
+
+Les balises doubles (ouvrantes et fermantes) s'écrivent de cette manière :
+
+    <balise>
+    </balise>
+
+On peut insérer d'autres balises à l'intérieur d'une balise double.
+
+Une page HTML est composée de deux parties principales : le Head 
+et le Body.
+
+Le Head, des informations pour la navigateur.
+
+Le Body : c'est le contenu de notre page.

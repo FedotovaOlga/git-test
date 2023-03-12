@@ -1,0 +1,15 @@
+En CSS, on peut justifier un paragraphe de quatre façons 
+différentes.
+
+Pour contrôler cet alignement, on utilise la propriété text-align.
+
+Cette propriété a 4 valeurs possibles :
+
+    - left -> justifie le texte à gauche
+           -> valeur par défaut
+
+    - right -> justifie le texte à droite 
+
+    - center -> centrer le texte 
+
+    - justify -> justifier le texte sur les deux côtés

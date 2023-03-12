@@ -1,0 +1,26 @@
+https://www.w3schools.com/css/css_intro.asp
+
+Qu'est-ce que CSS ?
+
+C'est un langage informatique, créé dans le but de styliser du contenu HTML.
+
+CSS veut dire Cascading Style Sheets -> Feuilles de Style en Cascade.
+
+    Pourquoi ?
+
+    Car les fichiers se lisent de haut en bas, et que l'ordre d'importance des instructions reçues par 
+    l'ordinateur se lit aussi de haut en bas.
+
+
+Comment créer du code CSS ?
+
+On a trois possibilités différentes :
+
+    On peut créer un fichier .css 
+        Dans ce cas, on doit relier notre fichier .css à notre fichier .html
+            Comment ?
+            Avec une balise <link>
+
+    On peut insérer une balise <style></style> dans le Head de notre fichier .html
+
+    On peut ajouter un atribut style à un élément HTML

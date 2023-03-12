@@ -1,0 +1,254 @@
+Un développeur doit savoir maquetter un site
+
+    Pourquoi maquetter un site ?
+
+        Car il est beaucoup plus simple de réaliser une maquette, qu'un site complet.
+
+        Un développeur web réalise donc une maquette, qu'il peut ensuite proposer au client.
+
+        Une fois le développeur et le client d'accord sur la maquette, le développeur peut commencer à travailler.
+
+
+        Deux étapes dans la réalisation de la maquette :
+
+            Un wireframe :
+
+                Brouillon
+
+                Avec les zones de contenu en gris
+
+                Aucun détail
+
+            Maquette(s) :
+
+                Lorsqu'on intègre du détail dans notre wireframe
+
+                    Du texte
+
+                    Des images
+
+                    Des couleurs
+
+                    Jusqu'à ce que la maquette ressemble à une capture d'écran du futur site
+
+        
+        FIGMA :
+
+            Logiciel de maquettage gratuit
+
+            Application web : pas besoin de la télécharger
+
+
+
+Un développeur doit (si il est freelance) :
+
+    Maîtriser la comptabilité
+    Être organisé dans ses dépenses
+    Être à jour avec l'URSSAF
+
+
+
+Le domaine du développement web se décompose en deux grandes parties :
+
+    Front-end
+
+        Tout ce qui est visuel
+
+    Back-end
+
+        Tout ce qui ne se voit pas (ex : traitement des données)
+
+
+
+Compétences à avoir par domaine :
+
+    Front-end :
+
+        HTML : le langage structurant une page web
+
+        CSS : le langage stylisant une page web
+
+        JavaScript - JS : la langage permettant de faire des animations sur la page web
+
+
+        HTML et CSS : ce sont des langages descriptifs : on écrit pas de logique
+                                                         on crée des pages web
+
+        JS : c'est un langage de programmation
+                On peut créer des algorithmes avec
+                                  jeux vidéos
+                                  système de fintech
+                                  blockchain
+                                  tout ce qui est possible avec du code
+
+
+        JS est le seul langage de programmation qui peut tourner dans un navigateur web.
+
+        Vous pourrez vous renseigner, après votre formation, sur WebAssembly (un langage de programmation qui permet de faire
+        tourner d'autres langages que JavaScript dans un navigateur web).
+
+
+    Back-end :
+
+        Au moins un langage de programmation :
+            PHP (créé spécialement pour le développement back-end)
+            JavaScript
+            Ruby
+            Python
+            Java
+            Rust
+            C++
+            ...
+
+        Facultatif mais très recommandé  :
+        Un framework : un cadre de travail pour vous aider à développer 
+                                                           à faire la maintenance
+                                                           à intégrer de nouvelles fonctionnalités dans votre site 
+
+
+        Base de données : l'endroit où on stocke nos informations
+            Pour être développeur, il faut maîtriser les bases de données et savoir s'en servir sous au 
+            moins 1 forme pour nos projets.
+
+            Il existe 2 types principaux de bases de données (BDD) :
+
+                Les bases de données relationnelles / SQL
+                Les bases de données NoSQL
+
+            Une base de données relationnelle / SQL : 
+
+                STRUCTURÉE
+
+                Une BDD dans laquelle notre data est rangée sous forme de tables :
+                    - clients
+                    - commandes
+                    - produits
+                    - ...
+                Chacune de ces tables contiendrai les entrées de la BDD avec leurs infos respectives.
+                Dans chacune des tables : des colonnes
+
+                Exemple :
+                    Table client :
+                        - Numéro de client
+                        - Nom
+                        - Tel
+
+                    Table commandes :
+                        - Numéro de commande 
+                        - Numéro du client qui a commandé
+
+
+                C'est le type le plus adapté à presque tous les sites.
+
+                Pourquoi ? 
+                    Car il est beaucoup plus simple de récupérer des données depuis une BDD SQL.
+
+            
+            Une base de données NoSQL :
+
+                PAS STRUCTURÉE
+
+                Des collections dans lesquelles les données sont rangées une après l'autre, sans relation.
+
+        Un système de gestion de Base de données (un logiciel permettant de faire tourner un de ces deux types de 
+        BDD, ex MySQL).
+
+
+        SQL : langage de requête permettant de communiquer avec une base de données relationnelle :
+            Lire des informations
+            Insérez
+            Modifier
+            Supprimer
+        
+
+        Dans un site web, l'immense majorité du temps, on sait tout ou presque de la forme des données 
+        allant nous être transmises, car (sauf problème majeur) elles nous sont transmises selon nos conditions.
+        C'est pour cela qu'il faudra, dans la majorité des cas, utiliser une BDD SQL.
+
+        Une BDD NoSQL prend toute son utilité quand on ne connait pas la forme des données allant nous être transmises.
+
+
+UI/UX :
+
+    UI : user interface : interface utilisateur : visuel de votre site 
+
+    UX : user experience : expérience utilisateur : l'expérience de votre client à l'utilisation de votre site
+        (contraintes de l'UX : on ne veut qu'un client n'ai que trois clics à faire, depuis un produit, 
+        pour le commander)
+
+
+Développer une 'interface web dynamique' :
+
+        Une UI dynamique, c'est une Interface dans laquelle le contenu change, mais la structure reste la 
+        même.
+
+        Par exemple :
+
+            Sur la page d'accueil de Youtube, les vidéos proposées ne sont jamais les mêmes
+
+            Sur une page catalogue d'un site web, les produits changent en fonctions des infos envoyées,
+            mais la structure de la page est la même
+
+
+Solution de gestion de contenu :
+
+    Un site / page depuis lequel vous pouvez :
+        Voir le contenu existant
+        Créer du contenu
+        Modifer du contenu
+        Supprimer du contenu
+
+
+'Veille' en informatique :
+
+    Veille informationnelle :
+
+        Se tenir au courant des actualités dans notre domaine de développement :
+
+            Mise à jour des langages
+                            frameworks
+                            libraires
+                            ...
+            Nouvelles solutions de sécurité
+            Nouvelles obligations RGPD
+
+            En bref, tout ce qui est en rapport avec le développement web (ou votre partie du développement
+            web).
+
+
+(Librairie : du code, que d'autres personnes ont écrit pour nous, et dont on peut se servir pour 
+développer plus facilement.
+    Ex : PHPMailer qui permet d'envoyer des mails facilement dans votre application.)
+
+
+Maquettage de la sécurité d'une appli :
+    Représenter le cheminement des données
+                les différents traitements qu'on applique à ces données
+
+
+Référencement naturel / SEO : l'indexation sur les moteurs de recherche
+                              'À quelle place on arrive ?'
+
+SEA / Référencement payant : Google Ads
+
+
+Hébergeurs principaux :
+
+    Ionos -> pas de prise de tête et service client très satisfaisant
+
+    Dreamhost -> correct, pas cher
+
+    OVH -> Français, un peu cher (à vérifier)
+
+    AWS -> Amazon Web Services -> un peu moins chez, + compliqué
+                                  (au développeur de gérer les réglages de son serveur)
+                                  (peut réserver des surprises sur la tarif)
+
+
+RGPD : Règlement Général de la Protection des Données 
+
+    Les règles de l'Union Européenne par rapport aux données :
+
+        - Cookies
+        - Politique de Confidentialité
+        - Conservation et suppression des données conservées

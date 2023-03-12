@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="form.html" method="POST">
+
+        <fieldset>
+            <legend>Informations générales</legend>
+
+            <label for="nom">Nom&nbsp;:</label> 
+            <!-- &nbsp; : non-breakable space - crée un espace insécable 
+            L'espace ne pourra pas être cassé : il ne peut pas y avoir 
+            de retour à la ligne sur cet espace  -->
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+            <br>
+            
+            <label for="password">Mot de passe&nbsp;:</label>
+            <input type="password" name="mdp" id="password">
+            <br>
+
+            <label for="email">Email&nbsp;:</label>
+            <input type="email" name="mail" id="email" disabled>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Compétences</legend>
+
+            <label for="annXp">Années d'expérience&nbsp;:</label>
+            <input type="range" name="xp" id="annXp" min="0" max="20" value="19" step="0.1">
+            <br>
+
+
+            <label>Langage préféré&nbsp;:</label>
+
+            <input type="radio" name="langage" id="html" value="0">
+            <label for="html">HTML</label>
+
+            <input type="radio" name="langage" id="css" value="1">
+            <label for="css">CSS</label>
+
+            <input type="radio" name="langage" id="js" value="2">
+            <label for="js">JS</label>
+
+            <br>
+
+            <label for="">Langages maîtrisés&nbsp;:</label>
+
+            <input type="checkbox" name="maitrise" value="0" id="html_Checkbox">
+            <label for="html_Checkbox">HTML</label>
+
+            <input type="checkbox" name="maitrise" value="1" id="CSS_Checkbox">
+            <label for="CSS_Checkbox">CSS</label>
+
+            <input type="checkbox" name="maitrise" value="2" id="JS_Checkbox">
+            <label for="JS_Checkbox">JS</label>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Commentaires</legend>
+
+            <label for="select1">Niveau de satisfaction&nbsp;:</label>
+            <select name="satisfaction" id="select1">
+                <option selected disabled>Choisissez</option>
+                <option value="0">Pas content</option>
+                <option value="1">Content</option>
+                <option value="2">Très content</option>
+            </select>
+
+            <br>
+
+            <label for="textarea1">Message&nbsp;:</label>
+            <br>
+            <textarea name="commentaire" id="textarea1" cols="60" rows="10" placeholder="Écrivez votre message"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inscription</legend>
+
+            <label for="inscription">Date d'inscription&nbsp;:</label>
+            <input type="date" min="2000-01-31" max="2023-01-31" value="2010-01-31" name="inscription" id="inscription">
+        </fieldset>
+
+        <input type="submit" name="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser">
+        <input type="hidden" name="cache" value="cequejeveux">
+
+    </form>
+
+</body>
+</html>

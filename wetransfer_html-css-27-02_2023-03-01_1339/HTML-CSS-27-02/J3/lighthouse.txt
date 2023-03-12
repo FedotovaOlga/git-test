@@ -1,0 +1,51 @@
+Le navigateur recommandé pour développer :
+
+    Chrome 
+
+Pourquoi ?
+
+    1 - Domine le marché 
+
+    2 - Inspecteur est très développé
+
+Inspecteur de Chrome : DevTools 
+
+DevTools -> Development Tools -> Outils de développement
+
+Menu de DevTools :
+
+    - Elements : le code source de la page s'affiche
+                  On peut voir le site en version mobile 
+                    (cliquer sur l'icône du téléphone)
+
+    - Console : les informations issues de votre code JavaScript 
+                qui s'affichent
+
+    - Sources : ce sont les ressources disponibles et nécessaies 
+                pour afficher la page
+
+    - Network : pour les requêtes HTTP
+
+    - Lighthouse : génère des rapports sur notre site  ET nous 
+                   donner des conseils
+                   
+                   Device : choisir si on veut un rapport 
+                            sur la version bureau ou mobile du site
+
+                    Catégories : catégories sur lesquelles le 
+                                 rapport va porter
+
+                        Performance : temps de chargement de la page 
+
+                        Accessibilité : pour les personnes malvoyantes 
+
+                        Best Practices : meilleures pratiques (domaine 
+                                         général)
+
+                        SEO
+
+                        Progressive Web App : est-ce que le site 
+                                    utilise les ressources modernes ?
+
+            Dans le rapport de Lightouse, on trouvera toutes les 
+            opportunités que Chrome a trouvé pour améliorer notre site.

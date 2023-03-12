@@ -1,0 +1,63 @@
+https://www.w3schools.com/css/css_dimension.asp
+https://www.w3schools.com/cssref/css_units.php
+
+En CSS, on peut définir la largeur d'un élément avec 
+'width' et la hauteur d'un élément avec 'height'.
+
+Width et Height sont donc les clés qui nous permettent de 
+définir la largeur et la hauteur d'éléments.
+
+Quelles valeurs peut-on utiliser ?
+
+    - px -> pixels 
+            On ne va pas l'utiliser.
+
+            Pourquoi ? 
+
+                Pour le Responsive.
+
+                En effet, pour le Responsive, on utiliser le moins 
+                possible de valeurs fixes.
+
+                Pour que l'affichage de notre contenu soit adaptable 
+                à plusieurs tailles d'écrans, on va utiliser des valeurs 
+                modulables.
+
+    - % -> pourcentages
+
+            Quand on assigne une valeur en % à un élément, sa taille 
+            est calculé selon la zone dans laquelle l'élément est 
+            contenu (conteneur / container).
+
+            Si on assigne cette valeur à un élément affiché 
+            directement sur la page, sans être dans un conteneur :
+            son conteneur, c'est la page en elle-même.
+
+    - vh & vw -> view-height & view-width 
+
+            view-height : la hauteur de l'écran
+            view-width : la largeur de l'écran
+
+            Les valeurs à assigner sont des nombres, qui suivi de 
+            vh ou vw, seront interprétés comme étant des pourcentages.
+
+            Syntaxe :
+
+            height: 50vh;
+                    -> 50% de view-height 
+                    -> 50% de la hauteur de l'écran
+
+--------------------------
+
+Pour les éléments de texte :
+
+em -> unité pour assigner une taille à un élément de texte 
+      em -> la taille actuelle de la police
+      
+      Syntaxe :
+        1em;
+        1.2em; (1.2 * la taille de la police actuelle)
+
+      Généralement utilisé pour le font-size :
+
+        font-size: 1.2em;

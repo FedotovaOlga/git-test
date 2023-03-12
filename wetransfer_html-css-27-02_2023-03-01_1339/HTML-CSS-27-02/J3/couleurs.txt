@@ -1,0 +1,26 @@
+En CSS, pour assigner une couleur à un élément, on a trois options :
+
+- Le nom de la couleur :
+
+    color: orange;
+
+    Nous donne des couleurs génériques, peu précises, mais utiles 
+    pour développer facilement, sans se prendre la tête sur des 
+    détails.
+
+
+- Le Hexadecimal :
+
+    color: #000000;
+
+    Symbole # + 6 chiffres / lettres
+
+
+- Le RGB (red, green, blue (, opacité)) :
+
+    color: rgb(12, 56, 255);
+
+    Si on veut ajouter une opacité à un élément : 
+        sur une échelle de 0 à 1, en 4ème paramètre :
+
+    color: rgb(12, 56, 255, 0.3);

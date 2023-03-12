@@ -1,0 +1,29 @@
+Div : https://www.w3schools.com/Tags/tag_div.asp
+Span : https://www.w3schools.com/tags/tag_span.asp
+
+Qu'est-ce qu'une div ?
+
+Une 'div' créée un bloc / zone de contenu dans laquelle ont peut insérer du contenu.
+
+On peut voir la div comme l'élément de base HTML.
+
+Imaginez tous les éléments dans lesquels ont peut en insérer d'autres(titres, paragraphes, sections, articles...), 
+comme des divs auxquelles des propriétés ont été ajoutées.
+
+
+
+Qu'est-ce qu'un span ?
+
+Un span, c'est une zone dans laquelle on ne va pas insérer de contenu :
+
+On va créer une span autour de contenu déjà créé pour lui appliquer du style.
+
+Par exemple, dans le code ci-dessous :
+
+    <p>Le texte est en noir <span style="color: red;">sauf dans le span</span>.</p>
+
+    Le span inséré dans le paragraphe nous permet de créer une zone de contenu en son sein, dans laquelle
+    on pourra appliquer le style que l'on veut.
+
+
+

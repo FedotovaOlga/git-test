@@ -1,0 +1,155 @@
+Responsive Web Design / RWD
+09/03/2023
+--------------------------------
+
+Breakpoint - point d'arrêt
+(différents tailles d'écran: téléphone, tablette, ordi portable, ordi de bureau)
+
+
+Type de site:
+
+- Fixe : site créé dans des mesures fixes
+- Fluide (liquide) : %, em, vh, vw
+
+vh, vw : par rapport à la taille de l'écran
+% : par rapport à taille de l'élément parent
+em, rem : police
+
+- Adaptatif : en pesures fixes mais différe selon la taille de l'écran
+
+Le design responsive:
+
+Une base fluide associé à des cas adaptatifs.
+Ces qualités sont exploités grace à media-queries (pour modifier le comportement à partir de nos breakpoints, le comportement d'affichage à l'écran)
+
+Responsive :
+un seul site (pas de 2ième url); pas de doublage de contenu; pas de pénalisation au niveau de référencement de google.
+
+Grilles: 12, 16 ou 24 colonnes
+on peut créer des grilles grâce au css, bootstrap (12) etc.
+
+Extintions Git sur VSCode!!!
+regarder tout ça
+
+Edge : vaut mieux laisser pour pas avoir des soucis d'affichage ! Il n'ouvre pas automatiquement Edge !
+
+ctrl/
+ça créé ou décréé un commentaire!
+
+
+si y a un truc qu'on connnait pas:
+MDN pour la doc
+W3School pour texter
+
+Rajouter systématiquement
+cdn css normalize min
+AVANT mon propre style css
+On peut prendre sur ce site:
+https://cdnjs.com/libraries/normalize
+
+On l'utilise systématiquement quand on n'utilise pas bootstrap.
+Bootstrap va utiliser un fichier reboot dans le même but.
+
+C'est pour faire que le site s'affiche pareil sur tous les navigateurs web.
+
+On commence toujours par le fichier plus général, externe.
+
+Block = prend 100% de la taille de son parent; se mettent en dessous un de l'autre
+Inline = seulement la place quils occupent; se mettent côte à côte
+
+
+border: solid!!!!!!!!!! sans e
+
+padding et margin mettre côte à côte
+
+Breakpoint : toujours en pixel
+
+nav>ul>li*3
+ça va créer le menu!!
+
+ce sont les raccourcis emmet
+
+ctrl+alt+fleche du bas ou souris : ça permet de écrire plusieures choses à la fois
+
+jcsb : raccourci pour justify-content:space between
+
+top right bottom left : pour mettre le padding sur la même ligne
+(et ausssi les bordures?)
+
+&copy; = rajoute un symbole de copyright
+
+Flexbox: 
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties
+
+margin: 0 auto;
+ça fait coller la marge en haut et en bas, et centre à gauche et à droite
+
+---------------------------------------------
+Jour 2
+---------------------------------------------
+
+position: sticky;
+top: 0;
+pour que le header ne bouge pas
+top: 10px; pour qu'il se met avec un décalage du haut de la page
+
+.container.rouge : créé une div avec deux class : container et rouge
+
+prendre le temps de texter au début!
+
+on peut commenter qch qui a déjà été tapé (et décommenter), en tapant ctrl+/
+
+box-sizing: border-box
+pour que le contenu ne dépasse pas
+
+.container {
+margin: 0 auto;
+width: 100%
+}
+c'est une convention
+
+ctrl+h = rechercher et remplacer
+
+F3 = rechercher
+
+suffit de taper dans html:
+.+nom de classe = ça créé automatiquement une classe
+
+clic droit => mettre en forme le document
+si tout va bien, ça veut dire qu'on peut fermer les divs.
+
+
+Pour vérifier si tout va bien, on peut fermer les divs et voir si elles se ferment bien.
+
+faut pas que photo dépasse 500ko sur le site!
+les logos pixels pas plus de 10ko
+
+Si on met balise PICTURE dans html, et avec les breakpoints, on met deux photos, comme ça il charge la photo de qualité en fonction de l'écran; c'est la seule fois quand on va mettre breakpoints :
+    <picture>
+        <source media="(min-width: 560px)" srcset="/img/imageGrande.jpg">
+        <img src="/img/imagePetite.jpg" alt="texte">
+    </picture>
+
+
+Pour les breakpoints consulter:
+https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+Pour vérifier la performance, l'accessibilité, le SEO, les meilleures pratiques : 
+dans l'inspecteur => Lighthouse!
+
+
+fond d'écran en orientation:
+
+@media screen and (orientation: landscape) {
+    body {
+        background-color: lightgreen;
+    }
+    
+}
+
+jeux pour flexbox et grid:
+
+https://flexboxfroggy.com/#ru
+
+https://cssgridgarden.com/#ru

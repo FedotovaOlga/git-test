@@ -1,0 +1,57 @@
+En CSS, le style est appliqué aux éléments selon une hiérarchie.
+
+Si deux propriétés entrent en conflit, celle à la hiérarchie la plus haute 
+sera affichée.
+
+La hiérarchie CSS est comme ceci : 
+
+1 - Styles 'en ligne' - inline styles
+
+    Lorsqu'on attribue directement du style à un élément HTML à l'aide de 
+    l'attribut "style".
+
+    Par exemple : <p style="margin-top: 2em;"><p>
+
+2 - Sélecteurs d'identification 
+
+    Lorsqu'on sélectionne un élément par son ID.
+
+3 - Sélecteurs de classe 
+
+    Lorsqu'on sélectionne un élément par sa classe.
+
+4 - Sélecteurs d'attributs 
+
+    Sélectionne un élément selon la valeur ou la présence d'un attribut.
+
+    (Au programme au jour 5)
+
+5 - Sélecteurs d'éléments 'généraux'
+
+    Lorsqu'on sélectionne des éléments selon le type de leur balise.
+
+6 - Le sélecteur universel
+
+    On peut utiliser le raccourci * et sélectionner tous les éléments 
+    d'une page.
+
+    Par exemple : 
+        
+        * { margin: 0; }
+
+De plus, une propriété déclarée dans une balise <style></style>, dans le head d'une 
+page HTML, aura, à hiérarchie égale, la priorité sur une instruction déclarée dans 
+un fichier CSS et sera affichée.
+
+Aussi, si deux propriétés ont une hiérarchie égale, celle lue en dernier par le 
+navigateur / écrite en-dessous de l'autre, aura la priorité et sera affichée.
+
+Enfin, on peut utiliser le mot-clé :
+
+    !important 
+
+pour gagner la priorité sur l'ensemble des autres instructions.
+
+Par exemple :
+
+    h2 { padding: 0 !important; }

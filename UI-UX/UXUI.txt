@@ -1,0 +1,192 @@
+UX/UI
+
+UX user expirience
+UI user interface
+
+Bon site UX : on peut trouver l'info en 3 cliks
+
+La ligne de flottaison :
+les derniers trucs qu'on voit en bas avant de scroller (en dessous y a autre chose)
+Elle n'existe pas dans les applications mobiles, uniquement sur des sites internet. Elle différente pour différentses tailles d'écran.
+
+
+- responsive
+- accessibilité (pour les mal voyants)
+
+
+Le Référentiel général d’amélioration de l’accessibilité (RGAA)
+https://design.numerique.gouv.fr/accessibilite-numerique/rgaa/
+https://www.w3.org/TR/WCAG21/
+
+L’abréviation HTTPS signifie « Hypertext Transfer Protocol Secure », qui se traduit par « Protocole hypertexte de transmission sécurisé ». 
+A l'origine c'était uniquement pour les sitex marchands (le S = sécurité) maintenant google impose pour tout le monde
+Certificat SSL = le petit cadenas en haut à côté de URL (Secure Sockets Layer)
+
+Validator de W3C = on peut aussi mettre des URL des sites pour voir là où y a des bugs :
+https://validator.w3.org/#validate_by_uri+with_options
+
+
+Mobile first
+
+AI: architecture de l'information
+	consiste à organiser:
+
+1) L'information et le contenu 
+2) La fonctionnalité de site web (player, chat bot, etc.)
+
+De manière à offrir la meiileure expérience possible à l'utilisateur
+
+Ré-organiser le contenu:
+- ce que l'on veut présenter, montrer ou démontrer, vendre aux internautes
+- ce que les gens trouvent ce qu'ils cherchent (en les canalisant) jusqu'au tunnel d'achat (via le panier)
+
+avec le moins de cliks possibles (ergonomie)
+
+Pour planification (et partage aux clients):
+Diagramme de Gantt
+https://www.ganttproject.biz/
+
+ou bien Trello
+
+
+Le sigle RGPD signifie « Règlement Général sur la Protection des Données » (en anglais « General Data Protection Regulation » ou GDPR
+
+Google analytics = uniquement pour analyser les sites qu'on a créé
+Y a un endroit sur google analytics où on peut exclure notre adresse IP; si je suis en mode administrateur les cookies ne vont pas être déposés; y a moyern de modifier ça sur mon site web (pas sur google analytics)
+
+https://pagespeed.web.dev/
+Ici on peut tester la rapidité de n'importe quelle page web, ainsi que son accébilité (mobile et bureau)
+
+Sinon y a aussi ça
+https://tools.pingdom.com
+
+heat map
+permet de voir les zones de clic:
+
+Payants:
+UXWizz
+Mouseflow
+Hotjar
+
+Opensource:
+https://www.patrick-wied.at/static/heatmapjs/
+
+-----------------------------------------------------------------------
+Jour 2
+-----------------------------------------------------------------------
+
+Arborescence :
+
+- Sur ordinateur : hierarchie des fichiers sur un disque dur
+
+- Sur un site/application : hierarchie des pages
+
+on peut y mettre des codes couleurs si c'est trop complexe;
+
+On peut les faire par ex avec ça (outil de mindmapping) :
+gratuits:
+- https://coggle.it/
+- x-mind (on peut générer un pdf)
+(- photoshop)
+
+
+Zoning :
+
+C'est l'organisation d'une page web. Le découpage de la page en plusieurs zones.
+C'est plus un outil de marketing, c'est pas trop utilisé en developpement.
+
+Wireframe :
+
+"maquette/cadre en fil de fer"
+Permet de spécifier l'organisation interne des sections, le placement du contenu, sans le dévoiler, sous la forme de boîtes.
+Une squelette d'un site web.
+Y a pas de couleurs! La charte graphique (définition des couleurs) peut venir avant ou après.
+
+Gratuit :
+
+!!Figma!!
+https://pencil.evolus.vn/Features.html
+en ligne : https://wireframe.cc
+ADOBE XD
+
+Payant :
+
+PRO https://balsamiq.com/wireframes/
+SKETCH
+INVISION (le plus cher; tout une suite)
+Le seul qui va plus loin que de simples maquettes (?)
+PHOTOSHOP
+
+Gratuit Payant ? :
+convertir des croquis wireframe en html
+(называется Sketch2Code)
+autres:
+https://fronty.com/how-to-convert-wireframe-to-html-css-code/
+https://blog.yotako.io/how-to-convert-a-balsamiq-wireframe-to-html-css/
+
+
+Parcours utilisateur (ou "client") sur le site
+(avant et post-achat)
+
+Scénarios et story-boards web (pas encore très utilisé aujourd'hui)-comme dans les films/dessins animés
+
+Feuille/planche de tendance = mood-board
+
+Planche de tendance ça vient de la mode.
+On peut faire ça avec:
+- Canva
+- Photoshop
+(avec des photos libres de droit)
+pour choisir 3 couleurs à intégrer sur le site
+
+Charte graphique
+Document qui définit les codes coouleurs à utiliser pour le web et print; les recommandations et interdits du logo de la marque pour les collaborateurs.
+
+
+SVG
+format vectoriel, adapté pour le responsive
+(le logo par ex.)
+Mettre de l'svg partout;
+il peut aussi etre transparent
+Il s'anime avec le code!
+
+sauf si on publie des applications apple dans Apple Stpre - png avec transparence
+png - avec des pixels, problématique de l'agrandir!
+
+AI Adobe Illustrator :
+permet de refaire un logo png en un logo svg (outil pour les graphistes)
+
+On peut modifier couleur de logos, en ouvrant avec Visual Studio Code par exemple et remplacer #000000 la couleur.
+
+Pour générer les palettes de couleurs qui vont bien ensemble:
+- https://color.adobe.com/fr/create/color-wheel (+Explorer dans le menu en haut)
+- https://coolors.co/
+
+Ce que j'ai fait sur Figma:
+https://www.figma.com/file/JUGpAL8kO7qugFvqD8Xwwt/Untitled?node-id=7-100&t=S9o2wWBtvPrFGhFJ-0
+
+Photos libres de droit gratuites pour utilisation commerciale: 
+
+https://www.pexels.com/fr-fr/chercher/dog/
+
+autres:
+
+https://audreytips.com/18-sites-photos-gratuites-libres-droit-usage-commercial/
+
+icones:
+https://www.flaticon.com/
+
+
+Icones et images:
+https://thenounproject.com/
+
+
+Converters and tools:
+https://onlineimagetools.com/
+
+
+
+PLUGINS pour figma!!!!!!!!!!
+https://www.octolio.io/articles-de-blog/meilleurs-plugins-figma
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+

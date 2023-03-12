@@ -1,0 +1,83 @@
+https://www.w3schools.com/html/html_basic.asp
+
+Un Body contient généralement trois balises principales :
+
+Une balise <header></header> : le bandeau d'affichage haut de notre site, comportant les informations 
+principales 
+
+Une balise <main></main> : le contenu spécifique à la page que l'on affiche
+
+Une balise <footer></footer> : le bandeau d'affichage bas de notre site, comportant les informations
+secondaires.
+
+
+
+La balise <section></section> nous permet de créer des sections de contenu dans notre page web.
+
+La balise <article></article> nous permet de créer des zones de contenu qui ont comme vocation de ne contenir des
+informations que sur un seul sujet, à la différence de <section></section> qui a comme vocation de contenir un plus grand nombre 
+d'informations.
+
+
+
+Les balises de texte :
+
+    Les Titres
+
+    Les Paragraphes
+
+
+Les TITRES se créent avec des balises allant de <h1></h1> à <h6></h6>, selon leur ordre d'importance.
+
+    On peut imaginer :
+        h1 -> le titre principal de la page 
+        h2 -> les titres des sections
+        h3 -> les titres des articles
+        h4 -> les sous-titres des articles
+        ...
+
+    (Vous pourrez toujours modifier la taille d'un titre, il ne faut donc pas choisir laquelle de ces 
+    balises utiliser en fonction de leur taille ! On spécifie leur niveau d'importance pour aider le 
+    navigateur et s'assurer un bon SEO (référencement naturel)).
+
+
+Les PARAGRAPHES se créent avec la balise <p></p>.
+C'est la balise que l'on va utiliser quand on veut créer une phrase ou un texte plus long.
+
+
+
+Les Images : 
+
+    Les images se créent avec la balise simple <img>.
+
+    La balise <img> prend plusieurs attributs.
+
+        Un attribut src="..." : le chemin vers l'image que l'on veut afficher
+
+        Un attribut alt="..." : le texte affiché si l'image n'arrive pas être chargée
+
+        Facultatif :
+
+            Un attribut width="..." : sa largeur
+            Un attribut height="..." : sa hauteur
+            La valeur de ces attributs est comprise en px (pixels) par défaut
+
+    
+Le séparateur :
+
+    La balise simple <hr> crée un séparateur dans notre fichier 
+    Séparateur : une barre qui sépare notre contenu
+
+
+Les balises de style HTML (pour le texte) :
+
+    <b></b> : le texte qui est à l'intérieur sera en gras
+
+    <i></i> : le texte qui est à l'intérieur sera différent de l'affichage classique (par défaut en italique).
+
+    <u></u> : le texte qui est à l'intérieur sera souligné
+
+
+Le retour à la ligne :
+
+    La balise simple <br> indique un retour à la ligne.

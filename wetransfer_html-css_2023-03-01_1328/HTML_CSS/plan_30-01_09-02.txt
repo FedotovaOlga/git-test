@@ -1,0 +1,78 @@
+JOUR 1
+
+Introduction au métier de développeur web
+Présentation de HTML et CSS
+Installation de VSCode
+Création d'un dossier
+Première page HTML
+    Structure complète mais basique
+Validator W3C
+Google Chrome DevTools
+Balises principales
+Atelier
+
+
+JOUR 2
+
+IDs
+Listes
+Display inline, block, inline-block
+Atelier
+
+
+JOUR 3
+
+Tableaux
+Formulaires
+Atelier
+
+
+JOUR 4
+
+Introduction à CSS
+Classes
+Premier fichier CSS
+Sélecteur basiques
+Couleurs
+Box-model : 
+    Margin
+    Padding
+    Borders
+        Différents types
+        Border-radius
+    Sélectionner chaque côté
+Atelier
+
+
+JOUR 5
+
+Float
+Display none & Visibility hidden
+Sélecteurs avancés
+Flexbox
+Atelier
+
+
+JOUR 6 - RWD
+
+Introduction au responsive
+Media Queries
+Responsive Web Design
+Atelier
+
+
+JOUR 7 - Bootstrap
+
+Bootstrap - Rangs et Colonnes
+Bootstrap - Classes
+Bootstrap - Composants
+Bootstrap - Thèmes
+Atelier
+
+
+JOUR 8 - Portfolio
+
+Qu'est-ce qu'un Portfolio ?
+Présentation de Portfolios
+Création d'un Portfolio
+Atelier

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <form action="post">
+        <fieldset>
+            <legend>Vous pouvez nous contacter via le formulaire ci-dessous&nbsp;:</legend>
+            <br>
+
+            <label for="nom">Votre nom&nbsp;:</label>
+            <input type="text" name="nom" id="nom" placeholder="Nom" required>
+            <br>
+
+            <label for="prenom">Votre prénom&nbsp;:</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+            <br>
+
+            <label for="mail">Votre adresse email&nbsp;:</label>
+            <input type="email" name="email" id="mail" placeholder="email" required>
+
+            <br>
+
+            <label for="select1">Sujet de votre message&nbsp;:</label>
+            <select name="sujet" id="select1">
+                <option value="0">Un message pour un membre d'équipe (sauf prise de rendez-vous)</option>
+                <option value="1">Problème dans le fonctionnement du site web</option>
+                <option value="2">Question de santé</option>
+                <option value="3">Autre commentaire (sauf prise de rendez-vous)</option>
+
+            </select>
+
+            <br>
+
+            <label for="textarea1">Vous pouvez écrire votre message ici&nbsp;:</label>
+            <br>
+            <textarea name="message" id="textarea1" cols="30" rows="10" placeholder="Ecrivez votre message ici"></textarea>
+            
+            <br>
+
+            <label>Si votre question concerne votre animal / vos animaux, vous pouvez le signaler ici&nbsp;:</label>
+
+            <br>
+
+            <label for="chat">Chat</label>
+            <input type="checkbox" name="animal" value="0" id="chat">
+
+            <label for="chien">Chien</label>
+            <input type="checkbox" name="animal" value="1" id="chien">
+
+            <label for="nac">NAC</label>
+            <input type="checkbox" name="animal" value="2" id="nac">
+
+            <label for="cheval">Cheval</label>
+            <input type="checkbox" name="animal" value="3" id="cheval">
+
+            <label for="vache">Vache</label>
+            <input type="checkbox" name="animal" value="4" id="vache">
+
+            <label for="autre">Autre</label>
+            <input type="checkbox" name="animal" value="5" id="autre">
+
+            <br>
+
+            <label>Si votre question est adressé à un.e membre de l'équipe en particulier, veuiller indiquer cette personne ici&nbsp;:</label>
+            
+            <br>
+
+            <label for="joanne">Joanne (véto)</label>
+            <input type="radio" name="equipe" id="joanne" value="0">
+
+            <label for="thibaud">Thibaud (véto)</label>
+            <input type="radio" name="equipe" id="thibaud" value="1">
+
+            <label for="manu">Manu (véto)</label>
+            <input type="radio" name="equipe" id="manu" value="2">
+
+            <label for="isabelle">Isabelle (ASV)</label>
+            <input type="radio" name="equipe" id="isabelle" value="3">
+
+            <label for="valerie">Valérie (ASV)</label>
+            <input type="radio" name="equipe" id="valerie" value="4">
+
+            <label for="megane">Mégane (ASV)</label>
+            <input type="radio" name="equipe" id="megane" value="5">
+
+            <label for="coralie">Coralie (ASV)</label>
+            <input type="radio" name="equipe" id="coralie" value="6">
+
+            <label for="celia">Célia (apprentie ASV)</label>
+            <input type="radio" name="equipe" id="celia" value="7">
+
+            <br>
+
+            <label for="urgent">Vous pouvez définir ici le niveau d'urgence de votre question&nbsp;:</label>
+            <br>
+            <input type="range" name="urgence" id="urgent" min="0" max="19" step="0.1">
+            
+            <br>
+                
+            <label for="date">Si votre question concerne un rendez-vous passé, veuillez indiquer la date ici&nbsp;:</label>
+            <br>
+            <input type="date" name="dateDernierRendezvous" id="date" min="2000-01-01" max="2023-03-01">
+            
+            <br>
+
+            <input type="submit" name="submit" value="Envoyer">
+            <input type="reset" value="Réinitialiser">
+
+        </fieldset>
+    </form>
+</body>
+</html>

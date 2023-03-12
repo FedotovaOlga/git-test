@@ -1,0 +1,113 @@
+h1{
+   color: violet;
+}
+/* Suppression du style des listes ul */
+
+header {
+    background-color: bisque;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:10px;
+}
+
+header img {
+    height: 50px;
+}
+
+header ul li {
+    min-width: 70px;
+}
+
+ul {
+    list-style: none;
+    /* margin: 0; pas obligatoire */
+    margin: 0; 
+    /* padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%; */
+    /* top-right-bas-left */
+    padding: 1% 5% 0% 5%;
+}
+
+main{
+
+    width: 80vw;
+    min-height: 150vh;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(250, 182, 182);
+
+}
+
+span{
+    font-style: italic;
+}
+
+footer {
+    background-color: rgb(208, 154, 83);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div {
+    padding-right: 15px;
+}
+
+footer ul li {
+    min-width: 70px;
+}
+
+
+/* Modifier la couleur du texte à partir de 370px */
+@media screen and (min-width:370px) {
+    h1 {
+        color: brown;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header img {
+        height: 60px;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    section h2{
+        width: 90vw;
+        text-align: center
+    }
+
+    section article {
+        max-width: 45%;
+        padding: 20px;
+        border: 1px solid black;
+        margin-bottom: 10px
+    }
+
+    footer ul {
+        display: flex
+    }
+
+    }
+
+
+/* Modifier l'affichage, mettre le titre à côté
+du paragraphe à partir de 768px */
+@media screen and (min-width: 768px) {
+    section {
+        display: flex;
+    }
+}
+

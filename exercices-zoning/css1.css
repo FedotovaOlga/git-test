@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    }
+
+    p {
+        color:white;
+        font-size: 0.8em;
+        font-family: 'Golos Text', sans-serif;
+    }
+
+#container1 {
+    background-color: rgb(150, 62, 150);
+    height: 3em;
+}
+
+#container2 {
+    background-color: yellow;
+    height: 1.5em;
+}
+
+main {
+    background-color: rgb(150, 62, 150);
+    height: 25em;
+    border-style: solid;
+    border-color: rgb(75, 153, 165);
+    border-width: 20px;
+}
+
+footer {
+    background-color: rgb(35, 63, 120);
+    height: 3em;
+}

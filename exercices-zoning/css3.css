@@ -1,0 +1,51 @@
+* {
+    margin: auto;
+}
+
+.zoneHaut
+{
+position: relative;
+top: 40px;
+left: 20px;
+}
+
+header {
+    background-color: red;
+    height: 20vh;
+    width: 80vw;
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+}
+
+.container2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.colonne {
+    flex-direction: column;
+    height: 70vh;
+    width: 10vw;
+    background-color: green;
+    border: 3px white solid;
+}
+
+.zoneGauche, .zoneDroite {
+    flex-direction: column;
+    background-color: rgb(51, 95, 227);
+    height: 86vh;
+    width: 40vw;
+    }
+
+.zoneBas{
+    flex-direction: column;
+    background-color: yellow;
+    height: 15vh;
+    width: 60vw;
+}

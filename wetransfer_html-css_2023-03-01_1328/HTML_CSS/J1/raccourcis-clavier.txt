@@ -1,0 +1,12 @@
+Raccourcis :
+
+    Controle + S : sauvegarder
+    Contrôle + Z : revenir en arrière
+    Contrôle + C : copier
+    Contrôle + X : couper
+    Controle + V : coller
+    Contrôle + F : rechercher du texte dans une page
+    Controle + A : sélectionner tout le contneu d'une page
+
+    Plusieurs lignes + tabulation : indentation d'un cran 
+    Plusieurs lignes + shift + tabulation : retour en arrière d'un cran

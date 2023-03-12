@@ -1,0 +1,50 @@
+https://www.w3schools.com/css/css_selectors.asp
+
+En CSS, il y a trois sélecteurs basiques.
+
+Le premier, c'est le nom de l'élément que l'on veut sélectionner :
+
+    h2 {
+
+    }
+
+    p {
+
+    }
+
+    body {
+
+    }
+
+Quand on sélectionne un élément de cette manière, on sélectionne l'ensemble des éléments de ce type.
+
+    Ex : 
+
+        h2 {
+            color: blue;
+        }
+
+        Va rendre bleu le texte de l'ensemble des h2.
+
+
+
+Le deuxième, c'est le sélecteur par ID.
+
+On peut sélectionner un élément par son ID avec le symbole # suivi de l'id de l'élément.
+
+    Ex : 
+
+        #titre1 {
+            color: red;
+        }
+
+
+Le troisième, c'est le sélecteur par classe.
+
+On peut sélectionner un groupe d'éléments par leur classe avec le symbole . (point) suivi du nom de la classe.
+
+    Exemple :
+
+        .titre {
+            color: orange;
+        }

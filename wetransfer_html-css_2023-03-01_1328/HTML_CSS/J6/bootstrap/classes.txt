@@ -1,0 +1,16 @@
+On a vu que Bootstrap fonctionne avec des classes que l'on assigne à nos éléments.
+
+Par exemple, pour créer un container sans marge, on a utilisé container-fluid
+             pour créer un rang, on a utilié row
+             pour créer une colonne, on a utilisé col
+
+Pour le reste, c'est le même principe :
+
+    Padding
+    Margin 
+    Borders 
+    Flex
+    Float 
+    ...
+
+    On va utiliser des classes créées par Bootstrap.

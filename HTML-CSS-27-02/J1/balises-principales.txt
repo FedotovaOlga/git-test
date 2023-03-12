@@ -1,0 +1,136 @@
+Section <section></section> :
+
+    Nous permet de créer des zones de contenu à l'intérieur 
+    d'un Main.
+
+    Leur but est de rassembler plusieurs éléments de contenu 
+    différent.
+
+Article <article></article> :
+
+    Nous permet de créer une zone de contenu. Son but est de contenir 
+    des informations, mais de créer un bloc.
+
+
+Titres : de <h1></h1> à <h6></h6>
+
+    Les titres nous permettent de créer des titres pour des zones de 
+    contenu.
+
+    Ils ont une taille par défaut, mais on ne va jamais se baser sur 
+    cette taille pour les choisir.
+
+    Les titres vont de h1 à h6 pour une question de hiérarchie :
+
+        h1 : Le titre de la page (1 seul par page)
+
+        h2 : Les titres des sections 
+
+        h3 : Les titres des articles 
+
+        ...
+
+    On se base seulement sur l'importance d'un titre pour savoir 
+    lequel choisir : on pourra toujours modifier sa taille après.
+
+    C'est important pour SEO de choisir les bons titres afin 
+    que les navigateurs puissent bien lire la page.
+
+    (SEO : Search Engine Optimized : votre référencement sur les 
+    moteurs de recherche)
+
+Paragraphe <p></p> :
+
+    Nous permet de créer des paragraphes : du texte long.
+
+    Sur VScode : LoremNOMBRE, on appuie sur entrée, et notre texte 
+    est créé.
+
+Image <img> : Une balise simple 
+
+    Elle a besoin d'un attribut (une indication / valeur) src="" pour source.
+
+    Cet attribut src aura besoin du chemin de l'image : 
+    son fichier et le chemin d'accès -> où trouver l'image
+
+    <img src="image.jpg">
+
+    Une image peut avoir un attribut alt="", qui indique le texte à 
+    afficher si on arrive pas à récupérer l'image.
+
+    Peut avoir un attribut width="" qui indique sa largeur (et qui 
+    est interprété en pixels). ex: width="200"
+
+    Peut avoir un attribut height="" qui indique sa hauteur (et qui 
+    est interprété en pixels). ex: height="200"
+
+    Pour width et height : on écrit pas px car c'est déjà interprété 
+    comme ceci.
+
+
+Liens <a></a> :
+
+    Une balise double.
+
+    À ne pas confondre avec <link> qui permet de relier un fichier 
+    à notre page html.
+
+    Ils doivent avoir un attribut href=""
+
+        href : HyperText Reference : une référence externe
+
+        La valeur de l'attribut href désigne l'endroit où on veut 
+        aller.
+
+    Si on veut ouvrir un lien dans un nouvel onglet, on doit lui 
+    rajouter l'attribut target="_blank"
+
+        <a href="mapage.html" target="_blank">Ma Page</a>
+
+    Pourquoi c'est une balises double ?
+
+        Parce qu'on peut mettre du contenu à l'intérieur.
+
+        Par exemple : 
+
+            Une affichette de produit, avec photo, titre, description,
+            peut être un lien vers le produit, peu importe l'endroit 
+            sur lequel on clique.
+
+
+Menus de navigation : <nav></nav>
+
+    La balise double <nav></nav> nous sert à créer des menus de 
+    navigation.
+
+
+Les listes <ol></ol> <ul></ul> :
+
+    Il y a deux types de listes en HTML :
+
+        Les listes ordonnées (classement)
+
+        Les listes non-ordonnées (sans classement)
+
+    Dans une liste, on peut insérer un <li></li>, un List Item.
+
+    Un <li></li>, c'est un élément de notre liste.
+
+    Pour créer une liste ordonnée :
+
+        <ol>
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+        </ol>
+
+    Pour créer une liste non-ordonnée :
+
+        <ul>
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+        </ul>
+
+    On peut créer des listes imbriquées :
+
+        Une liste dans laquelle un élément ou plus est lui-même 
+        une liste.

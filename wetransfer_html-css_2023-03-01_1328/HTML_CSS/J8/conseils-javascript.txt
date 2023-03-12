@@ -1,0 +1,169 @@
+Plutôt que de désepérer parce que JavaScript (front-end) va être dur, il faut plutôt en profiter 
+pour assimiler, ou commencer à assimiler, les concepts de base de la programmation (qu'on retrouvera 
+en Python, PHP, C++, ou tout autre langage que html et css).
+
+- Variables :
+
+    En JS, elles sont créées d'une manière très complexe pour des débutants.
+
+    Dans les autres langages, ce sera plus simple.
+
+    Ce qu'il faudra retenir : 
+
+        Les variables sont des endroits, que vous créez dans votre ordinateur, et qui 
+        servent à contenir des valeurs.
+
+        age = 12;
+        phraseAccueil = 'Bonjour tout le monde';
+
+
+- Boucles : 
+
+    Ce qu'il faudra retenir :
+
+        Un moyen d'exécuter du code plusieurs fois d'affilée, soit :
+
+            Jusqu'à ce qu'on ai atteint une condition d'arrêt (boucle while)
+
+                Par exemple, dans un jeu vidéo , pour une partie de 10 minutes.
+
+                    Créer une variable 'tempsRestant'.
+
+                    Initialiser tempsRestant = durée de la partie.
+
+                    Avant le départ de la partie
+                        
+                        tempsRestant = 10 (minutes) * 60 (secondes) = 600.
+
+                    On commence la partie...
+
+                        Toutes les secondes, on va enlever 1 à tempsRestant.
+
+                    Tant que le temps n'est pas écoulé, on laisse le jeu se continuer.
+
+                    Tant que tempsRestant n'est pas égal à 0, on continue la partie.
+
+                    Une fois que tempsRestant est égal à 0 :
+
+                        Le temps est écoulé, on termine la partie.
+
+            
+            Boucles for :
+
+                Imaginez 1 type d'action : 
+
+                    Par exemple, un fusil tire 1 balle.
+
+                    Pour un fusil qui tire en rafale :
+
+                        Le fusil va tirer trois balles.
+
+                        Mais, qu'est-ce que le fait de tirer 3 balles ?
+
+                            C'est le fait de répéter 3 fois l'action 'le fusil tire une balle'.
+
+                Une boucle 'for', c'est quand on veut répéter une action un nombre de fois que l'on
+                connaît à l'avance.
+
+                À la différence d'une boucle while qui attendait une condition d'arrêt, une boucle 'for'
+                sait à l'avance le nombre de fois qu'elle devra s'exécuter.
+
+
+            En réalité, la plus grande différence entre une boucle 'while' et une boucle 'for', c'est la 
+            vitesse.
+
+            Pourquoi ?
+
+                Une boucle 'while', avant de répéter une action, regarde à chaque fois si la condition 
+                d'arrêt est remplie ou non. Donc, si on répète 500 fois une action, la boucle 'while'
+                va poser 500 fois la question de savoir si la condition est remplie ou pas à l'ordinateur.
+
+                Une boucle 'for' connaît à l'avance le nombre de fois qu'elle devra s'exécuter. On a donc,
+                pour le même nombre de répétitions (ici 500), 500 questions en moins à poser à l'ordinateur.
+
+                    
+
+            Jusqu'à ce qu'on ai fait l'ensemble des itérations voulues à l'avance (boucle for)
+
+            (itération / itérer : réaliser une même action plusieurs fois)
+
+
+- Conditions :
+
+    If / Else 
+
+    On dit à l'ordinateur :
+
+        Si quelque chose est comme ceci : fait ça
+
+        Sinon : fait ça
+
+    Else if :
+
+        Une condition intermédiaire. Ça nous sert à prévoir plusieurs cas dans un seul bloc de condition.
+
+    Exemple :
+
+        if (a < 2) {
+            //
+        } else if (a < 5) {
+            //
+        } else if (a < 10) {
+            //
+        } else {
+            
+        }
+
+    Ce qu'il faudra retenir :
+
+        On dit à l'ordinateur d'effectuer telle ou telle tâche en fonction de conditions 
+        à remplir ou non (pourquoi non ? car on peut dire qu'on veut l'inverse de la condition à 
+        remplir avec un point d'exclamation).
+
+            if !(a < 2) {
+                //
+            }
+
+            Cette condition ne s'exécuterai que si 'a' n'est PAS inférieur à 2.
+
+    Une condition nous sert à créer un bloc de condition :
+
+        Un ensemble de contion dont seule la première condition remplie s'exécutera.
+
+    Dans un bloc de condition, on peut avoir :
+
+        - un 'if' seul
+        - un 'if' et un 'else'
+        - un 'if' avec un ou plusieurs 'else if'
+        - un 'if' avec un ou plusieurs 'else if' et un 'else'
+
+    La seule partie obligatoire d'un bloc de condition est le 'if'. Tout le reste est facultatif.
+
+- Fonctions :
+
+    Un moyen d'exécuter du code plusieurs fois.
+
+    Exemple :
+
+        Si on veut additioner une liste de nombres :
+
+            On ne va pas, à la main, additionner tous les nombres.
+
+            On ne va pas réécrire plusieurs fois le même code pour additioner des nombres.
+
+            On va faire une fonction, qui prend en paramètre une liste de nombres, qui additionne ces nombres 
+            tant qu'il y en a dans la liste, et qui retourne le résultat.
+
+    Ce qu'il faudra retenir :
+
+        Un fonction nous permet d'écrire du code 1 fois et de l'exécuter à volonté.
+
+        Un paramètre : une valeur dont la fonction a besoin pour s'exécuter.
+
+            Exemple : 
+
+                Pour une fonction qui additionne des nombres présents dans une liste, la fonction a besoin de 
+                la liste.
+
+        'Retourne' : la fonction nous renvoie la valeur, après son exécution, afin que l'on puisse 
+        garder cette valeur en mémoire et l'utiliser dans notre programme.

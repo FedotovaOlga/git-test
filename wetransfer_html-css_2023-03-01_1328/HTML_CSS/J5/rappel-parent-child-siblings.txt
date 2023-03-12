@@ -1,0 +1,29 @@
+Parent : parent
+Child : enfant
+Sibling : frère/soeur
+
+Les éléments HTML peuvent être représentés sous la forme d'un arbre généalogique.
+
+Body
+    Header
+    Main
+    Footer
+
+Ici, Header, Main et Footer serait les trois éléments enfants du Body.
+
+Body serait l'élément parent de Header, Main et Footer.
+
+Header, Main et Footer serait des éléments 'siblings' frères/soeurs.
+
+
+Les éléments enfants d'un élément HTML sont ceux créés directement en son sein.
+
+Body
+    Header
+    Main
+        Section
+    Footer
+
+Ici, la section ne serait pas un élément enfant du Body : ce serait un enfat du Main.
+     Le Body serait l'élément grand-père (linteraction avec les éléments autres que 
+     parent, enfant et frère/soeur se feront à l'aide de JavaScript).

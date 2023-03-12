@@ -1,0 +1,43 @@
+On crée une container flex en ajoutant la classe d-flex à une div.
+
+Si on veut que notre div ne devienne flex qu'à un moment donné, on peut utiliser :
+
+    Syntaxe :
+    d-breakpoint-flex
+
+    Pratique :
+    d-md-flex : la div ne deviendra flex que si l'écran est au moins d'une taille moyenne
+
+
+De quoi à besoin un container flex ?
+
+    1 direction (rang ou colonne)
+
+        Syntaxe:
+        flex-direction
+
+        Pratique:
+        flex-row
+        flex-column-reverse
+        
+    
+    Positionnement des éléments:
+
+        Syntaxe:
+        propriété + dernier mot de la valeur
+        justify-content: space-around;
+
+        Pratique :
+        justify-content-around
+        justify-content-center
+        justify-content-start
+
+
+    Alignement vertical des éléments;
+
+        Syntaxe:
+        propriété + dernier mot de la valeur
+        align-items: flex-start;
+
+        Pratique:
+        align-items-start

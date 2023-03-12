@@ -1,0 +1,87 @@
+1 - Présentation d'un projet professionnel
+
+    Pour vous : site internet
+
+2 - Rendre un dossier professionnel :
+
+    Comme un gros formulaire, que l'État vous transmet, et 
+    dans lequel vous allez, point par point, montrer ce que vous 
+    avez fait en tant que développeur.
+
+3 - Les évalutaion passées en formation :
+
+    Pas un contrôle continu.
+
+    Des notes pour vous-même, pour vous situer.
+
+    Handicapant si on ne les fait pas, mais si on les faits et qu'on
+    a une mauvaise note : pas grave.
+
+4 - Un entretien avec le jury
+
+    C'est le passage du diplôme.
+
+Point à valider durant le passage du jury :
+
+
+- Maquetter une application :
+
+    Imaginez une maquette, comme une capture d'écran de votre 
+    futur site.
+
+    Vous pouvez utiliser Figma : un logiciel de maquettage 
+    gratuit.
+
+    On fait des maquette pour faire valider un projet 
+    par un client avant de commencer à développer.
+
+
+- Réaliser une interface utilisateur statique et adaptable :
+
+    Faire des pages d'un site, et que ces pages soient 
+    responsive.
+
+    Responsive : le fait que notre site s'adapte à plusieurs 
+    tailles d'écran.
+
+
+- Réaliser une interface utilisateur dynamique :
+
+    Une IUD (Interface utilisateur dynamique) :
+
+        Une page dans lequel le contenu va changer, mais la 
+        structure reste la même.
+
+        Ex : page d'accueil Youtube, une page catalogue 
+        d'un site e-commerce.
+
+    Se fait en communiquant avec une base de données, et en 
+    récupérant les informations à afficher.
+
+
+- Développer les composants d'accès aux données :
+
+    Se connecter à votre base de données, récupérer des 
+    informations, en supprimer, en modifier, en insérer...
+
+
+- Développer la partie back-end :
+
+    Le code qui va tourner sur votre serveur :
+
+        Auth : Authentification & Autorisation
+
+            Est-ce que la personnes est bien qui elle dit qu'elle
+            est ?
+
+            Est-ce que la personne a le droit d'accéder à tel 
+            endroit du site ? (ex : formulaire de connexion)
+
+- Gestion de contenu / e-commerce :
+
+    Pouvoir créer des produits / du contenu depuis votre site 
+    (avec un formulaire).
+
+
+
+    

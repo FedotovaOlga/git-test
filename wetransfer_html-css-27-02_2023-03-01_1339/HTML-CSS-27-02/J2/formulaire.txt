@@ -1,0 +1,217 @@
+https://www.w3schools.com/html/html_forms.asp
+
+Les formulaires, ce sont les éléments qui nous permettent de 
+transmettre des données.
+
+Ils nous permettent d'effecter des requêtes HTTP depuis une page de 
+notre site web.
+
+On créé un formulaire avec la balise <form></form>.
+
+Un formulaire a besoin de deux attributs obligatoires :
+
+    action 
+    method
+
+Action : action="page.html"
+
+    L'endroit où l'utilisateur et les données vont être envoyées 
+    par le formulaire.
+
+    Le bouton du formulaire, au clic, nous envoie sur une nouvelle
+    page (qui peut être la même page, qui se recharge).
+
+    On a besoin d'action, pour que les données ne soient pas 
+    envoyées dans le vide.
+
+Method : method="GET", method="POST"
+
+    La façon dont les données peuvent être envoyées.
+
+    Un formulaire nous permet des requêtes HTTP de type GET ou POST.
+
+    Ces deux types de requêtes ont la même finalité :
+
+        Les données du formulaire sont envoyées à l'administrateur 
+        du site.
+
+        La différence majeure :
+
+            Les données envoyées avec une requête GET vont 
+            apparaître dans l'URL.
+
+            Les données envoyées avec POST vont être cachées.
+
+        On va utiliser une requête POST dès que les informations 
+        doivent être cachées.
+
+        En réalité, même si un formulaire nous permet de faire des requêtes 
+        GET, on va rarement les utiliser.
+
+        Une requête GET a pour but initial de récupérer des informations 
+        déjà créées, alors qu'une requête POST a pour but de poster 
+        de nouvelles données dans notre base de données.
+
+
+-------------------------------------------------------
+Les éléments de formulaire
+-------------------------------------------------------
+
+Input : <input>
+
+    Un élément qui permet à l'utilisateur de notre site 
+    de nous transmettre des données.
+
+    Un input a besoin d'un type.
+
+    Il peut être de type :
+
+        text -> du texte à afficher 
+        password -> le texte va être caché 
+        email -> l'input soit une adresse e-mail valide 
+
+        file -> transmette un fichier
+
+        submit -> permet d'envoyer le formulaire
+
+        range -> permet de sélectionner une valeur entre une 
+                 valeur minimale et une valeur maximale
+
+                 Cet input a besoin de trois attributs :
+                    min="" -> la valeur minimale
+                    max="" -> la valeur maximale
+                    step="" -> l'écart entre chaque étape
+
+                Il peut avoir un attribut facultatif value=""
+                qui sera la valeur affichée par défaut.
+
+        radio -> plusieurs possibilités, une seule réponse possible
+                 
+                 Pour que cet input fonctionne, on en crée autant 
+                 que nécessaire, et on les regroupe en leur donnant 
+                 le même attribut name="".
+
+                 C'est à nous de renseigner la value des inputs.
+
+        checkbox -> plusieurs possibilités, plusieurs réponses possibles
+
+                    Pour que cet input fonctionne, on en crée autant 
+                    que nécessaire, et on les regroupe en leur donnant 
+                    le même attribut name="".
+
+                    C'est à nous de renseigner la value des inputs.
+
+        reset ->  Réinitialiser le formulaire 
+                  Même structure que 'submit' : il va créer un bouton
+
+        date -> Nous permet de choisir une date
+                Date au format YYYY-MM-JJ
+                A besoin d'attributs :
+                    min=""
+                    max=""
+                    value="" (valeur par défaut)
+
+        hidden -> caché 
+                 A besoin d'une value si on veut qu'il serve à 
+                 quelque chose.
+
+    Chaque input a besoin d'un attribut name="" :
+
+        C'est le nom sous lequel on va pouvoir le récupérer, 
+        quand on va récupérer les données.
+
+        Cet attribut name="" est obligatoire si on veut envoyer 
+        des données.
+
+    On peut ajouter un attribut required :
+
+        Il va apporter une aide à l'utilisateur, pour tenter 
+        de l'obliger à remplir le champ.
+        ('tenter' car tout code Front est modifiable)
+
+    Un input peut avoir un attribut placeholder="" :
+
+        placeholder="Votre nom"
+
+        Du texte affiché à l'intérieur de l'input, tant que l'input 
+        est vide.
+
+    Les input, select et textarea peuvent avoir un attribut value="" :
+
+        C'est la valeur qui va être transmise :
+
+            On ne va pas l'utiliser sur tous les champs, mais :
+
+            Seulement sur les champs où l'utilisateur ne peut 
+            pas écrire lui-même la valeur qu'il veut transmettre :
+
+            Par exemple :
+
+                - Bouton envoyer : peut juste cliquer 
+
+                - Cases à cocher : peut juste cocher les cases
+
+            En bref, on indique nous-même la value, quand l'utilisateur 
+            peut juste cliquer, mais pas écrire.
+
+            La value va être cachée à l'utilisateur, sauf celle 
+            d'un input de type submit.
+
+
+Textarea : <textarea></textarea>
+
+    Créée une zone de texte longue, dans laquelle l'utilisateur 
+    peut nous transmettre un message.
+
+    Une textarea a deux attributs obligatoires :
+
+        cols="" -> sa largeur, en nombre
+
+        rows="" -> sa hauteur, en nombre 
+
+        Ses valeurs sont par défaut : on peut agmenter ou réduire 
+        la taille de la textarea avec la souris, en étirant l'angle
+        bas-droit
+
+
+Select : <select></select>
+
+    Permet de créer une liste déroulante, dans laquelle l'utilisateur
+    pourra choisir une option.
+
+    Option : <option></option>
+
+        Crée une option de sélection dans la liste déroulante.
+
+        Par défaut, la première option s'affiche directement.
+
+        On peut ajouter un attribut 'selected' à une autre option 
+        pour la sélectionner elle par défaut, et pas la première.
+
+
+Label : <label></label>
+
+    Un label, c'est une légende que l'on peut donner à un input.
+
+    Pour un meilleur SEO, on va ajouter un attribut for="" au label,
+    le reliant à l'id de l'input/select/textarea qu'il doit légender.
+
+    (On doit faire attention à ce que l'élément à légender ai bien un 
+    id. Même si on pourrait le penser, le label se relie bien à l'id 
+    d'un élément, pas à son name).
+
+
+Fieldset : <fieldset></fieldset>
+
+    Une fieldset, c'est une zone de contenu que l'on va créér 
+    dans notre formulaire, afin de pouvoir le délimiter 
+    en plusieurs parties, pour améliorer la lisibilité.
+
+    Un fieldset peut contenir une balise <legend></legend>, 
+    à placer juste à la suite de la balise ouvrante <fieldset>,
+    qui nous permet de donner une légende à notre zone de contenu.
+
+
+On peut ajouter un attribut 'disabled' à un champ du formulaire :
+
+    Le champ s'affichera, mais on ne pourra pas le remplir.

@@ -1,0 +1,18 @@
+Le Body, c'est l'ensemble des informations qui vont être affichées 
+dans le navigateur.
+
+Un Body est généralement constitué de trois zones principales.
+
+    <body></body>
+
+Un Header <header></header> : le bandeau d'affichage haut de notre 
+site, comprend les informations principales (logo, menu...)
+
+Un Main <main></main> : la zone de contenu spécifique à une page.
+
+Un Footer <footer></footer> : le bandeau d'affichage bas, 
+comprend les informations secondaires.
+
+Sur un site, Header et Footer seront les mêmes sur chaque page.
+
+Le contenu qui change, sur une page, ce sera le Main.

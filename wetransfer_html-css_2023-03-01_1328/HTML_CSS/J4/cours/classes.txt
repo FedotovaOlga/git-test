@@ -1,0 +1,11 @@
+https://www.w3schools.com/html/html_classes.asp
+
+Si un ID permet de sélectionner un élément, comment en sélectionner plusieurs ?
+
+C'est pour répondre à ce problème que les Classes ont été créées.
+
+Les Classes permettent de créer des groupes d'éléments.
+
+Pour ajouter une Classe à un élément, on utilise l'attribut class="...".
+
+Un élément peut avoir plusieurs classes, et plusieurs éléments peuvent avoir la même.

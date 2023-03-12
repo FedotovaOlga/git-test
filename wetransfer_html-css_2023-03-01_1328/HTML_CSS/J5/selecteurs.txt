@@ -1,0 +1,55 @@
+https://www.w3schools.com/cssref/css_selectors.php
+
+.class1.class2      Sélectionne les éléments ayant la classe 1 et 2 comme attribut
+.class1 .class2     Sélectionne les éléments class2 enfants d'un élément class1
+
+element.class       
+    p.class1        Sélectionne tous les <p> ayant l'attribut class1
+
+element > element   Sélectionne tous les <p> ayant une <div> comme élément parent
+    div > p
+
+element element     
+    div p           Sélectionne tous les <p> étant à l'intérieur d'une <div>
+
+element + element
+    ul + p         Sélectionne tous les <p> placés juste après une <ul>
+
+element ~ element
+    p ~ ul         Sélectionne tous les <ul> précédés par une <p>
+
+Une pseudo-classe, c'est une 'fait' sur un élément, qui va nous permettre de le sélectionner.
+Une pseudo-classe peut être en rapport avec :
+    L'état de l'élément (est-ce qu'il a été cliqué, est-ce que la souris le survole...)
+    L'arbre généalogique de l'élément (premier enfant, dernier enfant...)
+    Le contenu d'un élément (première lettre, première ligne...)
+
+:active             Pour appliquer du style à un élément si il a été cliqué
+    p:active
+    class1:active
+    #id:active
+
+:hover              Pour appliquer du style à un élément si la souris le survole
+    p:hover
+    class1:hover
+    #id:hover
+
+:first-child        Sélectionne le premier élément enfant
+    p:first-child
+    .class1:first-child
+    #id.first-child
+
+:last-child         Sélectionne le dernier élément enfant
+
+::first-letter
+    p::first-letter     Sélectionne la première lettre de chaque <p>
+
+::first-line
+    p::first-line      Sélectionne la première ligne de chaque paragraphe.
+
+a:visited           Sélectionne les liens ayant été visités
+
+
+
+:           Quand on sélectionne un élément en entier
+::          Quand on sélectionne une partie d'un élément

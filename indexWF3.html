@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+<body>
+    <header></header> <!--logo, menu etc.-->
+    <main>
+        <section></section> <!--différents éléments de contenu. Main peut avoir plusieurs sections, section peut avoir plusieurs articles.-->
+            <article>
+                <h1></h1> <!--ça va de h1 à h6, ce sont des titres. P.ex. h1 titre de la page, h2 titre de section, h3 titre de l'article, etc.-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> <!--écrire Lorem8 nombre de mots voulu et entrée-->
+<img src="" alt="" width="200" height="200"> <!--on n(écrit pas la valeur en pixel car c'est déjà compris)-->
+    </article> <!--pour créer un bloc d'info/contenu-->
+    <a href="mapage.html" target="_blank">Ma page</a> <!--ne pas confondre avec link, il est dans le head pour relier avec css par ex.-->
+<nav></nav> <!--pour créer des menus de navigation-->   
+<b></b> <!--gras-->
+<u></u> <!--souligner-->
+<i></i> <!--affiche le texte différemment, par défaut en italique-->
+
+<table>
+    <tr> <!-- = ligne = table row (rang)-->
+        <th> <!--header titre-->
+        </th>
+        <th>  
+        </th>
+        <th> 
+        </th>
+    </tr>
+
+    <tr>
+<td> <!--table data le remplissage des cellules-->
+
+</td>
+    </tr>
+</table>
+
+<div></div> <!--mettre le contenu à l'intérieur-->
+<span></span> <!--entourer une partie de paragraphe pour mettre en couleur par ex.-->
+<!--role=button : c'est pour que la fleche se transforme en main-->
+<form action="page.html"></form> <!--c'est pour créer un formulaire-->
+method="GET" pour afficher dans URL les données déjà connues avant (nom de produit par ex.)
+method="POST" pour cacher des informations nouvelles du formulaire (nom mrénom par ex.)
+<input type="   "> <!--type: text; email, password, file, submit (permet d'envoyer le formulaire)-->
+chaque input a besoin d'un attribut name="" pour pouvoir récupérer les données
+Un autre attribut de input qu'on peut mettre c'est required (juste ajouter le mot)
+placeholder="Votre nom" texte affiché à l'intérieur de input
+value="Envoyer" (dans submit) (seulement là où l'utilisateur ne peut pas écrire la valeur qu'il veut transmettre)
+pareil = cases à cocher, cliquer... Elle est caché sauf dans trucs de type submit
+
+input de type range = pour sélectionner une valeur entre min et max
+elle a 3 attributs:
+min=""
+max=""
+step=""ecart entre étapes
+
+input radio : plusieures possibilités, une seule réponse; le même attribut name + value en chiffres
+input checkbox: plusieures possiblitiés et réponses; le même name, modifier id et for car id c'est unique (_Checkbox par ex.)
+
+id = atribut qui permet de  sélectionner un élément d'une manière unique
+
+<a href="...htmldieze..."></a>
+
+<label for=""></label>
+Nom(and(symb)nbsp;:
+
+<fieldset></fieldset> entoure tout (label et inputs)
+<legend></legend> nom pour la zone de contenu, dans fieldset
+
+<nav>ici liens a href</nav>
+
+<textarea name="" id="" cols="30" rows="10"></textarea> zone de texte longue
+<br> pour bien placer le label; en gros c'est le retour à la ligne
+
+<select name="" id="">
+    <option value="" selected></option>
+</select> créer une liste déroulante avec des options (par défaut c'est la premiere option qui s'affiche
+mais on peut ajouter selected pour que ça soit une autre, on ajoute où on veut)
+disabled = dans input type etc, à la fin
+
+reset (type d'input) (pour tout reinitialiser)
+date pour choisir date min max(value = date par défaut; et pareil pour range) YYYY-MM-JJ
+hidden = caché (input pour php) Il a besoin de value si on veut qu'il serve à qch
+
+<img src="./assets/img/nomimage.jpg" alt="">
+./ = on reste dans le même dossier
+dossier/ = on avance
+../ = on recule d'un dossier
+
+attribut class = pour styliser; 1 élément peut avoir plusieures classes, 1 classe peut avoir plusieurs éléments
+<h1 id="titre1" class="titre class1">Titre</h1>
+un element peut avoir plusieurs classes; et id aussi
+
+<hr> balise simple, horizontal rule, pour séparer deux éléments
+
+<video width="" height="" controls >
+<source src="moovie.pm4" type="video/mp4">
+<source src="moovie.ogg" type="video/ogg">
+Ici on peut écrire le texte qui s'affichera si aucune des sources n'a marché.
+</video>
+
+<source> src type (attributs) si y a plusieurs sources, le navigateur affichera la première qu'il peut (et une seule)
+on peut supprimer src dans la balise vidéo, et créer balise source à part,
+si on veut pourvoir mettre plusieurs sources, pour laisser plus de chances
+au naigateur.
+à l'intérieur de la balise vidéo, apres les 
+
+<iframe src="" title=""></iframe>
+permet d'afficher des documents
+inline frame (встроенная, или плавающая рамка)
+src le chemin; title pour SEO ou personnes malvoyantes, il s'affiche pas
+frameborder on enleve, on va utiliser des trucs de style de css
+
+Pour développer (chrome) :
+lighthouse
+DevTools
+Iphone SE pour verifier sur teleph
+Elements: code source, on peut selectionner les elements et taille d'écran
+console: affiche du JavaScript
+Sources: différents ressources, notamment fichier CSS
+Network : requetes http
+=> Lighthouse!
+
+Lighthouse: génére des rapport sur notre site
+Progressive web app: moins important, peut être décoché
+
+<footer></footer> <!--header et footer sont les mêmes sur chaque page du site web-->
+</body>
+</html>
+
+
+QUESTIONS
+
+est-ce que label doit etre avant ou apres input dans le formulaire?
+réponse - avant (mieux pour SEO)
+vh vw css ?
+rem https://www.8host.com/blog/edinicy-izmereniya-css-rem-vs-em/ ?
+bordures  em?

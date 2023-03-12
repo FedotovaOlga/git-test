@@ -1,0 +1,70 @@
+En HTML et CSS, quand vous entendrez 'Display', cela veut dire :
+    Positionnement.
+
+Un élément HTML a deux types de Display de base :
+
+    display: inline;
+
+    display: block;
+
+
+Display Inline :
+
+    Un élément à Display Inline autorise d'autres éléments à 
+    s'afficher sur la même ligne que lui.
+
+    Par exemple, quand on créer une Nav avec des Liens à l'intérieur :
+
+        <nav>
+            <a></a>
+            <a></a>
+            <a></a>
+        </nav>
+
+    Les liens sont affichés sur la même ligne : ils ont donc, par défaut,
+    un Display Inline.
+
+
+Display Block :
+
+    Un élément à Display Block ne s'affichera pas sur la même ligne 
+    que l'élément précédant, et n'autorise pas les éléments suivants 
+    à s'afficher sur la même ligne que lui.
+
+    Par exemple, les Paragraphes ont un Display Block :
+
+        <p>Texte</p>
+        <p>Texte</p>
+        <p>Texte</p>
+    
+        Le code ci-dessus créera 3 rangs d'éléments.
+
+    On peut contrer les éléments à Display Block en utilisant :
+
+        margin: auto;
+
+    Ça va créer des marges automatiques (égales) sur la droite, comme 
+    sur la gauche.
+
+
+Un troisième type de Display 'de base' existe :
+
+    inline-block 
+
+
+Display Inline-Block :
+
+    Un élément à Display Inline-Block, aura les mêmes propriétés 
+    qu'un élément à Display Inline, sauf que il pourra aller à la 
+    ligne s'il arrive à la fin de l'écran.
+
+
+Comment modifier / assigner les display d'un élément :
+
+    (sélecteur) {
+        display: inline;
+    }
+
+    (sélecteur) {
+        display: block;
+    }

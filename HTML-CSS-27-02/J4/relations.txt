@@ -1,0 +1,84 @@
+En HTML, les éléments ont, ou peuvent avoir, des relations entre eux.
+
+On peut classer ces relations en trois catégories :
+
+    - les éléments Parents 
+
+    - les éléments Enfants 
+
+    - les éléments Frères
+
+
+Qu'est-ce qu'un élément Parent ?
+
+    C'est un élément qui contient directement un autre élément.
+
+    Par exemple, quand on crée un Body :
+
+        <body>
+
+            <header></header>
+
+            <main></main>
+
+            <footer></footer>
+
+        </body>
+
+    '<body></body>' est l'élément Parent du header, du main et du 
+    footer.
+
+    Comme dans la vie, le terme 'Parent' désigne l'élément qui 
+    en contient un autre directement.
+
+    Dans l'exemple ci-dessus, si on ajoutait une Section dans le
+    Main, la Section n'aurait pas le Body comme élément Parent, 
+    mais le Main, puisque c'est le Main qui le contiendrait 
+    directement.
+
+        <main>
+
+            <section></section>
+
+        </main>
+
+
+Les éléments enfants :
+
+    Ce sont les éléments contenus directement dans une zone de 
+    contenu.
+
+
+    Par exemple, quand on crée un Body :
+
+        <body>
+
+            <header></header>
+
+            <main>
+                <section></section>
+            </main>
+
+            <footer></footer>
+
+        </body>
+
+    Header, Main et Footer sont les éléments enfants du Body.
+
+    La Section est un élément enfant du Main.
+
+
+Les éléments Frères :
+
+    Les éléments Frères sont les éléments ayant le même Parent.
+
+    Dans l'exemple ci-dessus, Header, Main et Footer sont des 
+    éléments frères.
+    
+
+À retenir :
+
+    - Les 3 types de relations sont : Parent, Enfant, Frère
+    - Un élément ne peut avoir qu'un seul Parent 
+    - Un élément peut avoir plusieurs enfants 
+    - Un élément peut avoir plusieurs frères

@@ -1,0 +1,227 @@
+https://www.w3schools.com/csS/css3_flexbox.asp
+https://www.w3schools.com/csS/css3_flexbox_container.asp
+https://www.w3schools.com/csS/css3_flexbox_items.asp
+
+
+------------------------------------------------
+------------------------------------------------
+
+INTRO
+
+------------------------------------------------
+------------------------------------------------
+
+
+Flexbox (ou Flex) est un Layout -> une manière de positionner les éléments.
+
+Si on essayait de traduire Flexbox, on pourrait dire 'Boîte qui fait bouger'.
+
+Grâce à Flexbox, on va pouvoir positionner nos éléments où l'on veut sur notre 
+page.
+
+Comment faire cela ?
+
+    En créant un Container (un boîte), dans laquelle on va mettre des Items 
+    (des objets).
+
+
+------------------------------------------------
+------------------------------------------------
+
+CONTAINER
+
+------------------------------------------------
+------------------------------------------------
+
+Pour créer un Container (et ses futurs Items), on utilise la balise <div></div>.
+
+    <div class="container"> <!-- ce sera le container -->
+
+        <div>Item</div>
+
+        <div>Item</div>
+
+        <div>Item</div>
+
+    </div>
+
+Pour créer un Container Flex, on ajoute la propriété 'diplay: flex;' à une Div.
+
+    .container {
+        display: flex;
+    }
+
+On peut déterminer la taille du Container avec les propriétés width et height 
+de la div ayant permit sa création ou laisser une taille vide, et laisser les éléments 
+agrandir le Container au fur et à mesure qu'on en ajoute.
+
+
+------------------------------------------------
+------------------------------------------------
+
+PROPRIÉTÉS D'UN CONTAINER FLEX
+
+------------------------------------------------
+------------------------------------------------
+
+Un Container Flex contient plusieurs propriétés que l'on peut modifier :
+
+
+flex-direction : la direction dans laquelle les éléments sont ajoutés
+
+    column -> verticalement
+
+    row -> horitonzalement (par défaut)
+
+    column-reverse -> verticalement, du bas vers le haut
+
+    row-reverse -> horizontalement, de la droite vers la gauche
+
+    Syntaxe : flex-direction: column;
+
+
+
+flex-wrap : Est-ce que les éléments vont à la ligne s'ils arrivent à la fin du 
+            Container. 
+            Si oui -> cela crée un nouveau rang d'éléments.
+    
+    wrap -> oui, les éléments iront à la ligne
+    nowrap -> non (par défaut)
+    wrap-reverse -> oui, et les éléments seront dans l'ordre inverse
+
+    Syntaxe : flex-wrap: wrap;
+
+
+
+
+flex-flow : un raccourci pour flex-direction et flex-wrap
+
+    Syntaxe : flex-flow: row wrap;
+
+
+
+
+justify-content : de quelle manière seront positionnés les éléments 
+                  (dans leur sens d'ajout - le sens de 'flex-direction')
+    
+    center : au centre
+
+    flex-start : au départ du container (par défaut)
+
+    flex-end : à la fin du container
+
+    space-around : avec autant d'espace les-uns-les-autres, 
+                   et 1/2 espace de chaque côté
+
+    space-between : avec un maximum d'espace les-uns-les-autres,
+                    et 0 espace sur les côtés
+
+    space-evenly : autant d'espace les-uns-les-autres, et 1 espace de chaque côté
+
+
+    Syntaxe : justify-content: center;
+
+
+
+
+align-items : de quelle manière seront alignés les éléments 
+              (dans la direction opposée à leur sens d'ajout)
+
+    center : au centre
+
+    stretch : en prenant tout l'espace (par défaut)
+
+    flex-start : au départ du container
+
+    flex-end : à la fin du container
+
+    baseline : pour mettre la ligne de texte principale des éléments sur la 
+               même ligne
+
+
+
+((( 
+CONSEIL : Ne pas chercher à utiliser align-content, tant que les autres propriétés ne sont 
+pas maîtrisées.
+Plutôt -> align-items avec margin et padding pour repositionner les éléments.
+)))
+
+align-content : positionnement des rangs (dans le sens inverse à l'ajout des 
+                éléments)
+
+    (Différence avec align-items : align-items positionne les éléments dans leur 
+    rang, align-content positionne les rangs dans le Container)
+
+    center : au centre
+
+    stretch : tout l'espace (par défaut)
+
+    space-around : avec autant d'espace les-uns-les-autres, 
+                   et 1/2 espace de chaque côté
+    
+    space-between : avec un maximum d'espace les-uns-les-autres,
+                    et 0 espace sur les côtés)
+    
+    space-evenly : autant d'espace les-uns-les-autres, et 1 espace de chaque côté
+    
+    flex-start : au départ du container
+    
+    flex-end : à la fin du container
+
+
+
+------------------------------------------------
+------------------------------------------------
+
+ITEMS
+
+------------------------------------------------
+------------------------------------------------
+
+
+Les Items d'un Container Flex sont ses éléments enfant, ceux contenus directement 
+dans le Container.
+
+Par exemple : 
+
+    <div class="container"> <!-- le container -->
+
+        <div class="item" id="item1">Cette Div est un Item</div>
+
+        <div class="item">Cette Div est un Item</div>
+
+        <div class="item">
+            Cette Div est un Item
+            <p>
+                Le <p> n'est pas un Item
+            </p>
+        </div>
+
+    </div>
+
+On peut forcer le positionnement d'un Item avec la propriété 'align-self', qui 
+réécrit par-dessus la propriété 'align-items' d'un Container.
+
+Pour que cela fonctionne, on doit bien sélectionner l'Item en question, et non pas le 
+Container.
+
+Les valeurs d'align-self possibles sont :
+
+    auto :  la propriété align-items du Container parent (par défaut)
+
+    stretch : tout l'espace
+
+    center : au centre
+
+    flex-start : en haut du container
+
+    flex-end : en bas du container
+
+    baseline : sur la ligne de texte principale du rang
+
+
+        Syntaxe :
+
+            #item1 {
+                align-self: center;
+            }

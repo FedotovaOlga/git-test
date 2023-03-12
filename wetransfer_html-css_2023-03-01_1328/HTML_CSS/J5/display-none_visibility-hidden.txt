@@ -1,0 +1,15 @@
+Pour cacher / faire dsiparaître un élément de notre page HTML, nous avons deux solutions radicalement 
+différentes.
+
+visibility: hidden;
+
+    Faît 'disparaître' un élément de la page, sans retirer l'espace nécessaire à cet élément.
+
+    'visibility: hidden; rendent l'élément transparent/invisible, mais l'élément est toujours présent. 
+    Il est juste insivible pour nous, mais garde quand même ses dimensions et 
+    est affiché sur la page (c'est juste qu'on ne le voit pas).
+
+
+display: none;
+
+    Supprime un élément de la page.

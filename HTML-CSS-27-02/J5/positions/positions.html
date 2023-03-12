@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<body>
+    <h1>Positions :</h1>
+
+    <h2>Position statique :</h2>
+
+    <style>
+        .static {
+            position: static; /* Pas besoin d'écrire, car par défaut */
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+    <div class="static">
+        Cette div a une position statique.
+    </div>
+
+    <h2>Position relative :</h2>
+
+    <style>
+        .relative {
+            position: relative;
+            left: 50px;
+            top: 20px;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+    <div class="relative">
+        Cette div a une position relative.
+    </div>
+
+    <style>
+        .relativeInverse {
+            position: relative;
+            left: -50px;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    
+    <div class="relativeInverse">
+        Cette div a une position relative.
+    </div>
+
+    <h2>Position absolute :</h2>
+
+    <style>
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+        .item {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="item">
+        </div>
+    </div>
+
+
+    <h2>Position fixed :</h2>
+
+    <style>
+        .fixed {
+            position: fixed;
+            top: 55vh;
+            left: 50vw;
+            background-color: red;
+            width: 10vw;
+            height: 10vh;
+        }
+    </style>
+    
+    <div class="fixed">
+        Cette div a une position fixed.
+    </div>
+
+
+    <h2 style="text-decoration: line-through;">Position sticky :</h2>
+
+    <style>
+        .containerSticky {
+            position: relative;
+            height: 500px;
+        }
+        .boxSticky {
+            position: sticky;
+            top: 50px;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    
+    <!-- Créer un Container n'est pas obligatoire
+        Si on en crée pas, le Container sera le body par défaut -->
+    <div class="containerSticky">
+        <div class="boxSticky">
+            Cette div a une position sticky.
+        </div>
+    </div>
+
+    <div style="height: 100vh;"></div>
+    
+</body>
+</html>

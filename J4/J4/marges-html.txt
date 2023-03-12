@@ -1,0 +1,11 @@
+En HTML, les éléments ont, ou peuvent avoir, une marge déjà existante.
+
+Par exemple, les éléments ne seront pas collés aux côtés de l'écran, 
+mais il y aura une marge entre ces éléments et les bords de l'écran.
+
+Pour réinitialiser ces marges, on peut utiliser le sélecteur 
+universel '*', pour assigner à l'ensemble des éléments une marge de 0.
+
+* {
+    margin: 0;
+}

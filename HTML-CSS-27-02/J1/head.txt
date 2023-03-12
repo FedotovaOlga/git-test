@@ -1,0 +1,32 @@
+https://www.w3schools.com/html/html_head.asp
+
+Le Head, ce sont les informations relatives à la page, que l'on 
+envoi au navigateur, mais qui ne doivent pas être affichées : 
+ce sont des informations sur le contenu.
+
+Un Head peut contenir plusieurs balises :
+
+    <meta> : des informations, qu'on indique au navigateur 
+    <title> : le titre de la page visitée
+    <link> : lier des fichiers à notre page (ex : relier un fichier css)
+    <script> : insérer du code Javascript
+    <style> : insérer du code CSS
+
+
+Un Head a besoin de deux balises obligatoires.
+
+    Une balise <meta> qui va régler le ratio du navigateur.
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    Une balise <title> qui indique le titre de la page.
+
+    <title>Accueil</title>
+
+
+Une balise, pas obligatoire, mais très recommandées :
+
+    <meta charset="UTF-8">
+
+    En bref : on accepte les accents
+

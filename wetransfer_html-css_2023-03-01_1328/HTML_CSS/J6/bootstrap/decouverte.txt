@@ -1,0 +1,13 @@
+Bootstrap permet une personnalisation minime.
+
+En revanche, on peut très bien (et on en est-même presque obligé) utiliser du CSS ET Bootstrap.
+
+Pourquoi ?
+
+    Parce que Bootstrap créée des composants, et des classes CSS, mais son but n'est pas de réaliser du 
+    CSS poussé.
+
+    Quel est son but ?
+
+        Nous permettre de créer rapidement un site joli que l'on peut améliorer avec un peu de CSS 
+        additionnel.

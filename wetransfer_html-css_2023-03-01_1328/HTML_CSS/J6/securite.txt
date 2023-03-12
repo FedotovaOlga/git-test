@@ -1,0 +1,49 @@
+En règle général, la sécurité d'un site, c'est :
+
+    Faire en sorte qu'on ne puisse pas injecter de code dans notre site.
+
+Comment se font (en général) les injections de code ?
+
+    Via les inputs des formulaires.
+
+        Un input, c'est des caractères que l'on va lire.
+
+        Des caractères, ça peut être 
+            Injections XSS -> du code javascript qui tourne sur le front-end
+                              peut envoyer des requêtes à notre back-end 
+                              si notre site est compromis, la probabilité que l'attackeur ai réussi à accéder
+                              à notre backend existe
+                <script></script>
+                    L'attackeur peut accéder à notre machine
+                        Nous mettre des virus
+                            ex : 
+                                Ransomware -> données cryptées, rançon pour les récupérer
+                                Spyware -> le hackeur est là, voit tout ce que vous faîtes, et vous ne le 
+                                        savez pas
+            "
+                Injections SQL -> du code qui va tourner dans notre base de données
+                                    L'ensemble des informations est compromise
+                Si après les guillemets, la personne écrit
+                    DROP DATABASE
+                et que ve code est exécuté :
+                    On a perdu l'ensemble de nos données
+
+            Si la personne accède à notre base de données, la probabilité que notre back-end soit compromis est 
+            très forte 
+
+
+        Si notre back-end est compromis :
+            Tout peut se passer :
+                On peut vider votre compte 
+                Tout supprimer gratuitement
+                Installe des photos / films illégaux et appelle la police ?
+                    Votre entreprise (pire si bvous êtes en freelance, vous) vous êtes arrêtés (ou en tous 
+                    cas connus) comme pédophile
+                Accès aux contacts de tout le monde
+                    L'ensemble de vos contacts reçoit de votre email des images pédophiles
+
+
+L'ensemble de la sécurité du site est faite sur le back-end, puisque c'est le seul endroit où, si on bien 
+fait notre travail, un attackeur ne peut pas faire ce qu'il veut.
+    -> sur le front-end, un utilisateur voit tout
+

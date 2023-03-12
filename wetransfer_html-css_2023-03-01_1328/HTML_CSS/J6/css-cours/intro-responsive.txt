@@ -1,0 +1,96 @@
+Le responsive, c'est le fait d'adapter une page web à différentes tailles d'écran.
+
+
+En effet, le contenu ne sera pas le même, que l'on voit un site sur Bureau ou Mobile.
+
+    Par exemple, pour les menus :
+
+        Sur Bureau -> souvent en texte brut
+
+        Sur Mobile -> souvent un menu hamburger
+
+Une partie du Responsive est faite par les moteurs de recherche directement : 
+
+    L'affichage du texte
+
+
+Le Responsive, c'est aussi déterminer quel part / pourcentage de l'écran ou d'une zone de contenu un 
+élément fait.
+
+Pour les responsive, on ne va plus utiliser de pixels : on va utiliser des poucentages :
+
+    Comment les écrire :
+
+        Manière 1 : les % des zones de contenu
+
+        width: 80%;
+
+            L'élément va faire 80% de la largeur de la zone dans laquelle il a été créé.
+
+                Si on insère l'élément dans une Div, il fera 80% de la width de la div.
+
+                Si on insère l'élément directement dans notre page HTML, il fera 80% de la largeur de 
+                l'écran (si on a pas oublié le content="width:device-width, initial-scale=1.0" dans le header)
+
+        height : 80%;
+
+            L'élément va faire 80% de la hauteur de la zone dans lequelle il a été créé.
+
+
+        Manière 2 : les % d'écran
+
+        width: 80vw;
+
+            vw -> view-width -> largeur de la vue (largeur de l'écran)
+                                automatiquement interprété en %
+            L'élément fera 80% de la taille de l'écran.
+
+        height: 80vh;
+
+            vh -> view-height -> hauteur de la vue (hauteur de l'écran)
+                                automatiquement interprété en %
+            L'élément fera 80% de la taille de l'écran.
+
+
+
+Le responsive, c'est aussi déterminer quel élément doit apparaitre.
+
+    Par exemple : 
+
+        Il y a des icône qu'on ne va vouloir voir que sur mobile (ex : l'icône du menu hamburger).
+
+    Pour réaliser cette partie du responsive, on va utiliser :
+
+        display: hidden;
+
+        Qui revient à supprimer totalement un élément d'une page.
+
+
+
+Le responsive, c'est aussi déterminer de quelle manière les éléments doivent apparaître.
+
+    Par exemple, imaginons un article :
+
+        Si il est vu sur Bureau ou Tablette, on fera utilisera 'float' pour faire flotter l'image.
+
+        Si l'article est vu sur Mobile, on ne fera pas flotter l'image, mais elle sera en plein écran 
+        au-dessus du texte.
+
+
+Le responsive, on le fait avec des Media Queries.
+
+    Une Media Query, c'est une instruction que l'on donne au navigateur web en fonction de l'apapreil
+    sur lequel est vu la page.
+
+    Pour en apprendre plus :
+
+        https://www.w3schools.com/css/css3_mediaqueries.asp
+
+    Pour réaliser une Media Query, on peut utilier :
+
+        @media screen and (condition)
+        @media screen and (min-width: 900px) {
+            h2 {
+                margin: 20px;
+            }
+        }

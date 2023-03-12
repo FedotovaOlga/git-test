@@ -1,0 +1,81 @@
+<!-- https://www.w3schools.com/html/html_forms.asp -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+<body>
+
+    <!-- Les marges du formulaires nous permettent de tester l'ancre de la page id&ancres.html -->
+    <form action="formulaires.html" method="POST" style="margin: 50vh 0 50vh 0;">
+
+        <fieldset id="f1">
+            <legend>Zone 1</legend>
+            <label for="name">Nom&nbsp;:</label>
+            <input type="text" name="nom" id="name" placeholder="Votre nom" required>
+            <br>
+            <label for="email">Email&nbsp;:</label>
+            <input type="email" name="email" id="email" placeholder="Votre email" required>
+            <br>
+            <label for="motDePasse">Mot de passe&nbsp;:</label>
+            <input type="password" name="motDePasse" id="motDePasse" placeholder="***********" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Zone 2</legend>
+            <label>Niveau&nbsp;:</label>
+            <br>
+            <input type="radio" name="niveau" id="lvl1" value="Debutant">
+            <label for="lvl1">Débutant</label>
+            <br>
+            <input type="radio" name="niveau" id="lvl2" value="Intermediaire">
+            <label for="lvl2">Intermédiaire</label>
+            <br>
+            <input type="radio" name="niveau" id="lvl3" value="Confirme">
+            <label for="lvl3">Confirmé</label>
+            <br>
+            <label for="experience">Expérience&nbsp;</label>
+            <input type="range" name="experience" id="experience" min="0" max="30" value="5" step="1">
+        </fieldset>
+
+        <fieldset>
+            <legend>Zone 3</legend>
+            <label>Compétences&nbsp;:</label>
+            <br>
+            <input type="checkbox" name="HTML" id="HTML" value="1">
+            <label for="HTML">HTML</label>
+            <br>
+            <input type="checkbox" name="CSS" id="CSS" value="1">
+            <label for="CSS">CSS</label>
+            <br>
+            <input type="checkbox" name="JavaScript" id="JS" value="1">
+            <label for="JS">JavaScript</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Zone 4</legend>
+            <label for="satisfaction">Êtes-vous satisfait&nbsp;?</label>
+            <select name="satisfaction" id="satisfaction">
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+            </select>
+            <br>
+            <label for="commentaire">Un commentaire&nbsp;?</label>
+            <br>
+            <textarea name="commentaire" id="commentaire" cols="30" rows="10">
+                Ce message sera affiché par défaut
+            </textarea>
+        </fieldset>
+
+        <input type="file" name="fichier" id="fichier">
+
+        <br>
+
+        <input type="submit" name="submit" id="submit" value="Envoyer">
+        
+    </form>
+    
+</body>
+</html>

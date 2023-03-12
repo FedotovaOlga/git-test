@@ -1,0 +1,26 @@
+Si on appelle un fichier 'index', ce sera notre page d'accueil (du dossier).
+
+C'est valable pour 'index.html', mais aussi 'index.php', 'index.js'...
+
+
+Un site internet, c'est juste un dossier de fichiers.
+
+Par exemple, on peut créer un dossier 'site'.
+
+Pour les noms de pages :
+
+    Tout en minuscule
+
+    Pas d'espaces : on les remplace des underscore _
+
+        ex : Mon Compte.html 
+
+            mon_compte.html
+
+
+Utilisez DevTools (Inspecteur de Google Chrome) pour dévelopeper :
+
+    Vous pouvez tenter des choses sans modifier notre code 
+
+    On peut voir si des éléments sont présents mais invisibles au 
+    lieu de juste absents de la page 

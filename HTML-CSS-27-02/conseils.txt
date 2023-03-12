@@ -1,0 +1,15 @@
+Pour rendre un Header transparent quand on scrolle (en JavaScript):
+
+    - Créer un eventListener -> "écouteur d'évènement" -> attend de savoir si un évènement se passe ou pas 
+
+        - Cet évènement -> attend que l'utilisateur scrolle 
+
+        - Si l'évènement est déclenché :
+
+            - Sélectionner le header et lui attribuer une opacité de 0, ou presque 0
+
+    Pour aller plus loin :
+
+        - Créer un évènement qui écoute si on scrolle vers le haut 
+
+        - SI cet évènement se déclenche : remet l'opacité du header à son niveau normal

@@ -1,0 +1,86 @@
+Le développement web, qu'est-ce que c'est ?
+
+C'est le fait de créer un site internet, une application.
+
+C'est le fait de faire un programme, qui va être sur le web.
+
+Quand on parle de développement, il faut se séparer ça en deux parties :
+
+    - le Front
+
+    - le Back
+
+Le Front, c'est tout ce qui est visuel : tout ce que l'utilisateur 
+voit.
+
+Le Back, c'est ce que l'utilisateur ne voit pas.
+
+
+Pour faire du Front, il va falloir maîtriser :
+
+    HTML
+    CSS
+    JavaScript
+
+    HTML, ça va nous permettre de créer la structure d'un site :
+        On va juste créer les éléments (comme par exemple un titre, 
+        ou une section), sans style.
+        C'est le squelette du site web.
+
+    CSS, ça nous permet de styliser le site web : ajouter des 
+        couleurs, poisitionner les éléments, effectuer des 
+        transitions...
+        Imaginez qu'on crée le corps autour d'un squelette.
+
+    JS, ça nous permet d'animer le site web.
+        Imaginez que le corps qu'on a créé pourra marcher, 
+        respirer, boire, etc.
+
+    En plus de ces trois langages, on peut utiliser des Frameworks, 
+    des cadres de travail, pour nous faciliter l'écriture du code
+    (ex: Bootstrap pour le CSS, React pour le JavaScript).
+
+
+Pour faire du Back, il va falloir maîtriser :
+
+Au moins un langage de programmation (dont PHP, le plus utilisé).
+
+    Un back-end, c'est du code, qui tourne sur un serveur, 
+    qui reçoit des informations, et qui en renvoie d'autres.
+
+    Ces actions, on peut les faire avec tous les langages complets 
+    (PHP, JavaScript, C++, Python...).
+
+Au moins un type de base de données (SQL ou NoSQL) :
+
+    SQL, c'est le type de base de données le plus utilisé, ET 
+        c'est un langage informatique qui nous permet de 
+        communiquer avec des bases de données.
+
+
+Pour être Développeur FullStack (Front et Back), il va 
+falloir maîtriser :
+
+    HTML
+    CSS
+    JavaScript 
+    1 (ou plus) langage pour le back 
+    1 type de base de données (et les requêtes à faire)
+
+Il faudra aussi être bien à jour avec le RGPD (Règlement Général 
+de Protection des Données). 
+
+    1 politique de confidentialité
+    1 politique de cookies
+    1 page Mentions Légales
+
+    Un bandeau d'affichage qui propose à l'utilisateur de refuser
+    les cookies.
+
+Vous devrez faire une veille informatique.
+
+Veille informatique : se tenir au courant des nouvelles technologies,
+des nouveautyés dans le domaine informatique.
+
+
+

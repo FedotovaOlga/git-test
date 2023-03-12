@@ -1,0 +1,84 @@
+Séparateur : <hr>
+    https://www.w3schools.com/tags/tag_hr.asp#
+
+    Un séparateur crée une barre qui va séparer deux éléments.
+
+Vidéo : <video></video>
+    https://www.w3schools.com/tags/tag_video.asp
+
+    Permet d'afficher une video dans le navigateur.
+
+    Une balise vidéo peut avoir une width et une height.
+
+    La balise video peut prendre un attribut 'controls'.
+
+        En ajoutant cet attribut 'controls', le navigateur, 
+        dans l'écran d'affichage de la vidéo, va nous créer des 
+        contrôles basiques.
+
+    À l'intérieur d'une balise <video></video>, on va pouvoir 
+    insérer des balises <source>.
+
+    Source : <source>
+
+        A besoin d'un attribut src="" et type=""
+
+        src="" -> le chemin pour trouver la vidéo 
+        type="" -> le type de vidéo 
+
+    Si on insère plusieurs balises <source>, la navigateur 
+    affichera la première vidéo qu'il peut afficher.
+
+    Si il peut en afficher plusieurs :
+
+        Il affichera la première, pas une de plus.
+
+    On est pas obligé d'utiliser une balise <source> :
+
+        On peut ajouter un attribut src="" à la balise 
+        <video></video>.
+
+        Le problème que cela va causer, c'est que si le navigateur 
+        ne peut pas afficher la vidéo, il n'a pas d'autres options 
+        pour l'afficher.
+
+    À l'intérieur d'une balise <video></video>, après les sources, 
+    on peut écrire du texte :
+
+        Ce texte s'affichera si aucune des vidéos n'a pû être 
+        affichée.
+
+    Syntaxe pour afficher une vidéo, avoir plusieurs possibilités, 
+    afficher les contrôles pour la vidéo, et du texte si le 
+    navigateur n'arrive pas du tout à l'afficher :
+
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+
+    
+Iframe : <iframe></iframe>
+    https://www.w3schools.com/tags/tag_iframe.asp
+
+    La balise iframe nous permet d'afficher des documents à 
+    l'intérieur de notre page.
+
+    Elle prend un attribut src="", le chemin vers le document à 
+    afficher, et un attribut title="", qui est le titre du document.
+
+    L'attribut title="" est pour le SEO : il nous permet de décrire 
+    le document au navigateur.
+
+    Comme tous les éléments HTML, une iframe peut avoir une width 
+    et une height.
+
+    Mieux on décrit les documents aux navigateurs, mieux ça va être 
+    pour les personnes malvoyantes.
+
+    Syntaxe :
+
+    <iframe src="/default.asp" title="Document à afficher">
+    </iframe>

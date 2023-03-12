@@ -1,0 +1,39 @@
+https://www.w3schools.com/html/html_tables.asp
+
+Un tableau (ou table), en HTML, nous sert à afficher des informations.
+
+Un tableau se déclare avec la balise double <table></table>.
+
+Une fois la table créée, l'élément existe mais est vide.
+
+L'étape suivante est d'insérer des rangs à notre tableau.
+
+On crée un rang avec la balise double <tr></tr>.
+
+Ensuite, nous devons insérez des cellules dans notre table.
+
+Pour insérer des cellules dans notre table, nous avons deux balises :
+
+La première est la balise <th></th>, pour Table Head :
+    Ce sont les informations d'en-tête de notre table.
+
+La seconde est la balise <td></td>, pour Table Data :
+    C'est la data contenue et affichée dans notre tableau.
+
+On ne choisira jamais entre <th> et <td> pour le style :
+    Ces balises servent à indiquer au moteur de recherche quel élément correspond à quoi.
+    Si on veut appliquer du style aux éléments, on le fera en CSS, pas en choisissant un balise inadaptée.
+
+
+On peut faire des tables où les <th> sont horizontaux, et on peut faire des tables où les <th> sont verticaux.
+
+
+On pouvait auparavant utiliser une balise <thead></thead> pour créer le rang d'en-tête de notre page 
+(et donc ne pas utiliser <tr></tr> pour le créer).
+Cependant, cela ne faisait pas sens :
+    Pourquoi utiliser deux systèmes de balises différents, que l'on veuille afficher nos <th> horizontalement 
+    ou verticalement.
+Cette balise (<thead></thead>) n'est aujourd'hui plus utilisée.
+Le fait d'utiliser des <th></th> pour indiquer nos en-têtes suffit largement aux différents moteurs de recherche 
+pour avoir un bon SEO.
+

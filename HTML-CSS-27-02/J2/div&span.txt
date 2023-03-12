@@ -1,0 +1,37 @@
+Div et Span, sont deux balises qui permettent de créer des zones de 
+contenu.
+
+Div : <div></div>
+https://www.w3schools.com/tags/tag_div.asp
+
+    Une div, c'est une zone dans laquelle on va vouloir insérer du contenu.
+
+    Une div, imaginez que c'est l'élément de base HTML. 
+
+    Imaginez toutes les autres balises (dans lesquelles on peut insérer 
+    du contenu) comme des Divs auxquelles des propriétés ont été 
+    ajoutées.
+
+    Par exemple, section et article seraient des divs, optimisées 
+    pour l'affichage d'articles de blog.
+
+    Pourquoi ne pas utiliser toujours div ? Et se prendre la tête à 
+    faire des header, main, footer... ?
+
+        Pour le SEO. Un site bien expliqué aux bots des moteurs de 
+        recherche sera toujours mieux référencé.
+
+
+Span : <span></span>
+https://www.w3schools.com/tags/tag_span.asp
+
+On va en créer un autour d'un contenu déjà créé, afin de délimiter 
+une autre zone de contenu, sans modifier l'architecture de notre site.
+
+Il ne faut pas le confondre avec la div.
+
+Une bonne règle pour ne pas se prendre la tête :
+
+    Si on met du contenu à l'intérieur : Div 
+
+    Si on entoure du contenu déjà existant : Span

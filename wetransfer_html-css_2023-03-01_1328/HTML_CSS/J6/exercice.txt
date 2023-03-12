@@ -1,0 +1,56 @@
+Créer un nouveau dossier
+
+Avec dedans :
+
+    Un sous-dossier assets
+
+        Un sous-dossier img 
+
+            Au moins 1 image 
+
+    1 page index.html 
+
+    Aller sur la page de téléchargement bootstrap 
+
+        https://getbootstrap.com/docs/5.3/getting-started/download/
+
+    CDN via JsDeliver
+
+    Copier les 2 premiers liens 
+
+    Les inclure dans le head de votre page index.html
+
+
+Une fois que c'est fait :
+
+    Sur getbootstrap.com 
+
+        -> Menu vertical gauche
+
+        -> Components
+
+        -> Card
+
+        -> Copier le premier exemple et l'inclure dans index.html
+
+
+---------------------------------------------------------------------------
+
+Sur index.html -> créer votre premier site vitrine
+
+Le site vitrine :
+
+    Monopage
+
+    La monopage est constituée de :
+
+        - Header 
+        - Main : inspirez-vous de vincent-spinosa.com et des maquettes présentes sur le site
+                Au moins contenir :
+                    1 section avec (sur bureau) photo à gauche et texte à droite et (sur mobile)
+                        photo plein écran puis texte
+                    1 liste stylisée
+                    1 formulaire de contact
+                    1 section 'services' avec des cards pour différents services
+                    1 section 'membres' avec des Cards pour chaque mêmbre (avec photo de profil)
+        - Footer

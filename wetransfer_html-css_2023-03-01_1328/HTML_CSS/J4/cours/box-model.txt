@@ -1,0 +1,102 @@
+Box Model : https://www.w3schools.com/Css/css_boxmodel.asp
+Border : https://www.w3schools.com/css/css_border.asp
+Margin : https://www.w3schools.com/css/css_margin.asp
+Padding : https://www.w3schools.com/css/css_padding.asp
+
+
+Box Model : 
+
+On peut se représenter chaque élément HTML sous forme de boite.
+
+Cette boite est composée de quatre choses :
+
+    Son contenu : le texte / visuel / contenu HTML que la boite contient
+
+    Sa bordure (Border) : le contour de l'élément
+
+    Sa marge (Margin) : l'espacement entre l'élément et un autre élément
+
+    Sa marge interne (Padding) : l'espacement entre le contenu d'un élément et sa bordure
+
+
+Margin :
+
+C'est la marge entre un élément et un autre.
+C'est l'espace qui sépare deux éléments.
+
+Quand on règle la propriété margin d'un élément, on ne va pas le modifier visuellement, on va régler son 
+espacement par rapport aux autres éléments.
+
+Pour déclarer la marge d'un élément, on peut le faire en une ligne :
+
+    margin: 20px;
+
+    De cette manière, les marges des 4 côtés d'un élément (haut, doite, bas, et gauche) auront une valeur de 20px;
+
+Pour déclarer la marge d'un élément, on peut le faire côté par côté :
+
+    margin-top: 15px;
+    margin-right: 12px;
+    margin-bottom: 14px;
+    margin-left: 13px;
+
+    On peut faire ceci en une ligne :
+
+    margin: haut droite bas gauche;
+    margin: 15px 12px 14px 13px;
+
+
+Padding : 
+
+C'est la marge interne d'un élément.
+
+Contrairement à la propriété Margin, le padding va modifier l'élément :
+    
+    En effet, la marge ajoutée ne l'est pas autour de l'élément, mais entre son contenu et sa bordure.
+    Le contenu va être poussé vers le milieu.
+
+Le padding se règle de la même manière que Margin :
+
+    padding: 20px;
+
+    Ci-dessus : les quatre côtés auront 20px de padding.
+
+    padding-top: 15px;
+    padding-right: 13px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+
+    Ci-dessus : on règle la propriété padding côté par côté.
+
+    Raccourci (pour régler chaque côté) :
+
+    padding: top right bottom left;
+    padding: 15px 13px 14px 12px;
+
+
+Border : 
+
+C'est la bordure d'un élément.
+
+Elle entoure le contenu de l'élément.
+
+Une bordure a besoin de trois propriétés pour être visible :
+
+    Son type 
+
+        C'est le type de la bordure : unie, à points, à traits...
+
+    Son épaisseur 
+
+    Sa couleur
+
+    Pour déclarer une bordure, on peut déclarer une propriété par ligne :
+
+    border-style:  solid;
+    border-width:  1px;
+    border-color:  blue;
+
+    On peut aussi déclarer ces 3 lignes en une-seule :
+
+    border: type taille couleur;
+    border: solid 1px black;

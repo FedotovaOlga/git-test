@@ -1,0 +1,122 @@
+https://www.w3schools.com/html/html_forms.asp
+
+Qu'est-ce qu'un formulaire ?
+
+Un formulaire, en HTML, est un ensemble d'informations qu'un utilisateur peut ou doit remplir pour 
+les transmettre aux administrateurs d'un site.
+
+Un formulaire, en HTML, se déclare avec la balise double <form></form>.
+
+Cette balise doit avoir deux attributs obligatoires.
+
+Le premier, c'est un attribut action="PAGE_CIBLE"
+
+    C'est la page vers laquelle l'utilisateur et les données seront envoyés après l'envoi du formulaire
+
+Le second, c'est l'attribut method="METHODE_CHOISIE"
+
+Qu'est-ce qu'une méthode ?
+
+Une méthode, c'est la façon d'envoyer les données.
+
+Il y a deux méthodes parmi lesquelles ont peut choisir, en HTML.
+
+    La méthode GET 
+
+    La méthode POST 
+
+La différence entre ces méthodes, est que les informations d'un formulaire envoyé avec GET seront visibles 
+dans l'url.
+
+Les informations d'un formulaire envoyé avec POST seront cachées.
+
+
+
+Dans un formulaire, on peut créer des zones de contenu avec la balise double <fieldset></fieldset>.
+Tout élément entre ces deux balises sera compris dans la zone de contenu.
+On peut ajouter une légende à un fieldset avec la balise double <legend></legend>, que l'on doit placer 
+juste après la balise ouvrante <fieldset>.
+
+
+
+L'élément le plus important d'un formulaire est l'élément <input>.
+L'élément <input> se déclare avec une balise simple, car on ne va pas insérer un autre 
+élément HTML à l'intérieur d'un input.
+
+Un élément Input a un attribut obligatoire : son type.
+
+<input type="TYPE" name="NAME">
+
+Le type d'un input peut être :
+
+    TYPE        Ce que le client doit remplir
+
+    text        Du texte 
+    email       Une adresse mail
+    password    Du texte (qui sera caché)
+    tel         Numéro de téléphone
+
+
+    radio       Choix multiple, mais 1 seule possibilité
+
+                Un input de type radio doit avoir un attribut name="NOM".
+                Pour tous les inputs de type radio ayant le même attribut name, un seul choix sera possible.
+                Un input de type radio doit avoir un attribut value="VALEUR", correspondant à la valeur transmise 
+                lors de l'envoi d'un formulaire.
+
+    range       Une valeur comprise entre une valeur minimale et une valeur maximale
+
+    checkbox    Une case que l'on peut cocher
+
+    file        Permet à l'utilisateur d'uploader un fichier
+
+    submit      Un bouton qui permet d'envoyer le formulaire
+                (La value d'un bouton de type submit sera, en plus d'être transmise à notre bac-end, affichée 
+                comme étant le texte du bouton)
+
+
+Un formulaire peut contenir une (ou plusieurs) <textarea></textarea> :
+
+    Une zone de texte à remplir par l'utilisateur.
+
+    En plus de l'attribut name, elle doit contenir un attribut cols="X" (sa largeur) et rows="Y" (sa hauteur).
+
+
+Une formulaire peut contenir une (ou plusieurs balises <select></select>).
+
+Qu'est-ce qu'une balise Select ?
+
+C'est une balise qui permet à l'utilisateur de choisir une valeur parmi une liste défilante.
+
+Une balise <select></select> contient un attribut name="NOM", et des <option></option>.
+
+Les <option></option> sont les valeurs parmi lesquelles l'utilisateur peut choisir.
+
+Ces options prennent un attribut value="VALEUR".
+
+    Pourquoi les options ne prennent pas de name ? 
+
+        Car elles font partie intégrante du select, qui en a déjà un.
+        Les options apportent seulement des valeurs possibles à notre Select.
+
+
+
+Un formulaire peut contenir des <label></label> :
+    Une légende pour un champ du formulaire.
+
+    Un label peut un attribut for="...", correspondant à l'id du champ que l'on doit 
+    décrire (meilleur pour le SEO).
+
+
+Un input, textarea ou select peut avoir un attribut required.
+
+Cet attribut n'a pas de 'égal', pas de '" "', pas de valeur à contenir. Juste le mot required, écrit avant le 
+chevron fermant.
+
+Le fait d'ajouter l'attribut required à un champ du formulaire oblige les personnes de bonne foi, ne voulant pas 
+contourner les règles, à remplir le champ pour envoyer le formulaire.
+
+L'attribut required est surtout une fonction d'aide, pour qu'une personne de bonne foi n'ai pas remplir à 
+nouveau l'ensemble du formulaire en cas d'oubli :
+
+    En effet, une personne mal intentionnée peut supprimer ce mot dans l'inspecteur.

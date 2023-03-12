@@ -1,0 +1,12 @@
+W3C : un organisme qui va gérer les conventions autour du web
+(html et css).
+
+W3Schools : pleins de tutos, cours et ressources sur les langages du 
+développement web.
+
+MDN : pleins de ressources.
+
+
+W3C nous donne accès à un Validateur : un programme qui va valider, 
+ou non, notre code HTML, qui ne renvoie les erreurs si on en a.
+https://validator.w3.org/#validate_by_input

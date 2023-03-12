@@ -1,0 +1,49 @@
+Bootstrap fonctionne sur le principe de rangs et de colonnes.
+
+On insère ces rangs et colonnes dans un container.
+
+    Deux types :
+
+        Container : laisse une marge entre les côtés du container et les côtés de l'écran 
+
+        Container-fluid : ne laisse pas de marge entre les côtés du container et les côtés de l'écran
+
+            Nous allons utiliser un container fluid, pourquoi ?
+
+                Il est plus pratique d'ajouter des marges quand on en veut que d'en enlever quand on en
+                veut pas.
+
+Un container (comme on a vu pour Flex), c'est une zone dans laquelle on va pouvoir insérer du contenu.
+
+Quand on développe avec Bootstrap, on va mettre l'ensemble du contenu de notre page dans un container.
+
+    On ouvre le container juste après la balise ouvrante <body>, et on le ferme juste avant la balise 
+    fermante </body> (ou les <script></script> de fin de page).
+
+Notre page web est constituée de rangs.
+
+Un rang correspond à 100% de la largeur de l'écran.
+
+    Il est composé de douze colonnes, qui font chacune 8 1/3 de l'écran.
+
+Les colonnes nous aident à faire le responsive de façon sipmlifiée :
+
+    Pour chaque élément :
+
+        On peut spécifier le nombre de colonnes que l'élément va prendre pour chaque taille d'écran.
+
+        On réalise ceci grâce aux Breakpoints :
+
+            https://getbootstrap.com/docs/5.3/layout/breakpoints/
+
+
+
+Pour les rangs, comme les colonnes, on va utiliser la balise <div></div>.
+
+On créer un rang, en assignant la classe 'row' à notre div.
+
+
+
+Bootstrap est aussi très utile pour ses icônes :
+
+    On a des milliers d'icônes à disposition pour notre site.

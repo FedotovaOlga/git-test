@@ -1,0 +1,40 @@
+Qu'est-ce qu'un ID ?
+
+Un ID, c'est un attribut qu'on va ajouter à un élément pour le
+sélectionner de manière unique.
+
+Par exemple, pour pouvoir sélectionner dans le futur le premier 
+titre d'une page, on pourrait lui donner comme id :
+    id="titre1"
+
+Un élément ne peut avoir qu'un seul ID.
+
+Deux éléments ne peuvent pas avoir le même ID.
+
+
+Qu'est-ce qu'une ancre ?
+
+    Une ancre, c'est un point de repère, sur une page. 
+
+    Ça nous sert à pouvoir arriver à un endroit précis de la page, et 
+    pas juste tout en haut.
+
+    Grâce à une ancre, on peut arriver à un point précis, depuis n'importe
+    quelle page.
+
+    Dans le fichier div&span.html, se trouve le lien vers l'ancre de 
+    id&ancres.hmtl.
+
+Comment créer un lien vers une ancre ?
+
+    Toujoirs avec la balise <a></a>, toujours avec l'attribut 
+    href="", mais à une différence près :
+
+        on ajoute une '#', suivi de l'ID de notre élément cible, 
+        après le nom de la page.
+
+        Par exemple :
+
+            href="id&ancres.html"
+            href="id&ancres.html#titre1"
+

@@ -1,0 +1,101 @@
+https://www.w3schools.com/css/css_background.asp
+
+Background, en CSS, désigne l'arrière-plan d'un élément.
+
+Les propriétés principales en rapport avec l'arrière-plan :
+
+background-color: -> la couleur de l'arrière-plan
+
+    Syntaxe :
+
+        background-color: blue;
+
+background-image: -> pour afficher une image en arrière-plan 
+https://www.w3schools.com/css/css_background_image.asp
+
+    Pour utiliser background-image, il faut appeler une 
+    fonction.
+
+    Il faut utiliser la fonction url() créée par CSS.
+
+    L'url à indiquer : c'est le chemin de l'image que l'on veut 
+    afficher.
+
+    On doit écrire ce chemin, entre guillemets, dans les parenthèses 
+    de la fonction.
+
+    Syntaxe :
+
+        background-image: url("mon_image.jpg");
+
+
+background-repeat:
+https://www.w3schools.com/css/css_background_repeat.asp
+
+    Si une image est plus petite que la zone qu'elle doit remplir, 
+    elle va s'afficher plusieurs fois.
+
+    Pour faire en sorte que l'image ne se répète pas, on va donner 
+    à la clé background-repeat, la valeur 'no-repeat'.
+
+    Syntaxe :
+
+        background-repeat: no-repeat;
+
+
+background-position: détermine la position d'une image dans 
+                     l'arrière-plan
+https://www.w3schools.com/cssref/pr_background-position.php
+
+    Par défaut, une image de fond est affichée en haut 
+    à gauche de l'arrière-plan.
+
+    Pour déterminer où elle doit s'afficher, on va utiliser 
+    background-position.
+
+    On peut déterminer la position d'une image selon deux axes :
+
+        - l'axe horizontal :
+
+            On peut déterminer le placement grâce à :
+
+                -left 
+                -right
+                -center 
+
+        - l'axe vertical :
+
+            On peut déterminer le placement grâce à :
+
+                -top 
+                -bottom
+                -center
+
+        Syntaxe :
+
+            background-position: axe_horizontal axe_vertical;
+
+            Si on ne spécifie pas une valeur :
+
+                Elle va être 'center' par défaut.
+
+            Si on veut centrer une image :
+
+                background-position: center;
+
+
+
+
+
+background-attachment: 
+https://www.w3schools.com/css/css_background_attachment.asp
+
+    Détermine si une image de fond doit scroller, ou doit rester 
+    fixe, tandis que le reste du contenu scrolle.
+
+    Deux valeurs possibles :
+
+        - fixed : l'élément ne scrolle pas
+
+        - scroll : l'élément scrolle (par défaut)
+

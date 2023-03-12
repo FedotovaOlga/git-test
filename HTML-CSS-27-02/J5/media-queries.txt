@@ -1,0 +1,128 @@
+Media Queries : https://www.w3schools.com/css/css3_mediaqueries.asp
+Breakpoint : https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+
+----------------------------------------
+Qu'est-ce qu'une Media Query ?
+----------------------------------------
+
+Les Media Queries, en CSS, nous permettent d'appliquer du style à notre site en fonction des différentes 
+tailles d'écran sur lesquelles il est affiché.
+
+Grâce aux Media Queries, on peut réaliser le Responsive de notre site internet.
+
+
+
+----------------------------------------
+Comment les utiliser ?
+----------------------------------------
+
+Pour les utiliser, on crée un bloc de condition, dans lequel on insère le style souhaité.
+
+La styntaxe est :
+
+    @media screen and (condition) {
+        /* style */
+    }
+
+Par exemple, la Media Query ci-dessous rend les paragraphes bleus si l'écran a une taille maximale
+680px :
+
+    @media screen and (max-width: 680px) {
+        p {
+            color: blue;
+        }
+    }
+
+On peut faire des conditions selon une taille minimale ou maximale d'écran :
+
+    - @media screen and (min-width: Xpx)
+
+    - @media screen and (max-width: Xpx)
+
+Dans les deux cas, les tailles d'écran se calculeront en px.
+
+On peut aussi demander une taille minimale ET une taille maximale :
+
+    - @media screen and (min-width: Xpx) and (max-width: Xpx)
+
+Cela peut par exemple servir à prendre en compte l'affichage pour les tablettes.
+
+
+
+----------------------------------------
+Où les écrire ?
+----------------------------------------
+
+On écrit toujours les Media Queries APRÈS avoir écrit notre règle de style principale, afin de ne pas créer
+de problème de hiérarchie.
+
+De cette manière, on peut prendre en charge de nombreuses tailles d'écran, en utilisant qu'une seule 
+condition à la fois :
+
+/* L'approche ci-dessous est mobile-first : on prend d'abord en compte la version mobile, puis les tailles 
+d'écran supérieures */
+
+/* Règle générale */
+
+h2 {
+    color: red;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    h2 {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    h2 {
+        color: green;
+    }
+}
+
+/* Pour une approche Desktop First, plutôt que de créer une règle générale, et ensuite de prendre en charge des 
+tailels d'écran de plus en plus grande, on va créer une règle générale, puis prendre en charge des tailles d'écran 
+de plus en plus petites :
+*/
+
+/* Règle générale */
+
+p {
+    color: blue;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1140px) {
+    /**/
+}
+
+@media screen and (max-width: 768px) {
+    /**/
+}
+
+---------------------------------------------------
+
+Deux approches différentes pour le Responsive :
+
+    - Mobile-First : on crée une règle générale, puis en prend en charge des tailles d'écran de plus en plus 
+                     grandes (avec min-width)
+
+    - Destktop-First : on crée une règle générale, puis on prend en charge des tailles d'écran de plus en plus 
+                    petites (avec max-width)
+
+---------------------------------------------------
+
+Dans une Media Query, on peut insérer plusieurs blocs de style différents :
+
+    @media screen and (min-width: Xpx) {
+        h2 {
+            /**/
+        }
+        p {
+            /**/
+        }
+    }
