@@ -1,0 +1,98 @@
+   .item{$}*8
+va créer 8 items
+
+ <hr><br><br><br>
+on utilise ça en debuggage
+hr : ligne de séparation
+
+pseudoclasses
+.item:nth-child(odd) selecteur impair
+
+.item:nth-child(even) selecteur pair
+
+df = display flex (raccourci)
+
+vaut mieux utiliser Rem que Em parce que sinon, si y a un paragraphe dans un autre paragraphe, l'enfant sera plus grand que parent
+
+.grille>.itemGrille{item $}*6
+créé dit Grille et divs itemGrille à l'intérieur 
+
+.grille{
+    display: grid;
+    /* 1fr partput: taille égale */
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 6fr 2fr;
+}
+
+
+BOOTSTRAP
+
+modals : image qui se met en plein écran par ex.
+
+reboot + grille + composants : bootstrap.min.css
+c''st ce qu'il faut prendre
+
+
+lien pour le script (js) mettre tout à la fin!
+comme ça on s'assure que tout le html a été déjà chargé avant
+
+ensuite:
+ <script src="js/bootstrap.bundle.min.js"></script>
+
+cdn c'est bien car c'est pas moi qui héberge, c'est plus léger; mais ça marche pas sans connexion
+
+Faut faire la veille et changer la version dans les deux cas, mais attention: des fois faut changer manuellement les noms des classes
+
+vaut mieux faire les mises a jour relativement souvent, mais prendre son temps pour le faire, bien regarder sur le Blog de bootstrap tout ce qu'il y a à changer.
+(=>d'ou la veille)
+
+
+On peut utiliser nos class à nous, mais les appeler différemment des class bootstrap (bordure et pas border par ex)
+
+
+container-fluid prend 100% de son parent
+container => 80% de son parent + margin: 0 auto (centrage est déjà fait)
+
+d'habitude on donne la class "container-fluid" à header et footer
+et "container" à "main"
+
+il doit avoir des lignes (row) à l'intérieur de la div "container"
+
+la class "row" contient automatiquement le display flex
+
+Quand on utilise "col", on est pas limité à 12 colonnes.
+
+par contre, "col-" c'est différent; on ne dépasse pas 12 !
+
+justify-content-around
+c'est une class définie par bootstrap
+
+les constantes
+
+:root{
+    --monRouge :
+
+--bs-blue = bs c'est pour bootstrap
+
+le syntaxe pour appeler ma constante dans mon code :
+var(--monRouge)
+
+pour que sur l'écran moyen mes 4 colonnes soit cote à cote:
+
+            <div class="bordure col-12 col-md-3">item 4</div>
+
+par contre, col-12 c'est le comportement par défaut, pas besoin de le mettre
+(c'est le fait que ça prend toute la ligne)
+
+justify-content-between (on le met dans le nom de la classe souhaité) c'est comme "space-between"
+
+navbar: le lien de retour à l'accueil; le logo
+
+l'événement "cick" c'est avec du Javascript!
+
+animation avec bootstrap = javascript!
+
+https://sharemycode.fr/2it
+
+si on change pour bg dark, il faut changer partout la couleur de texte
+

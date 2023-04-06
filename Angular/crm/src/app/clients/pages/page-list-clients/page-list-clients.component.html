@@ -1,0 +1,38 @@
+<h1>{{ title }}</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th *ngFor="let item of headers" scope="col">{{ item }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tab">
+      <td>Action</td>
+      <td>{{ item.state }}</td>
+      <td>{{ item.tva }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.totalCaHt }}</td>
+      <td>{{item.totalCaHt | total :item.tva | currency}} </td>
+      <td>{{ item.comment }}</td>
+    </tr>
+  </tbody>
+  <app-btn
+    label="Ajouter"
+    styleBtn="btn btn-primary"
+    route="/clients/add"
+    >
+  </app-btn>
+</table>
+
+
+
+<!--
+  ajouter un pipe total (ajouter ce qu'il faut calculer) : totalCAHt * tva (Total TTC)
+  ajouter pipe currency
+  ajouter btn et lui passer des valeurs
+  dans clients/add, ajouter un composant form-client
+  dans le composant form-client ajouter les inputs
+
+
+ -->

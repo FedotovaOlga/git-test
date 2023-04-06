@@ -1,0 +1,4 @@
+CRUD demandé sur les tests d'emploi
+create read update delete (ce qu'on fait en SQL)
+
+le DOM = ce qui s'affiche dans le navigateur (inspecteur)

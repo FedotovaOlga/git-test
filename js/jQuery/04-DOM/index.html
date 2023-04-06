@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery</title>
+</head>
+<body>
+    
+    <h1>Insérer et remplacer des éléments ou du contenu dans le DOM</h1>
+
+    <br>
+    <hr>
+    <br>
+  
+    <!------- methode .text() .html()--------->
+    <h2>Contenu stockés dans des éléments</h2>
+  
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  
+    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  
+    <br>
+    <hr>
+    <br>
+  
+    <!------- methode .append() .prepend() .before() .after() --------->
+    <h2>Insérer du contenu ou des elements</h2>
+    <div id="film">
+      <h3>LA FAMILLE ADDAMS</h3>
+      <p class="">La famille Addams, qui vivait jusque-là retranchée dans leur demeure, juchée en haut d’une colline brumeuse du New Jersey, se prépare à recevoir des membres éloignés encore plus étranges qu’eux à l’occasion de la Mazurka de Pugsley.
+      </p>
+      <br>
+  
+      <h3>JUMANJI: NEXT LEVEL</h3>
+      <p>L'équipe est de retour mais le jeu a changé. Alors qu'ils retournent dans Jumanji pour secourir l'un des leurs, ils découvrent un monde totalement inattendu. Des déserts arides aux montagnes enneigées, les joueurs vont devoir braver des espaces inconnus et inexplorés, afin de sortir du jeu le plus dangereux du monde.
+      </p>
+    </div>
+  
+    <br>
+    <hr>
+    <br>
+  
+  
+   <!------- methode .replaceWith() --------->
+   <h2>Remplacer des éléments</h2>
+    <div id="remplace">
+      <h3>Salle de cinema</h3>
+      <h4>UGC</h4>
+      <h4>Gaumont</h4>
+      <h4>CGR</h4>
+      <h4>MK2</h4>
+    </div>
+  
+  
+  
+   <br>
+   <hr>
+   <br>
+  
+  
+    <!------- Supprimer des éléments --------->
+   <h2>Supprimer des éléments</h2>
+    <div id="supprimer">
+      <ol>
+        <li>Paris</li>
+        <li>Marseille</li>
+        <li>Lyon</li>
+        <li id="suppr">Bruxelles</li>
+        <li>Bordeaux</li>
+      </ol>
+    </div>
+
+    <!-- appel jquery cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- appel de mon script -->
+    <script src="script.js"></script>
+</body>
+</html>

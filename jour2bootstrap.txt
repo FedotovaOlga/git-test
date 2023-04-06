@@ -1,0 +1,67 @@
+primary=bleu
+
+
+faut mettre target="_blank", c'est presque une obligation
+
+emmet:
+h2#alert.bg-danger{les alerts}
+  <h2 class="bg-danger" id="alert">Les alerts</h2>
+
+.alert*7>lorem5
+
+pour avoir la couleur de fond dans alert:
+<div class="alert alert-primary">Lorem ipsum dolor sit amet.</div>
+
+google n'aime pas quand il y a du text sur les images, donc éviter Carousel "with captions"
+
+swiperjs.com : pour faire swiper des slides avec les doigts; bcp d'options
+Sur bootstrap y a aussi
+
+ctrl H pour rempacer
+ ou ctrl F2
+
+pour centerr le carousel, on l'a mis dans une div parent :
+
+        <div class="d-flex justify-content-center">
+
+et rajouté display-flex
+
+boutons : normalement la classe btn c'est uniquement pour les formulaires
+sinon c'est des balises a avec style bouton
+
+ <a href="#" class="btn btn-primary p-3">Bouton 3</a>
+p-1 jusqua p-5 padding (5 le plus grand)
+m-5 marge (ça éloigne)
+        x=axe horizontal; y=axe vertical; b=bottom; t=top; e=end; s=start; pour m et p
+on a les mêmes couleurs que alerts
+
+si la barre de navigation est trop large:
+soit on rajoute ul, soit deuxieme nav, soit on agrandit le breakpoint : xl au lieu de lg
+
+https://placehold.co/
+
+Pour que l'image rentre dans la Modal : 
+soit w-100, soit img-fluid (class de image), soir modal-lg
+
+Fuulscreen on met uniquement si on a juste l'image:
+<!-- Full screen modal -->
+<div class="modal-dialog modal-fullscreen-sm-down">
+  ...
+</div>
+
+class img-fluid mettre tout le temps!
+
+pour aérer les cards (et mettre en deux lignes de trois) <div class="row gy-5 justify-content-around">
+
+parce que la class "row" intégre le "d-flex" et le "wrap"
+
+Pour utiliser la grille de bootstrap, on est obligé de créer un container!
+Et ensuite on est obligé de faire "row" (ligne), et déjà à l'intérieur on met les colonnes ("col")
+
+Quand on met en production un projet, on ne doit jamais laisser le fichier bootstrap en local; on doit utiliser un CDN
+
+Pour utiliser les icones Bootstrap, il faut ajouter un CDN spécial
+
+
+REGARDER TEMPLATE BOOTSTRAP
+VID2O SUR WEBFORCE ??

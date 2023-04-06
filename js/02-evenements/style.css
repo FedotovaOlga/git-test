@@ -1,0 +1,22 @@
+.container {
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cercle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: aqua;
+    transition : background-color 1s;
+}
+
+.carre{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(130, 193, 35);
+}
+

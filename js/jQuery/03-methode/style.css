@@ -1,0 +1,35 @@
+.vert{
+    color: green;
+}
+.jaune{
+    color:yellow;
+}
+.rouge{
+    color:red;
+}
+.bleu{
+    color:blue;
+}
+.grand{
+    font-size: 25px;
+}
+
+#bloc{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 200px;
+    background-color: yellow;
+}
+
+#bloc2{
+    width: 300px;
+    position: relative;
+    left: 200px;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    border: 1px solid teal;
+    padding: 5px;
+    margin: 10px;
+}

@@ -1,0 +1,29 @@
+<!-- Ici on créé des liens -->
+<!-- à l'intérieur de l'application on peut pas utiliser href, c'est uniquement pour des liens exterieurs -->
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a
+    class="nav-link"
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}">
+    Page List Orders</a>
+    <!-- "/" c'est pour dire que c'est la racine du site -->
+  </li>
+
+
+  <li class="nav-item">
+    <a
+    class="nav-link"
+    routerLink="/clients"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}">
+    Page List Clients</a>
+  </li>
+
+</ul>
+
+<!--
+  c+tab et rentrer dedans, comment sur plusieurs lignes
+  C'est bien de détailler ici toutes les étapes qu'il faut faire
+ -->

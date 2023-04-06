@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-wrap:wrap;
+    min-height: 90vh;
+    border: 1px solid black;
+    align-items: start;
+}
+
+.item {
+    height: 150px;
+    width: 150px;
+}
+
+/* impair */
+.item:nth-child(odd){
+background-color: blue;
+}
+
+/* pair */
+.item:nth-child(even){
+background-color: red;
+}
+
+.containerReverse{
+    border: 10px solid black;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/* taille de police en em */
+.tailleEm {
+    font-size: 2em;
+}
+
+/* taille rem */
+.tailleRem{
+    font-size: 2rem;
+}
+
+.grille{
+    display: grid;
+    /* 1fr partput: taille égale */
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 6fr 2fr;
+}

@@ -1,0 +1,21 @@
+/* mettre partout la même taille et arranger avec flexbox (par ex deux par ligne, en deux colonnes */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* pas besoin de donner la widht car c'est le flex wrap qui fait ce qu'il faut; hauteur pas besoin, pour mettre autant d'images qu'on veut */
+    margin: 100px auto;
+    justify-content: center;
+}
+
+.taille {
+    width: 300px;
+    margin: 10px;
+    padding : 10px;
+
+    /* ne jamai donner à la fois hauteur et largeur, sinon on casse les proportions */
+}
+
+.border {
+    border: 5px solid grey
+}

@@ -1,0 +1,15 @@
+/* a {
+    .... !important
+} */
+
+/* à ne pas faire! */
+
+/* bonne méthode: surcharge de la classe bootstrap */
+
+/* .nav-link {
+    color:red;
+}
+
+.nav-link:hover {
+    color:yellow;
+} */

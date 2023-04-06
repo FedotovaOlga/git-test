@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery</title>
+</head>
+<body>
+    <h1>Les évenemnts</h1>
+    <h2>Ma souris : le click</h2>
+    <div id="container">
+        <button id="btn">Click !</button>
+
+        <ul>
+            <li>Le roi lion</li>
+            <li>Toy story</li>
+            <li>Aladin</li>
+        </ul>
+    </div>
+    <h3>Exo : Compteur de caractères "Twitter like"</h3>
+  <div >
+    <textarea name="tweet-content" id="tweet-content" placeholder="Votre tweet ici..." cols="30" rows="10"></textarea>
+    <p id="counter"></p>
+  </div>
+
+  <h3>Focus et Blur</h3>
+  <div>
+    <form>
+      <p>Cliquez sur les zones de texte</p>
+      <p><label for="">zone 1
+          <input type="text" class="zone" id="Zone-de-texte-1">
+        </label>
+      </p>
+      <p><label for="">zone 2
+          <input type="text" class="zone" id="Zone-de-texte-2">
+        </label>
+      </p>
+    </form>
+
+    <p>Focus : <span id="resultat"></span></p>
+    <p>Perte de focus (blur) : <span id="resultat2"></span></p>
+  </div>
+  
+  
+    <h3>Change</h3>
+  <div>
+    <form>
+      <p>Sélectionnez une valeur dans la liste déroulante :</p>
+      <select>
+        <!-- ATTENTION DE PAS METTRE D'ATTRIBUT VALUE DANS LES OPTIONS-->
+        <option>J'aime jQuery</option>
+        <option>J'adore jQuery</option>
+        <option>Je raffole de jQuery</option>
+        <option>jQuery ? Jamais entendu parler !</option>
+      </select>
+    </form>
+    
+    <p><span id="resultatChange"></span></p>
+  </div>
+  
+  
+  <h2>Les images</h2>
+  <br>
+  <h3>Réagir au survol d'une image</h3>
+
+  <img id="mario2" src="img/mario2.jpg">
+
+  <br>
+  <h3>Agrandissement avec animation au survol</h3>
+  <div id="blocImage">
+    <img id="mario3petit" src="img/mario3.jpg">
+    <img id="mario3grand" src="img/mario3Grand.jpg">
+  </div>
+
+  <h2>Galerie d'images</h2>
+  <div id="blocGalerie">
+    <img src="img/mario2.jpg" id="mario2Grand.jpg" class='miniature'>
+    <img src="img/mario3.jpg" id="mario3Grand.jpg" class='miniature'>
+    <img src="img/mario4.jpg" id="mario4Grand.jpg" class='miniature'>
+
+    <img id="grand" src="img/mario2Grand.jpg" />
+  </div>
+
+    <!-- appel jquery cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- appel de mon script -->
+    <script src="script.js"></script>
+</body>
+</html>

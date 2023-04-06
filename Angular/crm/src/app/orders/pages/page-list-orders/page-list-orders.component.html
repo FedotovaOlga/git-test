@@ -1,0 +1,53 @@
+<!-- Afficher une propriété dans l'html -->
+<!-- string interpolation (pour mettre la valeur qu'on veut) -->
+<h1>{{title}}</h1>
+
+<!-- afficher le contenu du tableau data -->
+<!-- <ul>
+  <li *ngFor="let item of tab">{{item.client}} </li>
+  "*" = c'est pour les directuves de Angular -->
+  <!-- For c'est comme la boucle forEach en JS -->
+<!-- </ul> -->
+
+<!-- {{item.client}} -->
+<!-- ne fonctionne pas à l'extérieur de la boucle *ngFor-->
+
+<table class="table">
+  <!-- entete du tableau -->
+  <thead>
+    <tr>
+      <th *ngFor="let item of headers" scope="col">{{item}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tab">
+      <td>Action</td>
+      <td>{{item.typePresta | uppercase }}</td>
+      <!-- "|" c'est un pipe, altGr6, il passe comme argument ce qui est à gauche, et à droite on met une méthode(function) -->
+      <td>{{item.client}}</td>
+      <td>{{item.nbJours}}</td>
+      <td>{{item.tjmHt}}</td>
+      <!-- <td>{{}}</td>
+      <td>{{}} </td> -->
+      <td>{{item.tjmHt | total : item.nbJours | currency}} </td>
+      <td>{{item.tjmHt | total : item.nbJours :item.tva | currency}} </td>
+      <td>{{item.state}}</td>
+    </tr>
+  </tbody>
+  <!-- ici un bouton -->
+  <!-- <button class="btn btn-primary">Ajouter</button> -->
+  <!-- éviter de créer des éléments comme ça dans html -->
+  <!-- Il faut utiliser un webcomponent à la place, comme ça on pourra modifier tous nos bouttons en même temps-->
+  <!-- Est-ce que Orders importe Shared? OUI -->
+  <!-- Est-ce que le Shared exporte le composant btn? OUI-->
+  <!-- composant doit être réutilisable && personnalisable -->
+  <!-- app-btn c'est un composant-enfant de page-list-orders -->
+  <!-- communication entre parent et enfant -->
+  <!-- label + style + route (c'est le composant parent qui décide)-->
+  <app-btn
+    label="Ajouter"
+    styleBtn="btn btn-primary"
+    route="/add"
+    >
+  </app-btn>
+</table>

@@ -1,0 +1,26 @@
+.blue{
+    background-color: blue;
+    color: #fff;
+}
+.danger{
+    color: red;
+}
+
+#blocImage{
+    position: relative;
+    height: 300px;
+}
+#blocImage img{
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+#mario3grand{
+    display: none;
+}
+
+#blocGalerie img{
+    padding: 5px;
+    border: 8px solid white;
+}
+

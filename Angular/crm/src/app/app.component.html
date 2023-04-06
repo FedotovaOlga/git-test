@@ -1,0 +1,59 @@
+<!-- string interpolation, c'est comme ça qu'on affiche une variable -->
+<!-- <h1 class="title">{{ title }}</h1> -->
+
+
+<!-- ajouter des composants -->
+<!-- composants statiques -->
+<!-- composants dynamiques visibles en fonction de l'URL -->
+
+<!-- Abbréviation Emmet -->
+<header class="fixed-top">
+
+  <!-- créer composant header et afficher -->
+  <app-header></app-header>
+
+
+  <!-- ajout événement au click -->
+  <button (click)='onClick()'>
+    <!-- une directive -->
+    <app-icon-nav *ngIf="open"></app-icon-nav>
+    <app-icon-close *ngIf="!open"></app-icon-close>
+
+    <!-- condition directement dans l'html, comme on est dans Angular-->
+  </button>
+  <!--
+    id="btn"
+    btn.addEventListener('click', function(){})
+    onClick c'est une méthode qu'on vient d'inventer
+   -->
+
+
+
+   <!-- J'utilise un composant qui contient une icone burger menu + croix -->
+   <!-- créer un module icons -->
+   <!-- créer deux composants -->
+
+</header>
+<!-- Ici on alterne la classe close-aside en fonction de la valeur de open -->
+<main [ngClass]="{'close-aside' : open}">
+  <div class="shadow position-fixed">
+  </div>
+  <aside>
+    <div class="scroller">
+      <app-nav></app-nav>
+    </div>
+  </aside>
+  <div class="page">
+    <div class="contents">
+
+      <!-- Ici on va avoir des composants dynamiques -->
+      <router-outlet></router-outlet>
+
+    </div>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </div>
+</main>
+
+<!-- ici lien vers js -->

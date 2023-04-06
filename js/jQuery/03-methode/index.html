@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery</title>
+</head>
+<body>
+   
+  <!------- methode .css() --------->
+  <h1 id="titre">Methodes jQuery</h1>
+
+
+  <!------- methode .attr() --------->
+  <div id="lien">
+    <a href="http://api.jquery.com">API jQuery</a><br>
+  </div>
+  <br>
+
+  <div>
+    <img id="logo" src="../../05-Tp/img/abyss.jpg" width="150px" alt=""><br>
+    <a id="docJquery" href="http://docs.jquery.com">Documentation jQuery</a><br>
+  </div>
+
+
+
+  <!------- methode .addClass() removeClass()toggleClass() hasClass()--------->
+  <ul id="rvb">
+    <li>Vert</li>
+    <li class="jaune">Jaune</li>
+    <li class="rouge">Rouge</li>
+    <li id="bleu" class="bleu">Bleu</li>
+  </ul>
+  <br>
+
+
+
+  <!------- methode .val()--------->
+  <h2>Formulaires</h2>
+  <form>
+    <label>Nom d'utilisateur</label>
+    <input type="text" id="nom"><br>
+
+    <label>Mot de passe</label>
+    <input type="password" id="pass"><br>
+
+    <label>Sexe</label>
+    <label>H</label>
+    <input type="radio" id="H" name="sexe" value="H">
+    <label>F</label>
+    <input type="radio" id="F" name="sexe" value="F">
+    <label>Non Binaire</label>
+    <input type="radio" id="nb" name="sexe" value="nb"><br>
+
+    <label>Fonction</label>
+    <select id="fonction">
+      <option value="etudiant">Etudiant</option>
+      <option value="ingenieur">Ingénieur</option>
+      <option value="enseignant">Enseignant</option>
+      <option value="retraite">Retraité</option>
+      <option value="autre">Autre</option>
+    </select><br><br>
+
+    <input type="submit" id="envoyer" value="Envoyer">
+    <input type="reset" id="annuler" value="Annuler">
+  </form>
+    <br>
+
+    <!-- Methode offset() -->
+    <h2>Position d'un element</h2>
+    <div id="bloc">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aliquam? Explicabo amet, aliquid blanditiis possimus quaerat, ab quia ullam molestias placeat tempore ut reiciendis corporis. Quam dignissimos veritatis facere consectetur?</p> -->
+    </div>
+    <br>
+
+    <h2>Connaitre la position d'un element</h2>
+    <div id="bloc2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aliquam? Explicabo amet, aliquid blanditiis possimus quaerat, ab quia ullam molestias placeat tempore ut reiciendis corporis. Quam dignissimos veritatis facere consectetur?</p>
+    </div>
+    <br>
+    <!-- appel jquery cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- appel de mon script -->
+    <script src="script.js"></script>
+</body>
+</html>

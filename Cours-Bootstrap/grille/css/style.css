@@ -1,0 +1,15 @@
+:root{
+    --monRouge : rgb(14, 119, 143);
+}
+/* on peut appeler aussi "red", ça va pas être en conflit */
+.bordure{
+    border: 1px var(--monRouge) solid;
+    background-color: lightgray;
+    max-height: 10vh;
+}
+
+.fond {
+    background-color: rgb(225, 184, 18);
+    min-height: 14vh;
+    margin: 10px 0;
+}

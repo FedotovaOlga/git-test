@@ -1,0 +1,98 @@
+1) on a créé méthode pour calcul
+2) on a créé un nouveau pipe dans shared (ng g pipe total --export)
+on cepicolle en gardant juste transform
+3) ne pas oublier d'exporter le module Shared dans le module Orders (.ts)
+4) html: {{ arg1 | total :arg2 :arg3}}
+(item.nbJours etc.)
+
+<= ça fait partie des améliorations performance (un peu comme lazy loading)
+
+Conseil cours: https://www.udemy.com/course/the-complete-guide-to-angular-2/
+
+5) rajout pipe currency pour la devise
+<td>{{item.tjmHt | total : item.nbJours | currency}} </td>
+
+6) dans orders.module.ts rajouter dans le décorateur:
+  providers: [
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'EUR' }
+  ]
+et pas oublier d'importer
+
+7) dans anguar.json, sous la ligne 15 (prefix app) on met:
+"i18n": {
+        "sourceLocale": "fr-FR"
+      },
+i18n c'est tout ce qui concerne la traduction
+fr-FR code en rapport avec la France
+
+ensuite il faut faire ctrl+c sur le terminale ou on avait fait ng serve (le redemarrer), et ensuite euro se place après les chiffres
+
+8) rajouté | currency sur la deuxième ligne de calcul dans page-list-orders.html
+
+
+*************APREM***************
+
+1) on a créé un bouton:
+- dans Shared dossier components, à l'intérieur ng g c(omponent) btn
+2) app-btn dans html
+3) l'exporter dans Shared
+4) Pour que ça soit personnalisable:
+
+Le résultat:
+  <app-btn
+    label="Ajouter"
+    styleBtn="btn btn-primary"
+    route="/add"
+    >
+  </app-btn>
+
+Par étape:
+
+parent.html:
+ <app-btn label="Ajouter"></app-btn>
+
+btn.ts:
+export class BtnComponent {
+  @Input() label!: string;
+
+btn.html:
+<a>{{label}}</a>
+
+5) On ajoute le style:
+btn.ts
+styleBtn="btn btn-primary">
+  @Input() styleBtn!: string;
+
+btn.html
+<a [ngClass]="styleBtn">{{label}}</a>
+
+parent.html
+<a [ngClass]="styleBtn"
+
+6) on ajoute la route
+parent.html
+    route="/add"
+btn.ts
+  @Input() route!: string;
+
+importer module RouterLink dans Shared
+
+btn.html
+[routerLink]="route"> (entre crochets!) = propriety binding
+
+7)
+orders > components > form-order;
+8)
+dans page-add-order.html:
+<app-form-order></app-form-order>
+9)
+on a pris un formulaire dans form-order.html (avec bootstrap) et on a ajouté une class conatainer (div) autour (pour ajouter du padding)
+
+
+
+********ATELIER*******
+  ajouter un pipe total (ajouter ce qu'il faut calculer)
+  ajouter pipe currency
+  ajouter btn et lui passer des valeurs
+  dans clients/add, ajouter un composant form-client
+  dans le composant form-client ajouter les inputs

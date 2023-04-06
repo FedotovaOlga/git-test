@@ -1,0 +1,11 @@
+Commandes Angular Server
+
+ng serve (ouvrir mon site);
+npm run (nom programme qu on veut demarrer)jsonServer;
+
+
+Autres commandes
+
+Pour commentaires sur plusieures lignes:
+HTML: c+tab
+JS/TS: /**
