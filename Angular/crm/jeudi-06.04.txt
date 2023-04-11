@@ -1,11 +1,17 @@
-1) on a créé méthode pour calcul
+github
+pq currency changé par elle même la dernière fois pour clients
+
+
+1) on a créé méthode pour calcul (dans page-list-orders.ts)
 2) on a créé un nouveau pipe dans shared (ng g pipe total --export)
-on cepicolle en gardant juste transform
-3) ne pas oublier d'exporter le module Shared dans le module Orders (.ts)
+on copicolle en gardant juste transform
+3) ne pas oublier d'exporter dans le module Shared et importer dans dans le module Orders (.ts)
 4) html: {{ arg1 | total :arg2 :arg3}}
 (item.nbJours etc.)
 
-<= ça fait partie des améliorations performance (un peu comme lazy loading)
+<= ça fait partie des améliorations performance
+Si on fait ppas ça, il y aura énorméments de console logs déclenchés, car la fonction est tout le temps relancée
+La pipe transforme les arguments qu'on lui passe et nous retourne le résultat
 
 Conseil cours: https://www.udemy.com/course/the-complete-guide-to-angular-2/
 
@@ -25,7 +31,7 @@ et pas oublier d'importer
 i18n c'est tout ce qui concerne la traduction
 fr-FR code en rapport avec la France
 
-ensuite il faut faire ctrl+c sur le terminale ou on avait fait ng serve (le redemarrer), et ensuite euro se place après les chiffres
+ensuite il faut faire ctrl+c sur le terminal ou on avait fait ng serve (le redemarrer), et ensuite euro se place après les chiffres
 
 8) rajouté | currency sur la deuxième ligne de calcul dans page-list-orders.html
 
@@ -55,6 +61,10 @@ btn.ts:
 export class BtnComponent {
   @Input() label!: string;
 
+=> décorateur
+=> informe angular que la valeur de label vient du parent
+
+
 btn.html:
 <a>{{label}}</a>
 
@@ -80,13 +90,18 @@ importer module RouterLink dans Shared
 btn.html
 [routerLink]="route"> (entre crochets!) = propriety binding
 
+<!-- Attention, pour utiliser routerLink, il faut importer le module Router Module dans le module concerné (dans Shared ici) -->
+
+<!-- Erreur: Can't bind to 'routerLink' since it isn't a known property of 'a'. -->
+
+
 7)
 orders > components > form-order;
 8)
 dans page-add-order.html:
 <app-form-order></app-form-order>
 9)
-on a pris un formulaire dans form-order.html (avec bootstrap) et on a ajouté une class conatainer (div) autour (pour ajouter du padding)
+on a mis un formulaire dans form-order.html (avec bootstrap) et on a ajouté une class conatainer (div) autour (pour ajouter du padding)
 
 
 
@@ -96,3 +111,236 @@ on a pris un formulaire dans form-order.html (avec bootstrap) et on a ajouté un
   ajouter btn et lui passer des valeurs
   dans clients/add, ajouter un composant form-client
   dans le composant form-client ajouter les inputs
+
+
+****************MARDI 11.04******************
+
+1) ajouté h1 dans form
+2) ajouté une méthode pour savoir quand l'utilisateur clique sur le btn:
+
+form-order.html:
+  <form (ngSubmit) = 'onSubmit()'>
+ensuite dans ts:
+export class PageAddOrderComponent {
+
+  public onSubmit (){
+    console.log('cliqué');
+  }
+  // au clic sur le btn la méthode "submit" est déclenchée
+}
+
+
+Dans JS:
+  public onSubmit (e){
+    e.preventDefault();
+pour que le formulaire ne se rafraichit pas apres submit
+
+On rajoute dans imports de orders.ts:
+    ReactiveFormsModule
+ça fait la même chose que JS au dessus.
+Et c'est grace à ça qu'on a acces à FormBuilder qui permet de'associer des propriétés aux inputs.
+
+Dans form-order.ts:
+export class FormOrderComponent {
+
+  public form!: FormGroup;
+
+
+  Pour récupérer les inputs au submit, leurs valeurs:
+1. ajouter un identifiant au formulaire
+ <form [formGroup]="form" (ngSubmit)='onSubmit()'>
+
+
+dans form order . ts:
+
+export class FormOrderComponent {
+
+  public form!: FormGroup;
+  constructor(private fb : FormBuilder){}
+
+  public onSubmit (){
+    console.log('cliqué');
+  }
+
+// décrire le contenu du form
+// On va créer un objet, et dans cet objet, on va créer des propriétés pour chaque input, on donne des valeurs par défaut
+
+ngOnInit(){
+// méthode qui sert à déclencher du code juste apres que je constructor est déclenché
+this.form = this.fb.group({
+  tjmHt: [1],
+  nbJours: [1],
+  tva: [1],
+  state: ['état par défaut'],
+  typePresta: ['type presta par défaut'],
+  client: ['client par défaut'],
+  comment: ['comment par défaut'],
+  id: [],
+
+})
+}
+
+Ensuite dans html:
+      <input formControlName="tjmTh" type="number" class="form-control" id="tjmHt">
+
+faire ça partout
+
+Puis à la place de "cliqué" on met ça:
+  public onSubmit (){
+    console.log(this.form.value);
+  }
+
+
+dans Order.ts (models core)
+// const newObj = new Order({}) permet d'obtenur un nouvel objet; quand l'utilisateur clique sur "ajouter"
+// newObj va contenir toutes les propriétés et valeurs par defaut du model Order
+
+
+
+form order ts:
+
+export class FormOrderComponent {
+
+  public form!: FormGroup;
+
+// etape: créer un objet du type  Order
+public item: Order = new Order();
+
+et
+
+  tjmHt: [this.item.tjmHt], // on précise bien la propriété
+
+(on a remplacé newObj par item)
+
+
+Résultat:
+
+ngOnInit(){
+// méthode spécifique à Angular qui sert à déclencher du code juste apres que je constructor est déclenché
+this.form = this.fb.group({
+  tjmHt: [this.item.tjmHt],
+  nbJours: [this.item.nbJours],
+  tva: [this.item.tva],
+  state: [this.item.state],
+  typePresta: [this.item.typePresta],
+  client: [this.item.client],
+  comment: [this.item.comment],
+  id: [this.item.id],
+
+})
+}
+
+Pour les enums:
+
+form-order.ts:
+
+
+export class FormOrderComponent {
+
+  public form!: FormGroup; // propriété créé mais non initialisée
+
+  public stateOrder = StateOrder;
+
+
+form order html
+<!--
+itérer dans les enums
+importer enum dans ts + stocker
+
+vous n'avez pas le droit d'itérer dans un enum
+*ngFor ne fonctionne que sur des tableaux
+Convertir stateOrder en tableau, alors on pourra itérer à l'intérieur
+ -->
+
+Méthode de javascript Object.values():
+
+https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+
+form-order.ts
+
+  // convertir enum en tableau
+  public stateOrder = Object.values(StateOrder);
+
+
+html:
+
+    <div class="form-group">
+      <label for="state">state</label>
+      <select formControlName="state" class="form-control">
+        <option *ngFor="let state of stateOrder">{{state}}</option>
+
+      </select>
+    </div>
+
+Si je suis bloquée à un moment, chercher sur Internet:
+"Convert object to array" (c'est une façon de faire)
+
+on a remplacé i par state
+
+
+HTML
+POur avoir une option préselectionnée:
+<select>
+<option>Test1</option>
+<option>Test2</option>
+<option selected>Test3</option> 
+
+</select>
+<!-- boolean, =true (selected) -->
+
+Dans Angular on utilise pas "selected"
+mais on fait valeur dynamique state:
+
+        <option *ngFor="let state of stateOrder" [value]="state">{{ state }}</option>
+
+      </select>
+    </div>
+
+
+***************APRES-MIDI******************
+
+orders service ts
+
+  // POSTER un nouvel objet dans la bdd
+  public add(obj: Order): Observable<Order>{
+    return this.http.post<Order>('http://localhost:3000/orders', obj); // après virgule : ce qu'on veut récupérer dans la bdd
+  }
+}
+
+
+form order ts
+
+
+  // etape: créer un objet du type  Order
+  public item: Order = new Order();
+
+  // Ici on injecte le service OrdersService pour pouvoir déclencher la méthode add()
+  constructor(private fb : FormBuilder, private ordersService: OrdersService){}
+
+  public onSubmit (){
+    console.log(this.form.value);
+    // méthode: POST
+    // envoyer this.form.value dans ma bdd (base de données) avec la méthode POST
+    this.ordersService.add(this.form.value).subscribe(data=>{
+      console.log(data);
+    });
+
+
+
+    // redirection vers accueil (page list order)
+  }
+
+
+***********ATELIER****************
+
+Dans le formulaire :
+
+Ajouter ReactiveFormsModule dans le module Clients
+
+au clic sur le bouton, déclencher la méthode submit
+
+déclencher une méthode dans le service et on passe l'objet
+
+Dans le formulaire (fichier TS), créer un objet avec des propriétés et des valeurs par défaut.
+
+Vous allez associer ces propriétés aux inputs dans l'HTML.

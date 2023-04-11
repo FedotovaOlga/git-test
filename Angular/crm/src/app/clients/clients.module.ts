@@ -6,6 +6,7 @@ import { PageEditClientComponent } from './pages/page-edit-client/page-edit-clie
 import { ClientsRoutingModule } from './clients-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { FormClientComponent } from './components/form-client/form-client.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +20,8 @@ import { FormClientComponent } from './components/form-client/form-client.compon
   imports: [
     CommonModule,
     ClientsRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   providers: [
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'EUR' }

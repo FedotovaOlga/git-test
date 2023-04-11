@@ -1,6 +1,9 @@
 <!-- property binding = associer une propriété (styleBtn) à un attribut (ngClass, comme href par ex.) -->
+<!-- si on met juste Class, il va pas comprendre, il va afficher "styleBtn" en chaine de caracteres dans la console -->
 
 <a [ngClass]="styleBtn" [routerLink]="route">{{label}}</a>
 <!-- faut mettre entre crochets, sinon il considère la suite comme une suite de caracteres -->
 
-<!-- Attention, pour utiliser routerLink, il faut importer le module Router Module dans le module concerné -->
+<!-- Attention, pour utiliser routerLink, il faut importer le module Router Module dans le module concerné (dans Shared ici) -->
+
+<!-- Erreur: Can't bind to 'routerLink' since it isn't a known property of 'a'. -->

@@ -23,6 +23,8 @@ export class Order implements OrderI { // implements = utilise l'interface
 
 }
 
-// new Order({}) permet d'obtenur un nouvel objet; quand l'utilisateur clique sur "ajouter"
+// const newObj = new Order() permet d'obtenur un nouvel objet; quand l'utilisateur clique sur "ajouter"
+// newObj va contenir toutes les propriétés et valeurs par defaut du model Order
+
 
 // Dans mon application quand je vais créer un objet du type Order, on obtiendra les valeurs par défaut

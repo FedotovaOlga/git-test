@@ -11,4 +11,7 @@ export class BtnComponent {
   @Input() route!: string;
 }
 
+// => décorateur
+// => informe angular que la valeur de label vient du parent
+
 

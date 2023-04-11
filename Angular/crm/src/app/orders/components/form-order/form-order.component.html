@@ -1,45 +1,56 @@
 <!-- créer un formulaire -->
 
 <div class="container">
-  <form >
+  <h1>Ajouter une commande</h1>
+  <form [formGroup]="form" (ngSubmit)='onSubmit()'>
+    <!-- on peut appeler cette méthode comme on veut -->
     <div class="form-group">
       <label for="typePresta">type</label>
-      <input type="text" class="form-control" id="typePresta">
+      <input formControlName="typePresta" type="text" class="form-control" id="typePresta">
     </div>
 
     <div class="form-group">
       <label for="client">client</label>
-      <input type="text" class="form-control" id="client">
+      <input formControlName="client" type="text" class="form-control" id="client">
     </div>
 
 
     <div class="form-group">
       <label for="nbJours">nbJours</label>
-      <input type="number" class="form-control" id="nbJours">
+      <input formControlName="nbJours" type="number" class="form-control" id="nbJours">
     </div>
 
     <div class="form-group">
       <label for="tjmHt">tjmHt</label>
-      <input type="number" class="form-control" id="tjmHt">
+      <input formControlName="tjmHt" type="number" class="form-control" id="tjmHt">
     </div>
 
     <div class="form-group">
       <label for="tva">tva</label>
-      <input type="number" class="form-control" id="tva">
+      <input formControlName="tva" type="number" class="form-control" id="tva">
     </div>
 
     <div class="form-group">
       <label for="state">state</label>
-      <select class="form-control">
+      <select formControlName="state" class="form-control">
+        <!--
+        itérer dans les enums
+        importer enum dans ts + stocker
 
-        <option >OPTION</option>
+        vous n'avez pas le droit d'itérer dans un enum
+        *ngFor ne fonctionne que sur des tableaux
+        Convertir stateOrder en tableau, alors on pourra itérer à l'intérieur
+        -->
+        <!-- ici property binding, on associe  l'attribut value à la valeur state-->
+        <option *ngFor="let state of stateOrder" [value]="state">{{ state }}</option>
+        <!-- [value]="state" pour avoir une valeur choisie par défaut -->
 
       </select>
     </div>
 
     <div class="form-group">
       <label for="comment">comment</label>
-      <textarea class="form-control" id="comment"></textarea>
+      <textarea formControlName="comment" class="form-control" id="comment"></textarea>
     </div>
 
 
@@ -47,3 +58,10 @@
   </form>
 
 </div>
+
+<!--
+  Pour réculérer les inputs au submit, leurs valeurs:
+1. ajouter un identifiant au formulaire
+ <form [formGroup]="form" (ngSubmit)='onSubmit()'>
+
+ -->

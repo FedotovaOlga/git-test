@@ -27,4 +27,10 @@ export class OrdersService {
     return this.http.get<Order[]>('http://localhost:3000/orders');
 
   }
+
+  // POSTER un nouvel objet dans la bdd
+  public add(obj: Order): Observable<Order>{
+    return this.http.post<Order>('http://localhost:3000/orders', obj); // après virgule : ce qu'on veut récupérer dans la bdd
+  }
 }
+
