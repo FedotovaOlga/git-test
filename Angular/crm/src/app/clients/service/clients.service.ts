@@ -27,4 +27,9 @@ export class ClientsService {
   //  appel http vers l'url http://localhost:3000/clients
   // avant d'écrire on teste l'url dans le navigateur
 
+  // POSTER un nouvel objet dans la bdd
+  public add(obj: Client): Observable<Client>{
+    return this.http.post<Client>('http://localhost:3000/clients', obj); // après virgule : ce qu'on veut récupérer dans la bdd
+  }
+
 }

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { StateClient } from 'src/app/core/enums/state-client';
-import { StateOrder } from 'src/app/core/enums/state-order';
 import { Client } from 'src/app/core/models/client';
+import { ClientsService } from '../../service/clients.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-client',
@@ -16,12 +17,20 @@ export class FormClientComponent {
 
   public item: Client = new Client();
 
-  constructor(private fb : FormBuilder){}
+  constructor(private fb : FormBuilder,
+    private clientsService: ClientsService,
+    private router: Router
+
+    ){}
 
 
 
   public onSubmit (){
     console.log(this.form.value);
+    this.clientsService.add(this.form.value).subscribe(data=>{
+      console.log(data);
+    });
+    this.router.navigate(["/clients"]);
 
   }
 

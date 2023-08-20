@@ -171,6 +171,22 @@
       "name": null,
       "totalCaHt": null,
       "comment": null
+    },
+    {
+      "state": "ACTIVE",
+      "tva": 50,
+      "id": 6,
+      "name": "test 18h06",
+      "totalCaHt": null,
+      "comment": null
+    },
+    {
+      "state": "INACTIVE",
+      "tva": 60,
+      "id": 7,
+      "name": "test 18h07",
+      "totalCaHt": 4000,
+      "comment": null
     }
   ]
 }
